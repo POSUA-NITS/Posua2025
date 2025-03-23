@@ -1,12 +1,16 @@
-import { useState } from 'react'
-
+import Artist from './Pages/Artist/Artist'
+import Gallery from './Pages/Gallery/Gallery'
+import './index.css'
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-      home
-    </>
+    <div>
+        {/* <Gallery/> */}
+          <Artist/>
+      </div>
+
+   
   )
 }
 
