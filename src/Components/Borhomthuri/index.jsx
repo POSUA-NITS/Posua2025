@@ -5,10 +5,16 @@ function Borhomthuri() {
   return (
     <section className="w-full h-full md:h-[42rem] relative flex flex-col md:flex-row justify-center items-center mt-16 py-5">
       <div className="absolute left-0 top-[-2rem] md:top-0 w-[10rem] md:w-[15rem]">
-        <img src="/HomeImages/4 1.png" alt="" />
+        <img
+          src="http://res.cloudinary.com/dqobuxkcj/image/upload/v1742756185/qoa3oyijxnbd2rgtiioy.webp"
+          alt=""
+        />
       </div>
       <div className="hidden md:block absolute right-[-0.6rem] top-0 w-[15rem]">
-        <img src="/HomeImages/modar 1.png" alt="" />
+        <img
+          src="http://res.cloudinary.com/dqobuxkcj/image/upload/v1742756249/jsbieymskdohbl3s2bdx.webp"
+          alt=""
+        />
       </div>
       <div className="w-full md:w-[45%] md:h-[38rem] flex flex-col justify-start items-center">
         <div className="flex flex-col items-center">
@@ -27,7 +33,7 @@ function Borhomthuri() {
         </p>
       </div>
       <div className="w-full md:w-[55%]  md:mt-0 flex flex-col md:flex-row justify-between items-center h-[16.3rem] sm:h-[26rem] md:h-[20rem]">
-        <div className="relative h-[100%] md:h-[43rem] w-full md:mb-15 flex justify-center items-center bg-[url('/HomeImages/Borhomthuri-image.png')] bg-contain bg-center bg-no-repeat">
+        <div className="relative h-[100%] md:h-[43rem] w-full md:mb-15 flex justify-center items-center bg-[url('http://res.cloudinary.com/dqobuxkcj/image/upload/v1742756307/holrium3wqkexu9xtr2p.webp')] bg-contain bg-center bg-no-repeat">
           {/* <img
             src="/HomeImages/Borhomthuri-image.png"
             alt=""

@@ -13,14 +13,23 @@ function Home() {
       <section className="w-full flex flex-col justify-between items-center">
         <AboutUs />
         <div className="absolute left-[-2rem] md:left-0 top-130 md:top-95  overflow-hidden w-[20rem] md:w-[40rem]">
-          <img src="/HomeImages/flower 1.png" alt="" />
+          <img
+            src="http://res.cloudinary.com/dqobuxkcj/image/upload/v1742755790/vw4vnyemtsujzgh1nzt0.webp"
+            alt=""
+          />
         </div>
         <Invitation />
         <div className="absolute right-0 top-185  z-0 w-[24rem] md:w-[50rem]">
-          <img src="/HomeImages/mukha 1.png" alt="" />
+          <img
+            src="http://res.cloudinary.com/dqobuxkcj/image/upload/v1742756010/tpulfkvcwmpp4vplpghv.webp"
+            alt=""
+          />
         </div>
         <div className="absolute left-0 top-325  overflow-hidden w-[14rem] md:w-[30rem]">
-          <img src="/HomeImages/japi3 1.png" alt="" />
+          <img
+            src="http://res.cloudinary.com/dqobuxkcj/image/upload/v1742756095/kyryz67wi5rpk6ddietj.webp"
+            alt=""
+          />
         </div>
         <Borhomthuri />
         <BorhomthuriGallery />

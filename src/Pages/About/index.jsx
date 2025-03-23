@@ -3,9 +3,12 @@ import SectionHeading from "../../Components/SectionHeading";
 function AboutUs() {
   return (
     <div className="relative w-full min-h-140 md:h-159 py-15 px-3 md:px-0">
-      <div className="relative flex flex-col md:flex-row justify-between md:justify-start w-full h-full bg-[url('/HomeImages/bihu-image.png')] bg-[top_left_42%] bg-cover md:bg-center  shadow-xl rounded-xl">
+      <div className="relative flex flex-col md:flex-row justify-between md:justify-start w-full h-full bg-[url('http://res.cloudinary.com/dqobuxkcj/image/upload/v1742755261/c8msuldq9pe6p0adn6mh.webp')] bg-[top_left_42%] bg-cover md:bg-center  shadow-xl rounded-xl">
         <div className="absolute top-[-1.8rem] md:top-[-2.5rem] left-[-1.8rem] md:left-[-2.5rem] w-45 h-45 md:w-70 md:h-70 z-20">
-          <img src="/HomeImages/About-frame-left.png" alt="" />
+          <img
+            src="http://res.cloudinary.com/dqobuxkcj/image/upload/v1742755422/xmwxibcv8hi2mnfxujvc.webp"
+            alt=""
+          />
         </div>
         <div className="md:hidden">
           <SectionHeading title="About us" />

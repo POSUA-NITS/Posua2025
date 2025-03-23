@@ -3,7 +3,7 @@ function SectionHeading({ title }) {
     <div className=" flex justify-center items-center mt-4 md:mt-8 z-10">
       <div className="flex flex-col justify-center items-center md:space-y-3">
         <img
-          src="/HomeImages/frame1-removebg-preview 2.png"
+          src="http://res.cloudinary.com/dqobuxkcj/image/upload/v1742755666/hiovoxoalrdud0bgynp2.webp"
           alt="Frame"
           className="w-38 md:w-70"
         />
