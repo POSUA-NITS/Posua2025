@@ -3,8 +3,8 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer className="h-[31rem] relative bg-[#f8ead0]">
-            <div className='bg-[#a9d0da] w-full absolute pt-20 md:px-40 bottom-0 md:bottom-28 z-0 opacity-90 overflow-hidden'>
-                <img src='/assets/footer-img.gif' className='absolute h-[120vw] md:h-auto md:scale-[130%] md:right-[7%] md:top-[7%] z-[5] object-cover' />
+            <div className='bg-[rgba(169,208,218,1)] w-full absolute pt-20 md:px-40 bottom-0 md:bottom-28 z-0 opacity-90 overflow-hidden'>
+                <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742786690/footer-img_oqvtil.gif' className='absolute h-[120vw] md:h-auto md:scale-[130%] md:right-[7%] md:top-[7%] z-[5] object-cover opacity-75' />
                 <div className='text-[#6B2C2C] text-sm md:text-base font-semibold flex gap-y-12 gap-x-20 px-10 relative z-10 flex-wrap'>
                     <div className='flex flex-col gap-2'>
                         <a>Instagram</a>
@@ -41,11 +41,11 @@ const Footer = () => {
                         </button>
                     </div>
                 </div>
-                <img src='/assets/posua.svg' className='w-1/3 relative left-[50%] bottom-[27vh] md:right-[5%] md:left-0 md:bottom-0 z-10' />
-                <img src='/assets/gamosa2.png' className='md:hidden block w-full absolute bottom-2 scale-200' />
+                <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742786301/%E0%A6%AA%E0%A6%9B%E0%A7%8B%E0%A7%B1%E0%A6%BE-1_chgze6.webp' className='w-1/3 relative left-[50%] bottom-[27vh] md:right-[5%] md:left-0 md:bottom-0 z-10' />
+                <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742785498/gamosa2_b2jrb6.webp' className='md:hidden block w-full relative z-[7] scale-200 bottom-1' />
             </div>
             <div className='hidden md:block w-full h-4 bg-[#dc6b71c6] absolute bottom-24'></div>
-            <img src='/assets/gamosa2.png' className='hidden md:block w-full absolute bottom-0' />
+            <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742785498/gamosa2_b2jrb6.webp' className='hidden md:block w-full absolute bottom-0' />
         </footer>
     )
 }
