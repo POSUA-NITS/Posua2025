@@ -67,4 +67,4 @@ const Sponsors = () => {
     )
 }
 
-export default Sponsors
+export {Sponsors}
