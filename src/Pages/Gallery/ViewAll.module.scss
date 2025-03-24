@@ -234,14 +234,14 @@ html, body {
         }
       
         .arrow {
-          background: rgba(232, 95, 95, 1);
+          background: #F3CB80;
           color: white;
           border: none;
-          font-size: 2rem;
+          font-size: 1.5rem;
           cursor: pointer;
           border-radius: 50%;
-          width: 3rem;
-          height: 3rem;
+          width: 2rem;
+          height: 2rem;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -267,8 +267,8 @@ html, body {
           position: absolute;
           top: 1rem;
           right: 1rem;
-          background: rgba(232, 95, 95, 1);
-          color: white;
+          background: #F3CB80;
+          color: black;
           border: none;
           font-size: 1rem;
           cursor: pointer;

@@ -1,0 +1,240 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%; /* Ensure full height */
+  box-sizing: border-box;
+}
+
+.outerContainer {
+  width: 100vw;
+  height: 100vh; /* Full viewport height */
+  box-sizing: border-box;
+  background-color: grey;
+  overflow-y: auto; /* Enables scrolling */
+  display: flex;
+  flex-direction: column;
+
+
+.mainContainer {
+  width: 100%;
+  flex-grow: 1; /* Allows the content to grow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+
+      // Remove overflow-y: scroll here
+        .heading{
+            width: 100%;
+            height: 10rem;
+            background-color: green;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .image{
+                display: block;
+                width: 15%;
+                height: 4rem;
+              
+                object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+                object-position: center; /* Centers the image */
+              }
+
+            
+
+            .title{
+                margin-top: -0.5rem;
+                height: 1rem;
+                width: 80%;
+                font-size: 3rem;
+                font-weight: 500;
+                color: white;
+                text-align: center;
+            }
+        }
+        .artist_wrapper{
+            width: 100%;
+            height: 16rem;
+            background-color: white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .artist1 {
+                width: 45rem;
+                height: 16rem;
+                background-color: orange;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                transition: transform 0.3s ease;
+                .leftMusic {
+                    margin-top: 1.05rem;
+                    display: hidden;
+                    width: 6rem;
+                    height: 6rem;
+                    object-fit: cover;
+                    object-position: top;
+                    transform: rotate(-45deg);
+                    mix-blend-mode: multiply;
+                    z-index: -3;
+                  }
+                .LeftPepa {
+                  display: inline-block;
+                  margin-top: 1.05rem;
+                  width: 6rem;
+                  height: 6rem;
+                  margin-right: -0.5rem;
+                  object-fit: cover;
+                  object-position: top;
+                  transition: margin-right 0.3s ease, transform 0.3s ease;
+                }
+              
+                .LeftDhol {
+                  margin-top: 2rem;
+                  display: inline-block;
+                  width: 8rem;
+                  height: 16rem;
+                  margin-left: -2rem;
+                  object-fit: 100% 100%;
+                  object-position: center;
+                  scale: 1.5;
+                  margin-right: -2rem;
+                }
+              
+                .artistImage {
+                  width: 12rem;
+                  height: 16rem;
+                  background-color: #b02227;
+                  background-image: url(./bgSvg.svg);
+                  background-size: cover;
+                  z-index: 25;
+                  scale: 1.2;
+                  border-radius: 1rem;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: flex-end;
+                  align-items: center;
+                  transition: transform 0.3s ease;
+              
+                  .mainArtist {
+                    display: inline-block;
+                    width: 10rem;
+                    height: 13rem;
+                    object-fit: cover;
+                    object-position: center;
+                    padding-top: 0.5rem;
+                    border-radius: 1rem;
+                  }
+              
+                  .textBox {
+                    width: 8rem;
+                    height: 4rem;
+                    z-index: 35;
+                    background-image: url(./TextFrame.png);
+                    background-size: 100% 100%;
+                    scale: 1.5;
+                  }
+                }
+              
+                .RightDhol {
+                  margin-right: -2rem;
+                  display: inline-block;
+                  width: 8rem;
+                  height: 20rem;
+                  object-fit: 100% 100%;
+                  object-position: center;
+                  scale: 1.5;
+                  z-index: 10;
+                  margin-left: -2rem;
+                }
+              
+                .RightPepa {
+                  display: inline-block;
+                  margin-top: 1.05rem;
+                  width: 6rem;
+                  height: 6rem;
+                  margin-left: -0.5rem;
+                  object-fit: cover;
+                  object-position: top;
+                  transition: margin-left 0.3s ease, transform 0.3s ease;
+                }
+                .rightMusic {
+                    width: 6rem;
+                    margin-top: 1.05rem;
+                    height: 6rem;
+                    object-fit: cover;
+                    object-position: top;
+                    transform: rotate(45deg);
+                    mix-blend-mode: multiply;
+                    display: hidden;
+                    z-index: -3;
+                  }
+              
+                // Hover Effect
+                &:hover {
+                  transform: scale(1.05);
+                  .leftMusic{
+                    display: inline-block;
+                  }
+                  .LeftPepa {
+                    margin-right: -1rem;
+                    transform: scale(1.05) rotate(30deg);
+                  }
+              
+                  .RightPepa {
+                    margin-left: -1rem;
+                    transform: scale(1.05) rotate(-30deg);
+                  }
+                  .rightMusic{
+                    display: inline-block;
+                  }
+                }
+              }
+              
+              
+        }
+        .subHeading{
+            width: 100%;
+            height: 2rem;
+            background-color: pink;
+        }
+        .prev_Artists {
+          width: 100%;
+          height: 45rem;
+          background-color: aqua;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        
+          .carouselWrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+         
+          .card {
+            width: 80vw;
+            height: 30rem;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+            .cardImage{
+              width: 25rem;
+              height: 30rem;
+            }
+          }
+        }
+        }
+
+     }
+  }

@@ -1,0 +1,73 @@
+.carouselCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  height: 60vh;
+
+  background-color: beige;
+.carousel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: fit-content;
+  background-color: yellow;
+
+  .cardContainer {
+    position: absolute;
+    width: 30rem;
+    height: 60vh;
+    box-sizing: border-box;
+    transform: scaleY(calc(1 + var(--abs-offset) * -0.4))
+      translateZ(calc(var(--abs-offset) * -30rem))
+      translateX(calc(var(--direction) * 6rem));  // Increased spacing
+    // filter: blur(calc(var(--abs-offset) * 1.2rem));
+    transition: all 0.3s ease-out;
+    z-index: 1;
+  }
+  
+  .left {
+    color: #f2c300;
+    font-size: 2rem;
+    position: absolute;
+    left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    z-index: 12;
+    cursor: pointer;
+    user-select: none;
+    background: unset;
+    border: unset;
+    padding: 1rem;
+    border: 0px solid transparent;
+    border-radius: 4rem;
+    transform: translateX(-100%) translatey(-50%);
+  }
+  
+  .right {
+    color: #f2c300;
+    font-size: 2rem;
+    position: absolute;
+    left: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    z-index: 12;
+    cursor: pointer;
+    user-select: none;
+    background: unset;
+    border: unset;
+    padding: 1rem;
+    border: 0px solid transparent;
+    border-radius: 4rem;
+    transform: translateX(100%) translatey(-50%);
+  }
+}
+
+}

@@ -176,7 +176,7 @@ const ViewAll = ({ onClose }) => {
             <button className={styles.arrow} onClick={(e) => { e.stopPropagation(); handlePrev(images1); }}>&lt;</button>
             <img src={images1[selectedImage].url} alt="Popup" className={styles.popupImage} />
             <button className={styles.arrow} onClick={(e) => { e.stopPropagation(); handleNext(images1); }}>&gt;</button>
-            <button className={styles.backButton} onClick={() => setSelectedImage(null)}>✕</button>
+            <button className={styles.backButton} onClick={() => setSelectedImage(null)}>Back</button>
             </div>
             </div>
         </div>
@@ -190,7 +190,7 @@ const ViewAll = ({ onClose }) => {
             <button className={styles.arrow} onClick={(e) => { e.stopPropagation(); handlePrev(images2); }}>&lt;</button>
             <img src={images2[selectedImage].url} alt="Popup" className={styles.popupImage} />
             <button className={styles.arrow} onClick={(e) => { e.stopPropagation(); handleNext(images2); }}>&gt;</button>
-            <button className={styles.backButton} onClick={() => setSelectedImage(null)}>✕</button>
+            <button className={styles.backButton} onClick={() => setSelectedImage(null)}>Back</button>
             </div>
             </div>
         </div>
@@ -204,7 +204,7 @@ const ViewAll = ({ onClose }) => {
             <button className={styles.arrow} onClick={(e) => { e.stopPropagation(); handlePrev(images3); }}>&lt;</button>
             <img src={images3[selectedImage].url} alt="Popup" className={styles.popupImage} />
             <button className={styles.arrow} onClick={(e) => { e.stopPropagation(); handleNext(images3); }}>&gt;</button>
-            <button className={styles.backButton} onClick={() => setSelectedImage(null)}>✕</button>
+            <button className={styles.backButton} onClick={() => setSelectedImage(null)}>Back</button>
             </div>
             </div>
         </div>
