@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: "Moglan Demo";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Moglan Demo"), url("/fonts/Moglan_DEMO.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Gotham"), url("/fonts/Gotham-Book.otf") format("opentype");
+}
+
+@theme components{
+    --font-moglan: "Moglan Demo", sans-serif;
+    --font-gotham: "Gotham", sans-serif;
+}

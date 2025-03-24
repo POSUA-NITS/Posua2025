@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className="h-[31rem] relative bg-[#f8ead0]">
+        <footer className="h-[31rem] relative bg-[#f8ead0] font-gotham">
             <div className='bg-[rgba(169,208,218,1)] w-full absolute pt-20 md:px-40 bottom-0 md:bottom-28 z-0 opacity-90 overflow-hidden'>
                 <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742786690/footer-img_oqvtil.gif' className='absolute h-[120vw] md:h-auto md:scale-[130%] md:right-[7%] md:top-[7%] z-[5] object-cover opacity-75' />
                 <div className='text-[#6B2C2C] text-sm md:text-base font-semibold flex gap-y-12 gap-x-20 px-10 relative z-10 flex-wrap'>

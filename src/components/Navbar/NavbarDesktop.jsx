@@ -27,7 +27,7 @@ const NavbarDesktop = () => {
   const location = useLocation()
   return (
     <nav className={``}>
-      <div className={`flex items-center justify-between h-20 px-40 gap-8 fixed z-[100] w-full ${location.pathname !== "/" ? 'bg-[#F8EAD0]' : ''} `}>
+      <div className={`flex items-center justify-between font-gotham h-20 px-40 gap-8 fixed z-[100] w-full ${location.pathname !== "/" ? 'bg-[#F8EAD0]' : ''} `}>
         <div className="w-1/4">
           <NavLink to={"/"}>
             <img
