@@ -80,3 +80,12 @@ body {
   flex-direction: row;
   animation: scrollRight 25s linear infinite;
 }
+
+@keyframes moveLeft {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-100%); }
+}
+
+.move-clouds {
+  animation: moveLeft 300s linear infinite;
+}
