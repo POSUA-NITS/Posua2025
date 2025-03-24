@@ -15,7 +15,7 @@ const Sponsor = (name, logo) => {
 
 const Sponsors = () => {
     return (
-        <section className="relative max-w-screen overflow-hidden font-gotham flex flex-col items-center justify-center px-10 md:px-40 bg-gradient-to-b from-[#29E5FF] via-[#FEFEFE] to-[#FEFEFE] md:bg-[#f8ead0] md:bg-none">
+        <section className="relative max-w-screen overflow-hidden font-gotham flex flex-col items-center justify-center px-10 md:px-16 tablet:px-40 bg-gradient-to-b from-[#29E5FF] via-[#FEFEFE] to-[#FEFEFE] md:bg-[#f8ead0] md:bg-none">
             <img src="https://res.cloudinary.com/dmezugavw/image/upload/v1742785498/header-img_brrtbl.webp" alt="" className="w-1/2 md:w-1/5 mt-32 md:mt-52" />
             <h1 className="text-5xl text-[#CB2229] mb-8 font-moglan">Sponsors</h1>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full place-items-center">
@@ -39,24 +39,24 @@ const Sponsors = () => {
                 {Sponsor("Sponsor 1", "https://picsum.photos/200")}
                 {Sponsor("Sponsor 1", "https://picsum.photos/200")}
             </div>
-            <div className="grid relative grid-cols-1 font-moglan md:grid-cols-3 gap-10 mt-28 md:mt-44 mb-28 w-full place-items-center">
-                <div className="relative flex overflow-visible z-10 justify-center md:w-[22vw] bg-gradient-to-b from-[#E7BB67] to-[#F4E0B9] rounded-lg">
-                    <div className='flex items-center flex-col justify-center w-[90%] md:w-[20vw] py-6 at-50%_70% bg-radial from-[#F1DCB5] to-transparent backdrop-blur-2xl rounded-lg'>
+            <div className="grid relative grid-cols-1 font-moglan tablet:grid-cols-3 gap-10 mt-28 md:mt-44 mb-28 w-full place-items-center">
+                <div className="relative flex overflow-visible z-10 justify-center tablet:w-[22vw] bg-gradient-to-b from-[#E7BB67] to-[#F4E0B9] rounded-lg">
+                    <div className='flex items-center flex-col justify-center w-[90%] py-6 at-50%_70% bg-radial from-[#F1DCB5] to-transparent backdrop-blur-2xl rounded-lg'>
                         <h2 className="text-2xl text-center p-4">Why to Sponsor Heading</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero id rem blanditiis dolorem soluta iste odit laboriosam voluptatem ex, officiis obcaecati, reiciendis voluptates! Exercitationem, voluptatum cupiditate? Ut tenetur accusantium earum molestiae debitis dignissimos sint inventore fugit at est. Assumenda qui delectus sit suscipit sapiente aperiam dolorem illo tempora numquam ullam.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero id rem blanditiis dolorem soluta iste odit laboriosam voluptatem ex, officiis obcaecati, reiciendis voluptates! Exercitationem, voluptatum cupiditate? Ut tenetur accusantium earum molestiae debitis dignissimos sint inventore fugit at est. Assumenda qui delectus sit suscipit sapiente aperiam dolorem illo tempora numquam ullam.</p>
                     </div>
                 </div>
                 <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742785499/japi_ij9nt2.webp' alt="" className="w-[150%] top-1/4 absolute z-0 opacity-50 -left-[45%] md:hidden block" />
-                <div className="relative flex overflow-visible z-10 justify-center md:w-[22vw] bg-gradient-to-b from-[#E7BB67] to-[#F4E0B9] rounded-lg">
-                    <div className='flex items-center flex-col justify-center w-[90%] md:w-[20vw] py-6 at-50%_70% bg-radial from-[#F1DCB5] to-transparent backdrop-blur-2xl rounded-lg'>
+                <div className="relative flex overflow-visible z-10 justify-center tablet:w-[22vw] bg-gradient-to-b from-[#E7BB67] to-[#F4E0B9] rounded-lg">
+                    <div className='flex items-center flex-col justify-center w-[90%] tablet:w-[20vw] py-6 at-50%_70% bg-radial from-[#F1DCB5] to-transparent backdrop-blur-2xl rounded-lg'>
                         <h2 className="text-2xl text-center p-4">Why to Sponsor Heading</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero id rem blanditiis dolorem soluta iste odit laboriosam voluptatem ex, officiis obcaecati, reiciendis voluptates! Exercitationem, voluptatum cupiditate? Ut tenetur accusantium earum molestiae debitis dignissimos sint inventore fugit at est. Assumenda qui delectus sit suscipit sapiente aperiam dolorem illo tempora numquam ullam.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero id rem blanditiis dolorem soluta iste odit laboriosam voluptatem ex, officiis obcaecati, reiciendis voluptates! Exercitationem, voluptatum cupiditate? Ut tenetur accusantium earum molestiae debitis dignissimos sint inventore fugit at est. Assumenda qui delectus sit suscipit sapiente aperiam dolorem illo tempora numquam ullam.</p>
                     </div>
                 </div>
-                <div className="relative flex overflow-visible z-0 justify-center md:w-[22vw] bg-gradient-to-b from-[#E7BB67] to-[#F4E0B9] rounded-lg">
-                    <div className='flex items-center flex-col justify-center w-[90%] md:w-[20vw] py-6 at-50%_70% bg-radial from-[#F1DCB5] to-transparent backdrop-blur-2xl rounded-lg'>
+                <div className="relative flex overflow-visible z-0 justify-center tablet:w-[22vw] bg-gradient-to-b from-[#E7BB67] to-[#F4E0B9] rounded-lg">
+                    <div className='flex items-center flex-col justify-center w-[90%] tablet:w-[20vw] py-6 at-50%_70% bg-radial from-[#F1DCB5] to-transparent backdrop-blur-2xl rounded-lg'>
                     <h2 className="text-2xl text-center p-4">Why to Sponsor Heading</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero id rem blanditiis dolorem soluta iste odit laboriosam voluptatem ex, officiis obcaecati, reiciendis voluptates! Exercitationem, voluptatum cupiditate? Ut tenetur accusantium earum molestiae debitis dignissimos sint inventore fugit at est. Assumenda qui delectus sit suscipit sapiente aperiam dolorem illo tempora numquam ullam.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero id rem blanditiis dolorem soluta iste odit laboriosam voluptatem ex, officiis obcaecati, reiciendis voluptates! Exercitationem, voluptatum cupiditate? Ut tenetur accusantium earum molestiae debitis dignissimos sint inventore fugit at est. Assumenda qui delectus sit suscipit sapiente aperiam dolorem illo tempora numquam ullam.</p>
