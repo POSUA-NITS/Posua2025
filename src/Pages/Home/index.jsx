@@ -1,7 +1,7 @@
 import Borhomthuri from "../../Components/Borhomthuri";
 import BorhomthuriGallery from "../../Components/Borhomthuri-gallery";
 import RedBorder from "../../components/RedBorder";
-import AboutUs from "../About";
+import AboutUs from "../AboutUs";
 import Invitation from "../Invitation";
 
 function Home() {
