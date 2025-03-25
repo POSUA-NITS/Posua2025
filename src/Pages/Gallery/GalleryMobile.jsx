@@ -60,7 +60,7 @@ useEffect(() => {
                  style={{
                     backgroundImage: `url(${backgrounds[currentIndex]})`,
                     transition: 'background-image 1s ease-in-out',
-                    backgroundSize: 'cover'
+                    backgroundSize: '100% 100%'
                   }}
               >
                   <p className={`${styles.year_Content} ${isFading ? styles.year_Change : ''}`}>
