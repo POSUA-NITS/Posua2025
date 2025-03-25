@@ -6,6 +6,12 @@ const Home = lazy(() =>
 const AboutUs = lazy(() =>
   import("./Pages/index").then((module) => ({ default: module.AboutUs}))
 );
+const Team = lazy(() =>
+  import("./Pages/index").then((module) => ({ default: module.Team}))
+);
+const Events = lazy(() =>
+  import("./Pages/index").then((module) => ({ default: module.Events}))
+);
 // import Footer from "./Components/Shared/Footer/Footer";
 // import Navbar from "./Components/Shared/Navbar/Navbar";
 const App = () => (
@@ -18,6 +24,8 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/AboutUs" element={<AboutUs />} />
+              <Route path="/Team" element={<Team />} />
+              <Route path="/Events" element={<Events />} />
             </Routes>
             {/* <Footer /> */}
           {/* </Suspense> */}
