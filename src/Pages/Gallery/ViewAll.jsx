@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from './ViewAll.module.scss';  // Import the same CSS module if styles are shared
-import flower from './flower.svg';
 
 const ViewAll = ({ onClose }) => {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -93,7 +92,7 @@ const ViewAll = ({ onClose }) => {
   return (
     <div className={styles.viewAllContainer}>
       <div className={styles.flower}>
-        <img src={flower} alt='flower' />
+        <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742904113/flower_oohmzu.svg' alt='flower' />
       </div>
 
       <div className={styles.content}>

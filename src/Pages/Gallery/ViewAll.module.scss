@@ -19,11 +19,12 @@ html, body {
   
   .viewAllContainer {
     display: flex;
+    padding-top: 6rem;
     flex-direction: row-reverse;
     width: 100vw;
     height: 100vh;
     background-color:rgb(234, 213, 176);
-    background-image: url(./Texture.svg);
+    background-image:      url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742904115/Texture_janxil.svg');
     background-repeat: repeat;
     animation: slideInFromRight 0.5s ease-out;
 

@@ -1,20 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import styles from "./GalleryMobile.module.scss";
-import Photo1 from './Photo1.png';
-import Photo2 from './Photo2.png';
-import Photo3 from './Photo3.png';
-import slider1 from './Slider1.svg';
-import slider2 from './Slider2.svg';
-import slider3 from './Slider3.svg';
-import pic1 from './Blur1.svg';
-import pic2 from './Blur2.png';
-import pic3 from './Blur3.svg';
-import UpFlower from './UpFlower.png';
+
 import ViewAll from './ViewAll';
 
-const backgrounds = [pic1, pic2, pic3];
+
+
+const backgrounds = [
+           'https://res.cloudinary.com/dybzo3xly/image/upload/v1742900799/Blur1_ztw1i1.webp',
+           'https://res.cloudinary.com/dybzo3xly/image/upload/v1742900798/Blur2_ltxgwv.webp', 
+           'https://res.cloudinary.com/dybzo3xly/image/upload/v1742900800/Blur3_pbqr8e.webp'];
 const years = ['2022', '2021', '2020'];
-const sliders = [slider1, slider2, slider3];
+const sliders = [
+             'https://res.cloudinary.com/dybzo3xly/image/upload/v1742901177/Slider1_wkmkzm.webp', 
+              'https://res.cloudinary.com/dybzo3xly/image/upload/v1742901177/Slider2_ds2haf.webp',
+              'https://res.cloudinary.com/dybzo3xly/image/upload/v1742901178/Slider3_mwlgza.svg'];
 
 const GalleryMobile = () => {
   const [showAll, setShowAll] = useState(false);
@@ -55,7 +54,7 @@ useEffect(() => {
           <div className={styles.mainContainer}>
               <div className={styles.Heading}>
                    <p className={styles.photoGallery}>Photo Gallery</p>
-                   <img src={UpFlower} className={styles.UpFlower} alt='UpFlower' />
+                   <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742904024/UpFlower_by8xj1.webp' className={styles.UpFlower} alt='UpFlower' />
               </div>
               <div className={styles.yearSection}
                  style={{
@@ -69,9 +68,9 @@ useEffect(() => {
                   </p>
               </div>
               <div className={styles.photos}>
-                  <img src={Photo1} className={styles.images} alt='Photo1' />
-                  <img src={Photo2} className={styles.images} alt='Photo2' />
-                  <img src={Photo3} className={styles.images} alt='Photo3' />
+                  <img src="https://res.cloudinary.com/dybzo3xly/image/upload/v1742899873/Photo1_arrmqs.webp" className={styles.images} alt='Photo1' />
+                  <img src="https://res.cloudinary.com/dybzo3xly/image/upload/v1742900022/Photo2_bumcss.webp" className={styles.images} alt='Photo2' />
+                  <img src="https://res.cloudinary.com/dybzo3xly/image/upload/v1742900107/Photo3_t90h8r.webp" className={styles.images} alt='Photo3' />
 
               </div>
               <div className={styles.LastPart}>
