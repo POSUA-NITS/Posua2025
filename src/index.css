@@ -88,13 +88,6 @@ body {
   animation: scrollRight 25s linear infinite;
 }
 
-@font-face {
-    font-family: "Gotham";
-    font-style: normal;
-    font-weight: normal;
-    src: local("Gotham"), url("/fonts/Gotham-Book.otf") format("opentype");
-}
-
 @theme components{
     --font-moglan: "Moglan Demo", sans-serif;
     --font-gotham: "Gotham", sans-serif;
