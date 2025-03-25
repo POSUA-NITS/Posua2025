@@ -17,13 +17,14 @@
     font-family: "Ledger";
     font-style: normal;
     font-weight: normal;
-    src: local("Gotham"), url("/fonts/Ledger-Regular.ttf") format("opentype");
+    src: local("Ledger"), url("/fonts/Ledger-Regular.ttf") format("opentype");
 }
 
 
 @theme components{
     --font-moglan: "Moglan Demo", sans-serif;
     --font-gotham: "Gotham", sans-serif;
+    --font-ledger: "Ledger", sans-serif;
     --breakpoint-tablet: 1000px;
     --breakpoint-laptop:1150px;
 }

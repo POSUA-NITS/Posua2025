@@ -321,6 +321,12 @@ body {
         row-gap: 2rem; // Adjust this value to increase or decrease the vertical gap
         column-gap: 3rem;
         padding-left: 0;
+        .card{
+          width: 17rem;
+          height: 18rem;
+          box-sizing: border-box;
+          border-radius: 1rem;
+        }
       }
     }
 
@@ -333,7 +339,7 @@ body {
 }
 
 // Tablet view (768px and below)
-@media (max-width: 768px) {
+@media (max-width: 986px) {
   .viewAllContainer {
     flex-direction: column;
     align-items: center;
@@ -389,14 +395,67 @@ body {
       .popUpWrapper {
         .popupContent {
           .popupImage {
-            width: 28rem;
-            height: 24rem;
+            width: 34rem;
+            height: 30rem;
           }
+          .arrow:first-of-type {
+            left: 13rem;
+          }
+  
+          .arrow:last-of-type {
+            right: 4rem;
+          }
+  
         }
       }
     }
   }
 }
+
+@media (max-width: 680px) {
+  .viewAllContainer {
+    .content {
+      .section1 {
+        .title {
+          font-size: 3.5rem;
+          
+        }
+      }
+
+     
+      .section2 {
+        grid-template-columns: repeat(2, 1fr); // 2 cards per row on tablets
+        padding-left: 1rem;
+
+        .card {
+          width: 13rem;
+          height: 14rem;
+        }
+      }
+    }
+
+    
+    .popup {
+      .popUpWrapper {
+        .popupContent {
+          .popupImage {
+            width: 24rem;
+            height: 25rem;
+          }
+          .arrow:first-of-type {
+            left: 8rem;
+          }
+  
+          .arrow:last-of-type {
+            right: 4rem;
+          }
+  
+        }
+      }
+    }
+  }
+}
+
 
 // Mobile view (480px and below)
 @media (max-width: 480px) {
@@ -404,19 +463,32 @@ body {
     .content {
       .section1 {
         .title {
-          font-size: 2rem;
+          font-size: 3rem;
+          text-wrap: nowrap;
         }
       }
 
       .section2 {
         grid-template-columns: 1fr; // 1 card per row on small screens
-        padding-left: 0;
+        padding-left: 1rem;
       }
     }
-
     .popup {
-      .popupImage {
-        width: 90%;
+      .popUpWrapper {
+        .popupContent {
+          .popupImage {
+            width: 20rem;
+            height: 23rem;
+          }
+          .arrow:first-of-type {
+            left: 6rem;
+          }
+  
+          .arrow:last-of-type {
+            right: 4rem;
+          }
+  
+        }
       }
     }
   }
