@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
 const NavOptions = [
@@ -25,9 +26,32 @@ const NavOptions = [
 
 const NavbarDesktop = () => {
   const location = useLocation()
+  const [navBlur, setNavBlur] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > 50) {
+      setNavBlur(true);
+    }
+    else {
+      setNavBlur(false);
+    }
+    setLastScrollY(currentScrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
     <nav className={``}>
-      <div className={`flex items-center justify-between font-gotham h-20 px-40 gap-8 fixed z-[100] w-full ${location.pathname !== "/" ? 'bg-[#F8EAD0]' : ''} `}>
+      <div className={`flex ${navBlur?"backdrop-blur-2xl":""} items-center justify-between font-gotham h-20 px-40 gap-8 fixed z-[100] w-full ${location.pathname !== "/" ? 'bg-[#F8EAD0]' : ''} `}>
         <div className="w-1/4">
           <NavLink to={"/"}>
             <img
