@@ -31,13 +31,15 @@ const Artist = () =>{
   return (
     <div className={styles.outerContainer}>
     <div className={styles.mainContainer}>
+    <div class={styles.extraImage1}></div>
+    <div class={styles.extraImage2}></div>
        <div className={styles.heading}>
            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742913661/Heading_ndgrgs.svg' className={styles.image} alt='heading '/>
            <p className={styles.title}>UPCOMING ARTISTS</p>
          </div>
        <div className={styles.artist_wrapper}>
            <div className={styles.artist1}>
-              <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914289/Music_rgfcuq.gif'className={styles.leftMusic} alt='leftMusic'/>
+              <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif'className={styles.leftMusic} alt='leftMusic'/>
               <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914466/papLeft_esh2ke.svg' className={styles.LeftPepa} alt='LeftPepa'/>
               <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914464/LeftDhol_mqch8f.svg' className={styles.LeftDhol} alt='LeftDhol'/>
               <div className= {styles.artistImage}>
@@ -46,10 +48,10 @@ const Artist = () =>{
               </div>
               <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914468/RightDhol_wvr36b.svg' className={styles.RightDhol} alt='RightDhol'/>
               <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914467/papRight_vdsite.svg' className={styles.RightPepa} alt='RightPepa'/>
-              <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914289/Music_rgfcuq.gif' className={styles.rightMusic} alt='rightMusic'/>
+              <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className={styles.rightMusic} alt='rightMusic'/>
            </div>
            <div className={styles.artist1}>
-              <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914289/Music_rgfcuq.gif' className={styles.leftMusic} alt='leftMusic'/>
+              <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className={styles.leftMusic} alt='leftMusic'/>
               <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914466/papLeft_esh2ke.svg' className={styles.LeftPepa} alt='LeftPepa'/>
               <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914464/LeftDhol_mqch8f.svg'className={styles.LeftDhol} alt='LeftDhol'/>
               <div className= {styles.artistImage}>
@@ -58,7 +60,7 @@ const Artist = () =>{
               </div>
               <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914468/RightDhol_wvr36b.svg' className={styles.RightDhol} alt='RightDhol'/>
               <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914467/papRight_vdsite.svg' className={styles.RightPepa} alt='RightPepa'/>
-              <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914289/Music_rgfcuq.gif' className={styles.rightMusic} alt='rightMusic'/>
+              <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className={styles.rightMusic} alt='rightMusic'/>
            </div>
          </div>
          <div className={styles.heading}>

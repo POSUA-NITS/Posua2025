@@ -10,26 +10,83 @@ html, body {
   width: 100vw;
   height: 100vh; /* Full viewport height */
   box-sizing: border-box;
-  background-color: grey;
+  background-color:#F8EAD0;
   overflow-y: auto; /* Enables scrolling */
   display: flex;
   flex-direction: column;
+  /* Hide scrollbar for Chrome, Safari, and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 
 
-.mainContainer {
-  width: 100%;
-  flex-grow: 1; /* Allows the content to grow */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: orange;
+  .mainContainer {
+    width: 100%;
+    flex-grow: 1; /* Allows the content to grow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#F8EAD0;
+    &::before,
+    &::after,
+    &::before,
+    &::after,
+    .extraImage1,
+    .extraImage2 {
+      content: "";
+      position: absolute;
+      background-size: contain;
+      background-repeat: no-repeat;
+      filter: brightness(0.8);
+     
+    }
+  
+    // Image 1 — Top Left
+    &::before {
+      background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742923319/rightGamusa_aadl38.png");
+      width: 20rem;
+      height: 30rem;
+      top: 4rem;
+      right: 0rem;
+    }
+  
+    // Image 2 — Bottom Right
+    &::after {
+      background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742922617/LeftGamusa_q8plub.png");
+      width: 20rem;
+      height: 30rem;
+      top: 4rem;
+      left: 0rem;
+    }
+  
+    // Image 3 — Top Right
+    .extraImage1 {
+      background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742923319/rightPhool_mfgw4o.png");
+      width: 20rem;
+      height: 20rem;
+      top: 28rem;
+      right: -2rem;
+    }
+  
+    // Image 4 — Bottom Left
+    .extraImage2 {
+      background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742922616/Phool_qmsxwd.png");
+      width: 20rem;
+      height: 20rem;
+      top: 28rem;
+      left: 0rem;
+    }
 
       // Remove overflow-y: scroll here
         .heading{
             width: 100%;
             height: 10rem;
-            background-color: green;
+            // background-color: green;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
@@ -53,21 +110,23 @@ html, body {
                 width: 80%;
                 font-size: 3rem;
                 font-weight: 500;
-                color: white;
+                font-family: var(--font-moglan);
+                color:  #CB2229;
                 text-align: center;
             }
         }
         .artist_wrapper{
             width: 100%;
             height: 16rem;
-            background-color: white;
+            background-color:#F8EAD0;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            margin-top: 5rem;
             .artist1 {
                 width: 45rem;
                 height: 16rem;
-                background-color: orange;
+                // background-color: orange;
                 display: flex;
                 justify-content: center;
                 align-items: flex-start;
@@ -177,7 +236,7 @@ html, body {
               
                 // Hover Effect
                 &:hover {
-                  transform: scale(1.05);
+                  transform: scale(1.15);
                   .leftMusic{
                     display: inline-block;
                   }
@@ -201,12 +260,12 @@ html, body {
         .subHeading{
             width: 100%;
             height: 2rem;
-            background-color: pink;
+            // background-color: pink;
         }
         .prev_Artists {
           width: 100%;
           height: 45rem;
-          background-color: aqua;
+          // background-color: aqua;
           display: flex;
           justify-content: center;
           align-items: center;
