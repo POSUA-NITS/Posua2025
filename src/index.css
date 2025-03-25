@@ -5,7 +5,7 @@
     font-style: normal;
     font-weight: normal;
     src: local("Moglan Demo"), url("/fonts/Moglan_DEMO.ttf") format("truetype");
-@import "tailwindcss";
+}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
