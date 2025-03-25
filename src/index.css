@@ -89,3 +89,47 @@ body {
 .move-clouds {
   animation: moveLeft 300s linear infinite;
 }
+
+@keyframes left {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-100%); }
+}
+
+@keyframes right {
+  from { transform: translateX(0%); }
+  to { transform: translateX(100%); }
+}
+
+@keyframes top {
+  from { transform: translateY(0%); }
+  to { transform: translateY(-100%); }
+}
+
+@keyframes bottom {
+  from { transform: translateY(0%); }
+  to { transform: translateY(100%); }
+}
+
+@keyframes topLeft{
+  from { transform: translate(0%, 0%); }
+  to { transform: translate(-100%, -100%); }
+}
+
+@keyframes topRight{
+  from { transform: translate(0%, 0%); }
+  to { transform: translate(100%, -100%); }
+}
+
+@keyframes bottomLeft{
+  from { transform: translate(0%, 0%); }
+  to { transform: translate(-100%, 100%); }
+}
+
+@keyframes bottomRight{
+  from { transform: translate(0%, 0%); }
+  to { transform: translate(100%, 100%); }
+}
+
+.move-topRight {
+  animation: topRight 3s linear forwards;
+}

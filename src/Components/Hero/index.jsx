@@ -4,7 +4,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 function Hero() {
-  const [stopGif, setStopGif] = useState(false);
+  const [stopGif, setStopGif] = useState(true);
+  const [stopAnimation, setStopAnimation] = useState(false);
 
   function handleScroll() {
     const element = document.getElementById("about-us");
@@ -16,17 +17,33 @@ function Hero() {
   }
 
   function startGif() {
-    setInterval(() => {
+    setTimeout(() => {
       setStopGif(true);
-    }, 3000);
+    }, 3200);
   }
 
   useEffect(() => {
-    startGif();
+    setTimeout(() => {
+      setStopGif(false);
+      startGif();
+    }, 2600);
   }, []);
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
+      {!stopAnimation && (
+        <div className="w-full h-screen absolute z-1000 ">
+          <div className="w-full h-full absolute right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/1_qwyup9.webp')] animate-[topRight_3s_ease-in-out_forwards] "></div>
+          <div className="w-full h-full absolute left-0 top-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/2_m7k0ic.webp')] animate-[top_3s_ease-in-out_forwards]"></div>
+          <div className="w-full h-full absolute left-0 top-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/3_uiqehz.webp')] animate-[right_3s_ease-in-out_forwards]"></div>
+          <div className="w-[70%] h-full absolute right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/4_xusz8v.webp')] animate-[right_3s_ease-in-out_forwards]"></div>
+          <div className="w-full h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/5_haotid.webp')] animate-[top_3s_ease-in-out_forwards]  md:animate-[topLeft_3s_ease-in-out_forwards]"></div>
+          <div className="w-full h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/6_mrzniy.webp')] animate-[bottom_3s_ease-in-out_forwards]"></div>
+          <div className="w-full md:w-[60%] h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/7_i1a56b.webp')] animate-[bottom_3s_ease-in-out_forwards] md:animate-[bottomLeft_3s_ease-in-out_forwards]"></div>
+          <div className="w-[65rem] md:w-[60%] h-[90%] absolute left-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/8_no4cmw.webp')] animate-[left_3s_ease-in-out_forwards]"></div>
+        </div>
+      )}
+
       <div className="absolute bg-linear-to-b from-[#53b8f7] to-[#f9f9f9] w-full h-[30%] md:h-[50%]"></div>
       <div className="absolute w-[55rem] h-[35rem] right-0 bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841328/cloud5_po3haf.webp')] bg-cover move-clouds"></div>
       <div className="absolute w-[8rem] h-[8rem] md:w-[15rem] md:h-[15rem] left-15 top-20 md:left-70 md:top-35 bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841315/Sun_mtqiuk.webp')] bg-cover"></div>
@@ -59,13 +76,13 @@ function Hero() {
             <img
               src="https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841699/posua_eoalhx.gif"
               alt=""
-              className="absolute w-[31%]"
+              className="absolute w-[80%] md:w-[31%] hidden md:block"
             />
           )}
         </div>
         <div className="w-[10rem] md:w-[31rem] h-[2.5rem] md:h-[3.5rem] relative ">
-          <div className="bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841315/text1_nwlvi9.webp')] bg-cover h-[1.05rem] md:h-[1.8rem] w-[100%] md:w-[55%] absolute left-[-4rem] md:left-0 top-0"></div>
-          <div className="bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841315/text2_rcprtv.webp')] bg-cover h-[1.05rem] md:h-[1.8rem] w-[100%] md:w-[55%] absolute right-[4rem] md:right-0 bottom-0"></div>
+          <div className="bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841315/text1_nwlvi9.webp')] bg-cover h-[1.05rem] md:h-[1.8rem] w-[100%] md:w-[55%] absolute left-[-3rem] md:left-0 top-0"></div>
+          <div className="bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841315/text2_rcprtv.webp')] bg-cover h-[1.05rem] md:h-[1.8rem] w-[100%] md:w-[55%] absolute right-[3rem] md:right-0 bottom-0"></div>
         </div>
       </div>
 
