@@ -1,4 +1,4 @@
-version: 1
+version: 6
 services:
   - type: web
     name: posua-2025
