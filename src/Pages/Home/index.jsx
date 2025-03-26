@@ -8,7 +8,7 @@ import Invitation from "../Invitation";
 function Home() {
   return (
     <section>
-      {/* <Hero /> */}
+      <Hero />
       <section className="bg-[#f8ead0] min-h-screen w-full flex justify-between px-[6%] md:px-[9%] relative">
         <div className="w-4 md:w-6">
           <RedBorder />

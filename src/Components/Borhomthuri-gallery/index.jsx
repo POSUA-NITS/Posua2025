@@ -10,7 +10,7 @@ function BorhomthuriGallery() {
         </span>
       </h1>
       <div className="scroll-container h-40 w-50 overflow-hidden ">
-        <div className="scroll-content-horizontal h-[2rem] w-600 flex gap-3">
+        <div className="scroll-content-horizontal h-[2rem] w-600 flex gap-3 overflow-y-clip">
           {data.map((item, index) => (
             <a
               href={item.link}
