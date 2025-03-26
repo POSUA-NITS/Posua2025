@@ -18,8 +18,6 @@ const Events = () => {
   const swiperRef = useRef(null);
 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
-
-  // Effect to listen for screen resize
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 1024);
@@ -38,15 +36,13 @@ const Events = () => {
   }, []);
     
   return (
-    <div className="bg-[#F8EAD0] min-h-screen w-full flex flex-col items-center text-center relative pt-[12vh]">
-      {/* Side and Top Lines */}
-      <div className="absolute mobile2:top-[8vh] laptop2:top-[10vh] w-full h-[8px] bg-[#DC6B70] opacity-50"></div>
+    <div className="bg-[#F8EAD0] min-h-screen h-full w-full flex flex-col items-center text-center relative pt-[12vh]">
+      {/* Side Lines */}
       <div className="absolute top-0 mobile2:left-[10vw] laptop2:left-[10.2vw] w-[7px] h-full bg-[#DC6B70] opacity-50"></div>
       <div className="absolute top-0 mobile2:left-[7vw] laptop2:left-[9vw] w-[7px] h-full bg-[#DC6B70] opacity-50"></div>
       <div className="absolute top-0 mobile2:right-[10vw] laptop2:right-[10.2vw] w-[7px] h-full bg-[#DC6B70] opacity-50"></div>
       <div className="absolute top-0 mobile2:right-[7vw] laptop2:right-[9vw] w-[7px] h-full bg-[#DC6B70] opacity-50"></div>
       
-      {/* Header Section */}
       <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742815614/frame1-removebg-preview_2_1_m9yltj.png" alt="" 
       className="mt-6 mobile2:w-[45vw] laptop2:w-[19vw]"/>
       <div className="posua mobile2:text-[5vh] laptop2:text-[8.5vh] text-[#CB2229] mobile2:mt-3 ">EVENTS</div>
