@@ -2,72 +2,129 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90vw;
-  height: 60vh;
+  width: 100vw;
+  height: 70vh;
+  background-color: #f8f0e3; 
+  font-family: sans-serif;
+}
 
-  background-color: beige;
 .carousel {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  width: fit-content;
-  background-color: yellow;
+}
 
-  .cardContainer {
-    position: absolute;
-    width: 30rem;
-    height: 60vh;
-    box-sizing: border-box;
-    transform: scaleY(calc(1 + var(--abs-offset) * -0.4))
-      translateZ(calc(var(--abs-offset) * -30rem))
-      translateX(calc(var(--direction) * 6rem));  // Increased spacing
-    // filter: blur(calc(var(--abs-offset) * 1.2rem));
-    transition: all 0.3s ease-out;
-    z-index: 1;
-  }
-  
-  .left {
-    color: #f2c300;
-    font-size: 2rem;
-    position: absolute;
-    left: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 50%;
-    z-index: 12;
-    cursor: pointer;
-    user-select: none;
-    background: unset;
-    border: unset;
-    padding: 1rem;
-    border: 0px solid transparent;
-    border-radius: 4rem;
-    transform: translateX(-100%) translatey(-50%);
-  }
-  
-  .right {
-    color: #f2c300;
-    font-size: 2rem;
-    position: absolute;
-    left: 12rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 50%;
-    z-index: 12;
-    cursor: pointer;
-    user-select: none;
-    background: unset;
-    border: unset;
-    padding: 1rem;
-    border: 0px solid transparent;
-    border-radius: 4rem;
-    transform: translateX(100%) translatey(-50%);
+.cardContainer {
+  position: absolute;
+  width: 22rem; 
+  height: 60%; 
+  box-sizing: border-box;
+  transform: scale(calc(1 - var(--abs-offset) * 0.3))
+    translateZ(calc(var(--abs-offset) * -40rem))
+    translateX(calc(var(--direction) * 10rem));
+  transition: all 0.3s ease-out;
+  z-index: calc(10 - var(--abs-offset));
+}
+
+.cardContainer img {
+  width: 100%;
+  height: 80%; 
+  object-fit: cover; 
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.cardContainer p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.left,
+.right {
+  color: #f2c300;
+  font-size: 3rem; 
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 12;
+  cursor: pointer;
+  user-select: none;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1); 
   }
 }
 
+.left {
+  left: 1rem; 
+}
+
+.right {
+  right: 1rem; 
+}
+
+.prev_Artists {
+  width: 100%;
+  height: 45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .carouselWrapper {
+    width: 90%; /* Reduce carousel width to 90% */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 28rem;
+    height: 30rem; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    // border: 4px solid $frame-color;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 0 1.5rem;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  .cardImage {
+    width: 100%;
+    height: 80%; 
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .textBox {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+
+  .artistName {
+    font-size: 1.2rem;
+    // color: $text-color;
+    margin: 0;
+    padding: 0.5rem;
+  }
 }

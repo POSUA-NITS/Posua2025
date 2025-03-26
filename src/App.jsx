@@ -22,10 +22,10 @@ const Error = lazy(() =>
 const App = () => (
     <main className="relative">
       {/* <InitialLoadingForHome /> */}
-      {/* <BrowserRouter> */}
+       <BrowserRouter> 
           {/* <InitialLoadingForHome /> */}
-          {/* <Suspense fallback={<Loading />}> */}
-            {/* <Navbar />
+           {/* <Suspense fallback={<Loading />}>  */}
+             <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<AboutUs />} />
@@ -34,10 +34,10 @@ const App = () => (
               <Route path="/artist" element={<Artist/>} />
               <Route path="*" element={<Error/>} />
             </Routes>
-            <Footer /> */}
+            <Footer /> 
           {/* </Suspense> */}
-      {/* </BrowserRouter> */}
-          <Artist/>
+      </BrowserRouter>
+      {/* <Artist/> */}
 
     </main>
   );
