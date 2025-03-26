@@ -51,7 +51,7 @@ const NavbarDesktop = () => {
 
   return (
     <nav className={``}>
-      <div className={`flex ${navBlur?"backdrop-blur-2xl":""} items-center justify-between font-gotham h-20 px-40 gap-8 fixed z-[100] w-full `}>
+      <div className={`flex ${navBlur?"backdrop-blur-2xl":""} items-center justify-between font-gotham h-20 px-44 gap-8 fixed z-[100] w-full `}>
         <div className="w-1/4">
           <NavLink to={"/"}>
             <img
