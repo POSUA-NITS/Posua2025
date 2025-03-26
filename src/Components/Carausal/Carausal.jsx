@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import styles from "./Carausal.module.scss";
 
 const MAX_VISIBILITY = 2;
+const VISIBLE_CARDS = 5;
 
 const Carousel = ({ children }) => {
   const [active, setActive] = useState(0);
@@ -32,13 +33,10 @@ const Carousel = ({ children }) => {
   return (
     <div className={styles.carouselCont}>
       <div className={styles.carousel} ref={carouselRef}>
-        {active >= 0 && (
-          <button className={styles.left} onClick={handlePrev}>
-            &lt;
-          </button>
-        )}
-        {React.Children.map(children, (child, i) => {
-          const offset = active - i;
+        <button className={styles.left} onClick={handlePrev}>&lt;</button>
+        {Array.from({ length: VISIBLE_CARDS }, (_, index) => {
+          const cardIndex = (active + index - Math.floor(VISIBLE_CARDS / 2) + count) % count;
+          const offset = index - Math.floor(VISIBLE_CARDS / 2);
           const absOffset = Math.abs(offset);
           let scale = 1;
 
@@ -51,9 +49,10 @@ const Carousel = ({ children }) => {
 
           return (
             <div
+              key={cardIndex}
               className={styles.cardContainer}
               style={{
-                "--active": i === active ? 1 : 0,
+                "--active": cardIndex === active ? 1 : 0,
                 "--offset": offset,
                 "--direction": Math.sign(offset),
                 "--abs-offset": absOffset,
@@ -61,19 +60,15 @@ const Carousel = ({ children }) => {
                 zIndex: `${count - absOffset}`,
                 opacity: absOffset > MAX_VISIBILITY ? 0 : 1,
                 pointerEvents: absOffset > MAX_VISIBILITY ? "none" : "auto",
-                display: absOffset > MAX_VISIBILITY ? "none" : "block",
+                display: "block",
                 transition: "transform 0.5s ease-in-out, opacity 0.5s ease-in-out",
               }}
             >
-              {child}
+              {children[cardIndex]}
             </div>
           );
         })}
-        {active < count - 1 && (
-          <button className={styles.right} onClick={handleNext}>
-            &gt;
-          </button>
-        )}
+        <button className={styles.right} onClick={handleNext}>&gt;</button>
       </div>
     </div>
   );
