@@ -41,7 +41,7 @@ function Borhomthuri() {
           /> */}
         </div>
 
-        <div className="hidden h-[26rem] w-[32%]  mr-3 md:flex flex-col justify-center items-center">
+        <div className="hidden h-[28rem] w-[32%]  mr-3 md:flex flex-col justify-center items-center">
           <h1 className="gotham-font  text-[#550E11] text-lg">
             Previous Editions
           </h1>

@@ -42,7 +42,7 @@ body {
 
 @font-face{
   font-family: "Gotham";
-  src: url("/Fonts/Gotham-Light.otf") format("truetype");
+  src: url("/Fonts/Gotham-Light.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -72,7 +72,7 @@ body {
 
 .scroll-container {
   /* height: 400px; */
-  /* overflow: hidden; */
+  overflow: hidden;
   position: relative;
 }
 
@@ -89,7 +89,7 @@ body {
 }
 
 @theme components{
-    --font-moglan: "Moglan Demo", sans-serif;
+    --font-moglan: "MoglanDemo", sans-serif;
     --font-gotham: "Gotham", sans-serif;
     --font-ledger: "Ledger", sans-serif;
     --breakpoint-tablet: 1000px;
