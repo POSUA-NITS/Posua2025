@@ -9,7 +9,7 @@ function BorhomthuriGallery() {
           revious Editions
         </span>
       </h1>
-      <div className="scroll-container h-40 w-50 overflow-hidden ">
+      <div className="scroll-container h-45 w-50 overflow-hidden ">
         <div className="scroll-content-horizontal h-[2rem] w-600 flex gap-3">
           {data.map((item, index) => (
             <a
@@ -19,7 +19,7 @@ function BorhomthuriGallery() {
               style={{ margin: "1rem 0" }}
               key={index}
             >
-              <img src={item.src} alt="magazine" />
+              <img src={item.src} alt="magazine" className="bg-cover w-26" />
               <img
                 src={item.edition_num}
                 alt="Edition"
@@ -27,6 +27,7 @@ function BorhomthuriGallery() {
                   margin: "0 auto",
                   padding: ".5rem",
                 }}
+                className="bg-cover w-26"
               />
             </a>
           ))}
