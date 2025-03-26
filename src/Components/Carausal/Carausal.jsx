@@ -18,19 +18,22 @@ const Carousel = ({ children }) => {
     }
   }, [children]);
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setActive((prevActive) => (prevActive + 1) % count);
-  //   }, 3000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActive((prevActive) => (prevActive + 1) % count);
+    }, 1500);
 
-  //   return () => clearInterval(interval);
-  // }, [count]);
+    return () => clearInterval(interval);
+  }, [count, active]);
+
+  const handlePrev = () => setActive((i) => (i - 1 + count) % count);
+  const handleNext = () => setActive((i) => (i + 1) % count);
 
   return (
     <div className={styles.carouselCont}>
       <div className={styles.carousel} ref={carouselRef}>
-        {active >= 0  && (
-          <button className={styles.left} onClick={() => setActive((i) => i - 1)}>
+        {active >= 0 && (
+          <button className={styles.left} onClick={handlePrev}>
             &lt;
           </button>
         )}
@@ -40,11 +43,11 @@ const Carousel = ({ children }) => {
           let scale = 1;
 
           if (absOffset > 0) {
-            scale = 1 - (absOffset * 0.10);
+            scale = 1 - absOffset * 0.1;
             scale = Math.max(0.8, scale);
           }
 
-          const translationFactor = 0.70;
+          const translationFactor = 0.7;
 
           return (
             <div
@@ -58,8 +61,8 @@ const Carousel = ({ children }) => {
                 zIndex: `${count - absOffset}`,
                 opacity: absOffset > MAX_VISIBILITY ? 0 : 1,
                 pointerEvents: absOffset > MAX_VISIBILITY ? "none" : "auto",
-                display: absOffset > MAX_VISIBILITY ? 'none' : 'block',
-                transition: 'transform 0.5s ease-in-out, opacity 0.5s ease-in-out',
+                display: absOffset > MAX_VISIBILITY ? "none" : "block",
+                transition: "transform 0.5s ease-in-out, opacity 0.5s ease-in-out",
               }}
             >
               {child}
@@ -67,7 +70,7 @@ const Carousel = ({ children }) => {
           );
         })}
         {active < count - 1 && (
-          <button className={styles.right} onClick={() => setActive((i) => i + 1)}>
+          <button className={styles.right} onClick={handleNext}>
             &gt;
           </button>
         )}

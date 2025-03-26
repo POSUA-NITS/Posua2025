@@ -4,6 +4,7 @@ import Navbar from "./Components/Shared/Navbar/Navbar";
 import Footer from "./Components/Shared/Footer/Footer";
 import Gallery from "./Pages/Gallery/Gallery";
 import Artist from "./Pages/Artist/Artist";
+import ArtistMobileView from "./Pages/Artist/ArtistMobileView";
 const Home = lazy(() =>
   import("./Pages/index").then((module) => ({ default: module.Home }))
 );
@@ -22,22 +23,23 @@ const Error = lazy(() =>
 const App = () => (
     <main className="relative">
       {/* <InitialLoadingForHome /> */}
-       <BrowserRouter> 
+       {/* <BrowserRouter>  */}
           {/* <InitialLoadingForHome /> */}
            {/* <Suspense fallback={<Loading />}>  */}
-             <Navbar />
+             {/* <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<AboutUs />} />
               <Route path="/gallery" element={<Gallery/>} />
               <Route path="/sponsors" element={<Sponsors/>} />
-              <Route path="/artist" element={<Artist/>} />
+              <Route path="/artist" element={<ArtistMobileView/>} />
               <Route path="*" element={<Error/>} />
             </Routes>
-            <Footer /> 
+            <Footer />  */}
           {/* </Suspense> */}
-      </BrowserRouter>
+      {/* </BrowserRouter> */}
       {/* <Artist/> */}
+         <Artist/>
 
     </main>
   );
