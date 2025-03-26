@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import { RedBorder } from "../../RedBorder/index";
 
 const NavOptions = [
   {
@@ -51,8 +52,8 @@ const NavbarDesktop = () => {
 
   return (
     <nav className={``}>
-      <div className={`flex ${navBlur?"backdrop-blur-2xl":""} items-center justify-between font-gotham h-20 px-44 gap-8 fixed z-[100] w-full `}>
-        <div className="w-1/4">
+      <div className={`flex ${navBlur ? "backdrop-blur-2xl" : ""} items-center justify-between font-gotham h-20 px-44 gap-8 fixed z-[100] w-full ${location.pathname === "/gallery" ? 'bg-[rgba(248,234,208,1)]' : ''} `}>
+        <div className="w-1/4 relative z-10">
           <NavLink to={"/"}>
             <img
               className="h-[70px] w-auto"
@@ -63,7 +64,7 @@ const NavbarDesktop = () => {
             />
           </NavLink>
         </div>
-        <div className="flex items-center justify-between gap-8 text-[#141301]">
+        <div className="flex items-center justify-between gap-8 text-[#141301] relative z-10">
           {NavOptions.map((option, index) => {
             return (
               <NavLink
@@ -81,6 +82,14 @@ const NavbarDesktop = () => {
           >
             Artist
           </NavLink>
+        </div>
+        <div className={`w-full h-full absolute left-0 ${location.pathname === "/gallery" ? '' : 'hidden'} z-5`}>
+          <div className="w-4 md:w-6 absolute top-0 left-[6%] md:left-[9%] h-full z-[8]">
+            <RedBorder />
+          </div>
+          <div className="w-4 md:w-6 absolute top-0 z-[8] right-[6%] md:right-[9%] h-full">
+            <RedBorder />
+          </div>
         </div>
       </div>
       <div className={`w-full absolute z-20 top-[5rem] h-2 bg-[#dc6b71c6]`}></div>

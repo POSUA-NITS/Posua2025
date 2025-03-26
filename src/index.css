@@ -11,12 +11,20 @@
     font-family: "Gotham";
     font-style: normal;
     font-weight: normal;
-    src: local("Gotham"), url("/fonts/Gotham-Book.otf") format("opentype");
+    src: local("Gotham"), url("/fonts/Gotham-Book.otf") format("truetype");
 }
+@font-face {
+    font-family: "Ledger";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Ledger"), url("/fonts/Ledger-Regular.ttf") format("opentype");
+}
+
 
 @theme components{
     --font-moglan: "Moglan Demo", sans-serif;
     --font-gotham: "Gotham", sans-serif;
+    --font-ledger: "Ledger", sans-serif;
     --breakpoint-tablet: 1000px;
     --breakpoint-laptop:1150px;
     --breakpoint-mobile: 550px;
