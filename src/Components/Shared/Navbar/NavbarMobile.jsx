@@ -79,7 +79,7 @@ const NavbarMobile = () => {
           </a>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="relative z-[350] flex h-full w-16 items-center justify-center"
+            className="relative z-[350] flex h-full w-16 items-center justify-center text-[#DC6B70]"
           >
             {isMenuOpen ? <X size={40} /> : <Menu size={40} />}
           </button>
