@@ -7,8 +7,6 @@
     src: local("Moglan Demo"), url("/fonts/Moglan_DEMO.ttf") format("truetype");
 }
 
-
-
 @font-face{
   font-family: "MoglanDemo";
   src: url("/Fonts/Moglan_DEMO.ttf") format("truetype");

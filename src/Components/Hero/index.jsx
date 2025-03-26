@@ -32,7 +32,7 @@ function Hero() {
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {!stopAnimation && (
-        <div className="w-full h-screen absolute z-1000 ">
+        <div className="w-full h-screen absolute ">
           <div className="w-full h-full absolute right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/1_qwyup9.webp')] animate-[topRight_3s_ease-in-out_forwards] "></div>
           <div className="w-full h-full absolute left-0 top-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/2_m7k0ic.webp')] animate-[top_3s_ease-in-out_forwards]"></div>
           <div className="w-full h-full absolute left-0 top-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/3_uiqehz.webp')] animate-[right_3s_ease-in-out_forwards]"></div>
