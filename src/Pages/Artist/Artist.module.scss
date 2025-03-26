@@ -1,0 +1,317 @@
+// --- Variables ---
+$frame-color: #a94442;
+$text-color: #333;
+$primary-background: #F8EAD0;
+
+// --- General Styles ---
+* {
+  box-sizing: border-box;
+}
+
+// --- Outer Container ---
+.outerContainer {
+  width: 100vw;
+  height: 100vh; /* Full viewport height */
+  background-color: $primary-background;
+  overflow-y: auto; /* Enables scrolling */
+  display: flex;
+  flex-direction: column;
+
+  /* Hide scrollbar */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+// --- Main Container ---
+.mainContainer {
+  width: 100%;
+  flex-grow: 1; /* Allows the content to grow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-background;
+  position: relative;
+
+  // --- Pseudo-elements for decorative images ---
+  &::before,
+  &::after,
+  .extraImage1,
+  .extraImage2 {
+    content: "";
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: brightness(0.8);
+  }
+
+  &::before {
+    background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742923319/rightGamusa_aadl38.png");
+    width: 20rem;
+    height: 30rem;
+    top: 4rem;
+    right: 0rem;
+  }
+
+  &::after {
+    background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742922617/LeftGamusa_q8plub.png");
+    width: 20rem;
+    height: 30rem;
+    top: 4rem;
+    left: 0rem;
+  }
+
+  .extraImage1 {
+    background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742923319/rightPhool_mfgw4o.png");
+    width: 20rem;
+    height: 20rem;
+    top: 28rem;
+    right: -2rem;
+  }
+
+  .extraImage2 {
+    background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742922616/Phool_qmsxwd.png");
+    width: 20rem;
+    height: 20rem;
+    top: 28rem;
+    left: 0rem;
+  }
+
+  // --- Heading Styles ---
+  .heading {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .image {
+      display: block;
+      width: 15%;
+      height: 4rem;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .title {
+      margin-top: -0.5rem;
+      height: 1rem;
+      width: 80%;
+      font-size: 3rem;
+      font-weight: 500;
+      font-family: var(--font-moglan);
+      color: #CB2229;
+      text-align: center;
+    }
+  }
+
+  // --- Artist Wrapper Styles ---
+  .artist_wrapper {
+    width: 100%;
+    height: 16rem;
+    background-color: $primary-background;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+
+    .artist1 {
+      width: 45rem;
+      height: 16rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      transition: transform 0.3s ease;
+
+      .leftMusic {
+        margin-top: 1.05rem;
+        display: hidden;
+        width: 6rem;
+        height: 6rem;
+        object-fit: cover;
+        object-position: top;
+        transform: rotate(-45deg);
+        mix-blend-mode: multiply;
+        z-index: -3;
+      }
+
+      .LeftPepa {
+        display: inline-block;
+        margin-top: 1.05rem;
+        width: 6rem;
+        height: 6rem;
+        margin-right: -0.5rem;
+        object-fit: cover;
+        object-position: top;
+        transition: margin-right 0.3s ease, transform 0.3s ease;
+      }
+
+      .LeftDhol {
+        margin-top: 2rem;
+        display: inline-block;
+        width: 8rem;
+        height: 16rem;
+        margin-left: -2rem;
+        object-fit: 100% 100%;
+        object-position: center;
+        scale: 1.5;
+        margin-right: -2rem;
+      }
+
+      .artistImage {
+        width: 12rem;
+        height: 16rem;
+        background-color: #b02227;
+        background-image: url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742914160/bgSvg_mzeadi.svg');
+        background-size: 100% 100%;
+        z-index: 25;
+        scale: 1.2;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        transition: transform 0.3s ease;
+
+        .mainArtist {
+          display: inline-block;
+          width: 10rem;
+          height: 13rem;
+          object-fit: cover;
+          object-position: center;
+          padding-top: 0.5rem;
+          border-radius: 1rem;
+        }
+
+        .textBox {
+          width: 8rem;
+          height: 4rem;
+          z-index: 35;
+          background-image: url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742914836/TextFrame_yvekzx.png');
+          background-size: 100% 100%;
+          scale: 1.5;
+        }
+      }
+
+      .RightDhol {
+        margin-right: -2rem;
+        display: inline-block;
+        width: 8rem;
+        height: 20rem;
+        object-fit: 100% 100%;
+        object-position: center;
+        scale: 1.5;
+        z-index: 10;
+        margin-left: -2rem;
+      }
+
+      .RightPepa {
+        display: inline-block;
+        margin-top: 1.05rem;
+        width: 6rem;
+        height: 6rem;
+        margin-left: -0.5rem;
+        object-fit: cover;
+        object-position: top;
+        transition: margin-left 0.3s ease, transform 0.3s ease;
+      }
+
+      .rightMusic {
+        width: 6rem;
+        margin-top: 1.05rem;
+        height: 6rem;
+        object-fit: cover;
+        object-position: top;
+        transform: rotate(45deg);
+        mix-blend-mode: multiply;
+        display: hidden;
+        z-index: -3;
+      }
+
+      // Hover Effect
+      &:hover {
+        transform: scale(1.15);
+
+        .leftMusic {
+          display: inline-block;
+        }
+
+        .LeftPepa {
+          margin-right: -1rem;
+          transform: scale(1.05) rotate(30deg);
+        }
+
+        .RightPepa {
+          margin-left: -1rem;
+          transform: scale(1.05) rotate(-30deg);
+        }
+
+        .rightMusic {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  // --- Previous Artists Styles ---
+  .prev_Artists {
+    width: 100%;
+    height: 45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .carouselWrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      width: 22rem;
+      height: 25rem;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      margin: 0 1.5rem;
+
+      &:hover {
+        transform: translateY(-5px);
+        transition: transform 0.3s ease;
+      }
+    }
+
+    .cardImage {
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .textBox {
+      width: 100%;
+      padding: 0.5rem;
+      box-sizing: border-box;
+    }
+
+    .artistName {
+      font-size: 1.2rem;
+      color: $text-color;
+      margin: 0;
+      padding: 0.5rem;
+    }
+  }
+}
+
