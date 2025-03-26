@@ -13,7 +13,7 @@ $primary-background: #F8EAD0;
   width: 100vw;
   height: 100vh; /* Full viewport height */
   background-color: $primary-background;
-  overflow-y: auto; /* Enables scrolling */
+  // overflow-y: auto; /* Enables scrolling */
   display: flex;
   flex-direction: column;
 
