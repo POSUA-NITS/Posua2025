@@ -7,24 +7,7 @@
     src: local("Moglan Demo"), url("/fonts/Moglan_DEMO.ttf") format("truetype");
 }
 
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  /* line-height: 1.5; */
-  font-weight: 400;
 
-  
-  /* background-color: #f8ead0; */
-
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  margin: 0;
-}
 
 @font-face{
   font-family: "MoglanDemo";
@@ -88,9 +71,11 @@ body {
   animation: scrollRight 25s linear infinite;
 }
 
+
 @theme components{
     --font-moglan: "MoglanDemo", sans-serif;
     --font-gotham: "Gotham", sans-serif;
+    --font-ledger: "Ledger", sans-serif;
     --breakpoint-tablet: 1000px;
     --breakpoint-laptop:1150px;
 }
