@@ -92,7 +92,7 @@ $primary-background: #F8EAD0;
     width: 26rem;
     height: 26rem;
     top: 28rem;
-    right: 16rem;
+    right: 20%;
   }
 
   .extraImage4 {
@@ -102,7 +102,7 @@ $primary-background: #F8EAD0;
     width: 26rem;
     height: 26rem;
     top: 28rem;
-    left: 16rem;
+    left: 20%;
     z-index: 4;
   }
 
@@ -118,7 +118,7 @@ $primary-background: #F8EAD0;
 
     .image {
       display: block;
-      width: 15%;
+      width: 15rem;
       height: 4rem;
       object-fit: cover;
       object-position: center;
@@ -142,9 +142,10 @@ $primary-background: #F8EAD0;
     height: 16rem;
     background-color: $primary-background;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin-top: 5rem;
+   
 
     .artist1 {
       width: 45rem;
@@ -153,7 +154,6 @@ $primary-background: #F8EAD0;
       justify-content: center;
       align-items: flex-start;
       transition: transform 0.3s ease;
-
       .leftMusic {
         margin-top: 1.05rem;
         display: hidden;
@@ -206,8 +206,8 @@ $primary-background: #F8EAD0;
 
         .mainArtist {
           display: inline-block;
-          width: 10rem;
-          height: 13rem;
+          width: 90%;
+          height: 80%;
           object-fit: cover;
           object-position: center;
           padding-top: 0.5rem;
@@ -215,8 +215,8 @@ $primary-background: #F8EAD0;
         }
 
         .textBox {
-          width: 8rem;
-          height: 4rem;
+          width: 70%;
+          height: 30%;
           z-index: 35;
           background-image: url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742914836/TextFrame_yvekzx.png');
           background-size: 100% 100%;
@@ -281,7 +281,9 @@ $primary-background: #F8EAD0;
           display: inline-block;
         }
       }
+      
     }
+
   }
 
   // --- Previous Artists Styles ---
@@ -368,3 +370,113 @@ $primary-background: #F8EAD0;
   }
 }
 
+
+// --- Responsive Design ---
+@media (max-width: 1350px) {
+  .outerContainer{
+    .extraImage3 {
+      
+      top: 28rem;
+      right: 15%;
+    }
+  
+    .extraImage4 {
+  
+      top: 28rem;
+      left: 15%;
+      z-index: 4;
+    }
+    .mainContainer {
+      .artist_wrapper{
+          
+         .artist1{
+            scale: 0.8;
+                &:hover {
+                  transform: scale(1);
+                }
+              }
+      }
+
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .outerContainer{
+    .extraImage3 {
+   
+      top: 28rem;
+      right: 9%;
+    }
+  
+    .extraImage4 {
+   
+      top: 28rem;
+      left: 9%;
+      z-index: 4;
+    }
+   .mainContainer {
+  
+  .prev_Artists {
+    height: 40rem;
+
+    .card {
+      width: 18rem;
+      height: 26rem;
+      margin: 0 1rem;
+    }
+  }
+}
+}
+}
+
+@media (max-width: 768px) {
+  .mainContainer::before, .mainContainer::after {
+    width: 12rem;
+    height: 18rem;
+    top: 2rem;
+  }
+
+  .extraImage1, .extraImage2 {
+    width: 12rem;
+    height: 12rem;
+    top: 20rem;
+  }
+
+  .extraImage3, .extraImage4 {
+    width: 16rem;
+    height: 16rem;
+    top: 20rem;
+  }
+
+  .artist_wrapper {
+    margin-top: 2rem;
+    .artist1 {
+      width: 25rem;
+      height: 10rem;
+
+      .LeftDhol, .RightDhol {
+        width: 5rem;
+        height: 12rem;
+        scale: 1.2;
+      }
+
+      .artistImage {
+        width: 8rem;
+        height: 12rem;
+        scale: 1;
+      }
+    }
+  }
+
+  .prev_Artists {
+    height: 36rem;
+
+    .card {
+      width: 16rem;
+      height: 24rem;
+      margin: 0 0.5rem;
+    }
+  }
+}

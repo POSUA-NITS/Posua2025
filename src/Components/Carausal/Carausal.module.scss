@@ -71,3 +71,37 @@
 .right {
   right: 1rem; 
 }
+
+
+/* Tablet Responsiveness */
+@media (max-width: 1024px) {
+  .carouselCont {
+    height: 60vh;
+  }
+  .cardContainer {
+    width: 18rem;
+    transform: scale(calc(1 - var(--abs-offset) * 0.2))
+      translateZ(calc(var(--abs-offset) * -30rem))
+      translateX(calc(var(--direction) * 8rem));
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .carouselCont {
+    height: 50vh;
+  }
+  .carousel {
+    width: 90%;
+  }
+  .cardContainer {
+    width: 14rem;
+    transform: scale(calc(1 - var(--abs-offset) * 0.1))
+      translateZ(calc(var(--abs-offset) * -20rem))
+      translateX(calc(var(--direction) * 5rem));
+  }
+  .left,
+  .right {
+    font-size: 2rem;
+  }
+}

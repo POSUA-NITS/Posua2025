@@ -375,7 +375,7 @@ body {
           }
 
           .back_button {
-            margin-top: 1rem;
+            margin-top: -0.5rem;
           }
         }
       }
@@ -466,11 +466,20 @@ body {
           font-size: 3rem;
           text-wrap: nowrap;
         }
+        .wrapper1{
+          .back_button {
+            margin-top: -0.65rem;
+          }
+        }
       }
 
       .section2 {
         grid-template-columns: 1fr; // 1 card per row on small screens
         padding-left: 1rem;
+        .card {
+          width: 18rem;
+          height: 19rem;
+        }
       }
     }
     .popup {
