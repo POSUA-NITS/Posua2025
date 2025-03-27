@@ -8,11 +8,11 @@ const Home = lazy(() =>
   import("./Pages/index").then((module) => ({ default: module.Home }))
 );
 const AboutUs = lazy(() =>
-  import("./Pages/index").then((module) => ({ default: module.AboutUs}))
+  import("./Pages/index").then((module) => ({ default: module.AboutUs }))
 );
 
 const Sponsors = lazy(() =>
-  import("./Pages/index").then((module) => ({ default: module.Sponsors}))
+  import("./Pages/index").then((module) => ({ default: module.Sponsors }))
 );
 
 const Error = lazy(() =>
@@ -20,26 +20,23 @@ const Error = lazy(() =>
 );
 
 const App = () => (
-    <main className="relative">
-      {/* <InitialLoadingForHome /> */}
-       <BrowserRouter> 
-          {/* <InitialLoadingForHome /> */}
-           {/* <Suspense fallback={<Loading />}>  */}
-             <Navbar />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<AboutUs />} />
-              <Route path="/gallery" element={<Gallery/>} />
-              <Route path="/sponsors" element={<Sponsors/>} />
-              <Route path="/artist" element={<Artist/>} />
-              <Route path="*" element={<Error/>} />
-            </Routes>
-            <Footer /> 
-          {/* </Suspense> */}
-      </BrowserRouter>
-      {/* <Artist/> */}
-
-    </main>
-  );
+  <main className="relative">
+    {/* <InitialLoadingForHome /> */}
+    <BrowserRouter>
+      {/* <Suspense fallback={<Loading />}>  */}
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/sponsors" element={<Sponsors />} />
+        {/* <Route path="/artist" element={<Artist />} /> */}
+        <Route path="*" element={<Error />} />
+      </Routes>
+      <Footer />
+      {/* </Suspense> */}
+    </BrowserRouter>
+  </main>
+);
 
 export default App;
