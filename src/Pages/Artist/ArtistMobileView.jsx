@@ -22,6 +22,7 @@ const ArtistMobileView = () => {
   return (
     <div className={styles.outerContainer}>
       <div className={styles.mainContainer}>
+            <div className={styles.extraImage1}></div>
         <div className={styles.section1}>
           <img
             src="https://res.cloudinary.com/dybzo3xly/image/upload/v1742913661/Heading_ndgrgs.svg"

@@ -13,7 +13,8 @@
   overflow-y: scroll;
 
   &::before,
-  &::after {
+  &::after,
+  .extraImage1 {
     content: "";
     position: absolute;
     background-size: contain;
@@ -37,6 +38,14 @@
     height: 40rem;
     top: 20rem;
     right: -5rem;
+  }
+  .extraImage1 {
+    position: fixed;
+    background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742965608/rightJapi_qlsahv.png");
+    width: 26rem;
+    height: 26rem;
+    bottom: 4rem;
+    right: 20%;
   }
 
   .mainContainer {
