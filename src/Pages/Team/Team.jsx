@@ -106,9 +106,9 @@ const Team = () => {
               </div>
               <h1 className="posua text-white opacity-0 absolute bottom-9 left-[50%] -translate-x-[50%] text-2xl group-hover:opacity-100 z-40 transition-all duration-300">Head</h1>
               <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742837716/5_2_xosmnn.png" alt="" 
-              className="absolute mobile2:h-[49vh] laptop2:h-[58vh] mobile2:-top-15 laptop2:-top-14 mobile2:-left-[8.4vh] laptop2:-left-[9.5vh] z-20"/>
+              className="absolute mobile2:h-[49vh] laptop2:h-[58vh] mobile2:-top-[13vw] laptop2:-top-14 mobile2:-left-[8.4vh] laptop2:-left-[9.5vh] z-20"/>
               <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742838523/5_3_mazixq.png" alt="" 
-              className="absolute mobile2:h-[49vh] laptop2:h-[58vh] -top-15 laptop2:-top-13 mobile2:-right-[8.4vh] laptop2:-right-[9.9vh] z-20"/>
+              className="absolute mobile2:h-[49vh] laptop2:h-[58vh] -top-[13vw] laptop2:-top-13 mobile2:-right-[8.4vh] laptop2:-right-[9.9vh] z-20"/>
               <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742839250/woood-removebg-preview_1_2_zyapin.png" alt="" 
               className="absolute bottom-0 w-[90%] z-30"/>
             </div>

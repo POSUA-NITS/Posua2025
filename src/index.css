@@ -89,12 +89,25 @@ body {
 }
 
 @theme components{
-    --font-moglan: "MoglanDemo", sans-serif;
-    --font-gotham: "Gotham", sans-serif;
-    --font-ledger: "Ledger", sans-serif;
-    --breakpoint-tablet: 1000px;
-    --breakpoint-laptop:1150px;
+  --font-moglan: "Moglan Demo", sans-serif;
+  --font-gotham: "Gotham", sans-serif;
+  --font-ledger: "Ledger", sans-serif;
+  --breakpoint-tablet: 1000px;
+  --breakpoint-laptop:1150px;
+  --breakpoint-tablet2: 750px;
+  --breakpoint-laptop2: 1200px;
+  --breakpoint-ipadpro: 1000px;
+  --breakpoint-mobile2: 300px;
 }
+
+.posua {
+  font-family: 'Moglan Demo', sans-serif;
+}
+
+.gotham {
+  font-family: 'Gotham', sans-serif;
+}
+
 @keyframes moveLeft {
   from { transform: translateX(0%); }
   to { transform: translateX(-100%); }
