@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Shared/Navbar/Navbar";
 import Footer from "./Components/Shared/Footer/Footer";
 import { RedBorder } from "./Components/RedBorder";
-import {Loading} from "./Components/Loader/Loading";
+import { Loading } from "./Components/Loader/Loading";
 
 const Home = lazy(() =>
   import("./Pages/index").then((module) => ({ default: module.Home }))

@@ -1,11 +1,11 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  // overflow-x: hidden;
-  // height: 100%;
-  box-sizing: border-box;
-}
+// html,
+// body {
+//   margin: 0;
+//   padding: 0;
+//   // overflow: hidden;
+//   height: 100%;
+//   box-sizing: border-box;
+// }
 @keyframes slideInFromRight {
   from {
     transform: translateX(100%);
@@ -36,6 +36,7 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
   // Flower div stays on the right side
+  padding-top: 4.5rem;
   .flower {
     box-sizing: border-box;
     width: 20rem;
@@ -120,6 +121,7 @@ body {
             border-radius: 3rem;
             background-color: rgba(255, 213, 134, 1);
             text-align: center;
+            cursor: pointer;
             span {
               font-family: var(--font-ledger);
               font-weight: 400;
@@ -160,6 +162,7 @@ body {
           border-radius: 3rem;
           background-color: rgba(255, 213, 134, 1);
           text-align: center;
+          cursor: pointer;
           span {
             margin: auto;
             font-family: var(--font-ledger);
@@ -375,7 +378,7 @@ body {
           }
 
           .back_button {
-            margin-top: 1rem;
+            margin-top: -0.5rem;
           }
         }
       }
@@ -466,11 +469,20 @@ body {
           font-size: 3rem;
           text-wrap: nowrap;
         }
+        .wrapper1{
+          .back_button {
+            margin-top: -0.65rem;
+          }
+        }
       }
 
       .section2 {
         grid-template-columns: 1fr; // 1 card per row on small screens
         padding-left: 1rem;
+        .card {
+          width: 18rem;
+          height: 19rem;
+        }
       }
     }
     .popup {
