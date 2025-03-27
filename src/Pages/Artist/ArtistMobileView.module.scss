@@ -56,6 +56,7 @@
       justify-content: center;
       align-items: center;
       scale: 0.8;
+      margin-top: 4rem;
 
       .headingImage {
         display: inline-block;
@@ -168,6 +169,7 @@
       justify-content: center;
       align-items: center;
       scale: 0.8;
+      margin-top: 2rem;
       .UpcomingImage {
         display: inline-block;
         width: 60%;
@@ -189,7 +191,7 @@
       }
     }
     .section4 {
-      margin-top: 3rem;
+      // margin-top: 3rem;
       width: 100%;
       height: 30rem;
       display: flex;
