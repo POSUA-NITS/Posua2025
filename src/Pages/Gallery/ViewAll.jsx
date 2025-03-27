@@ -260,7 +260,7 @@ const ViewAll = ({ onClose }) => {
   };
 
   return (
-    <div className={styles.viewAllContainer}>
+    <div className={styles.viewAllContainer+" pl-10 "}>
       <div className={styles.flower}>
         <img
           src="https://res.cloudinary.com/dybzo3xly/image/upload/v1742904113/flower_oohmzu.svg"

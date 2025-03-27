@@ -2,8 +2,8 @@
 html, body {
     margin: 0;
     padding: 0;
-    // overflow: hidden;
-    height: 100%;
+    // overflow-x: hidden;
+    // height: 100%;
     box-sizing: border-box;
   }
   @keyframes slideInFromRight {
@@ -56,7 +56,7 @@ html, body {
      .headline{
         width: 80%;
         height: 5rem;
-        margin-left: 1rem;
+        margin-left: 3rem;
         // background-color: aqua;
         .photoGallery{
              font-family: var(--font-moglan);
