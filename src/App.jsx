@@ -11,6 +11,12 @@ const Home = lazy(() =>
 const AboutUs = lazy(() =>
   import("./Pages/index").then((module) => ({ default: module.AboutUs }))
 );
+const Team = lazy(() =>
+  import("./Pages/index").then((module) => ({ default: module.Team }))
+);
+const Events = lazy(() =>
+  import("./Pages/index").then((module) => ({ default: module.Events }))
+);
 
 const Sponsors = lazy(() =>
   import("./Pages/index").then((module) => ({ default: module.Sponsors }))
@@ -41,6 +47,8 @@ const App = () => (
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/artist" element={<Artist />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/events" element={<Events />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <div className="w-4 md:w-6 fixed top-0 left-[6%] md:left-[9%] h-screen z-[8]">

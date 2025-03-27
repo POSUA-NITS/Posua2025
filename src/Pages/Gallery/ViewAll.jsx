@@ -331,7 +331,7 @@ const ViewAll = ({ onClose }) => {
                 <img
                   src={image.url}
                   alt={`Gallery ${image.id}`}
-                  className={styles.image}
+                  className={styles.image+" object-cover"}
                 />
               </div>
             ))}

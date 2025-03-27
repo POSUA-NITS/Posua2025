@@ -112,12 +112,7 @@ function Hero() {
       >
         <ArrowDown className="w-12 h-20 absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 text-red-900" />
       </div>
-      <div className="w-4 md:w-6 absolute h-full left-[6%] md:left-[9%]">
-        <RedBorder />
-      </div>
-      <div className="w-4 md:w-6 absolute h-full right-[6%] md:right-[9%]">
-        <RedBorder />
-      </div>
+
       <div className=" bg-[url('/Heroimages/Leaves.gi')] w-full h-full absolute left-0 right-0 top-0 flex justify-center items-center"></div>
     </div>
   );
