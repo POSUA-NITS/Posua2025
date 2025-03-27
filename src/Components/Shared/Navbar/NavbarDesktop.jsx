@@ -54,7 +54,7 @@ const NavbarDesktop = () => {
     <nav className={``}>
       <div className={`flex ${navBlur ? "backdrop-blur-2xl" : ""} items-center justify-between font-gotham h-20 px-44 gap-8 fixed z-[100] w-full ${location.pathname === "/gallery" ? 'bg-[rgba(248,234,208,1)]' : ''} `}>
         <div className="w-1/4 relative z-10">
-          <NavLink to={"/"}>
+          <a href={"/"}>
             <img
               className="h-[70px] w-auto"
               src="https://res.cloudinary.com/dmezugavw/image/upload/v1742786688/logo_mgsmjo.gif"
@@ -62,7 +62,7 @@ const NavbarDesktop = () => {
               height={100}
               alt="logo"
             />
-          </NavLink>
+          </a>
         </div>
         <div className="flex items-center justify-between gap-8 text-[#141301] relative z-10">
           {NavOptions.map((option, index) => {

@@ -12,7 +12,7 @@ $primary-background: #F8EAD0;
 .outerContainer {
   width: 100vw;
   background-color: $primary-background;
-  overflow-y: auto; /* Enables scrolling */
+  // overflow-y: auto; /* Enables scrolling */
   display: flex;
   flex-direction: column;
 

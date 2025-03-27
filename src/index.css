@@ -7,25 +7,151 @@
     src: local("Moglan Demo"), url("/fonts/Moglan_DEMO.ttf") format("truetype");
 }
 
-@font-face {
-    font-family: "Gotham";
-    font-style: normal;
-    font-weight: normal;
-    src: local("Gotham"), url("/fonts/Gotham-Book.otf") format("truetype");
-}
-@font-face {
-    font-family: "Ledger";
-    font-style: normal;
-    font-weight: normal;
-    src: local("Ledger"), url("/fonts/Ledger-Regular.ttf") format("opentype");
-}
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* line-height: 1.5; */
+  font-weight: 400;
+
+  
+  /* background-color: #f8ead0; */
 
 
-@theme components{
-    --font-moglan: "Moglan Demo", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+@font-face{
+  font-family: "MoglanDemo";
+  src: url("/Fonts/Moglan_DEMO.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "AlexBrush";
+  src: url("/Fonts/AlexBrush-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Gotham";
+  src: url("/Fonts/Gotham-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Ledger";
+  src: url("/Fonts/Ledger-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.moglan-font {
+  font-family: "MoglanDemo", sans-serif;
+}
+
+.alexBrush-font {
+  font-family: "AlexBrush", sans-serif;
+}
+
+.gotham-font {
+  font-family: "Gotham", sans-serif;
+  font-weight: 400;
+}
+
+@keyframes scrollUp {
+  from { transform: translateY(0%); }
+  to { transform: translateY(-50%); }
+}
+
+@keyframes scrollRight {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-50%); }
+}
+
+.scroll-container {
+  /* height: 400px; */
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-content {
+  display: flex;
+  flex-direction: column;
+  animation: scrollUp 25s linear infinite;
+}
+
+.scroll-content-horizontal {
+  display: flex;
+  flex-direction: row;
+  animation: scrollRight 25s linear infinite;
+}
+
+@theme {
+    --font-moglan: "MoglanDemo", sans-serif;
     --font-gotham: "Gotham", sans-serif;
     --font-ledger: "Ledger", sans-serif;
     --breakpoint-tablet: 1000px;
     --breakpoint-laptop:1150px;
     --breakpoint-mobile: 550px;
+}
+@keyframes moveLeft {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-100%); }
+}
+
+.move-clouds {
+  animation: moveLeft 300s linear infinite;
+}
+
+@keyframes left {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-100%); }
+}
+
+@keyframes right {
+  from { transform: translateX(0%); }
+  to { transform: translateX(100%); }
+}
+
+@keyframes top {
+  from { transform: translateY(0%); }
+  to { transform: translateY(-100%); }
+}
+
+@keyframes bottom {
+  from { transform: translateY(0%); }
+  to { transform: translateY(100%); }
+}
+
+@keyframes topLeft{
+  from { transform: translate(0%, 0%); }
+  to { transform: translate(-100%, -100%); }
+}
+
+@keyframes topRight{
+  from { transform: translate(0%, 0%); }
+  to { transform: translate(100%, -100%); }
+}
+
+@keyframes bottomLeft{
+  from { transform: translate(0%, 0%); }
+  to { transform: translate(-100%, 100%); }
+}
+
+@keyframes bottomRight{
+  from { transform: translate(0%, 0%); }
+  to { transform: translate(100%, 100%); }
+}
+
+.move-topRight {
+  animation: topRight 3s linear forwards;
 }
