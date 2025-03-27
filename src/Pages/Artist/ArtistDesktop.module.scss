@@ -115,6 +115,7 @@ $primary-background: #f8ead0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 4rem;
 
     .image {
       display: block;
@@ -371,24 +372,27 @@ $primary-background: #f8ead0;
 // --- Responsive Design ---
 @media (max-width: 1350px) {
   .outerContainer {
+    .mainContainer {
     .extraImage3 {
+      
       top: 28rem;
-      right: 15%;
+      right: 5rem;
     }
-
+  
     .extraImage4 {
+      position: fixed;
+   
       top: 28rem;
-      left: 15%;
+      left: 5rem;
       z-index: 4;
     }
-    .mainContainer {
+  
+    
       .artist_wrapper {
-        .artist1 {
-          scale: 0.8;
-          &:hover {
-            transform: scale(1);
-          }
-        }
+         scale: 0.8;
+      }
+      .prev_Artists{
+        scale: 0.9;
       }
     }
   }
@@ -396,80 +400,29 @@ $primary-background: #f8ead0;
 
 @media (max-width: 1024px) {
   .outerContainer {
+    .mainContainer {
     .extraImage3 {
+      width: 20rem;
+      height: 20rem;
       top: 28rem;
-      right: 9%;
+      right: 3rem;
     }
-
+  
     .extraImage4 {
+     
+      width: 20rem;
+      height: 20rem;
       top: 28rem;
-      left: 9%;
+      left: 3rem;
       z-index: 4;
     }
-    .mainContainer {
+    .artist_wrapper {
+      scale: 0.3;
+   }
       .prev_Artists {
-        height: 40rem;
-
-        .card {
-          width: 18rem;
-          height: 26rem;
-          margin: 0 1rem;
-        }
+        scale: 0.7;
       }
     }
   }
 }
 
-@media (max-width: 768px) {
-  .mainContainer::before,
-  .mainContainer::after {
-    width: 12rem;
-    height: 18rem;
-    top: 2rem;
-  }
-
-  .extraImage1,
-  .extraImage2 {
-    width: 12rem;
-    height: 12rem;
-    top: 20rem;
-  }
-
-  .extraImage3,
-  .extraImage4 {
-    width: 16rem;
-    height: 16rem;
-    top: 20rem;
-  }
-
-  .artist_wrapper {
-    margin-top: 2rem;
-    .artist1 {
-      width: 25rem;
-      height: 10rem;
-
-      .LeftDhol,
-      .RightDhol {
-        width: 5rem;
-        height: 12rem;
-        scale: 1.2;
-      }
-
-      .artistImage {
-        width: 8rem;
-        height: 12rem;
-        scale: 1;
-      }
-    }
-  }
-
-  .prev_Artists {
-    height: 36rem;
-
-    .card {
-      width: 16rem;
-      height: 24rem;
-      margin: 0 0.5rem;
-    }
-  }
-}
