@@ -104,7 +104,7 @@ $primary-background: #f8ead0;
     height: 26rem;
     top: 28rem;
     left: 20%;
-    z-index: 4;
+   
   }
 
   // --- Heading Styles ---
@@ -143,7 +143,7 @@ $primary-background: #f8ead0;
     height: 16rem;
     background-color: $primary-background;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-top: 5rem;
 
@@ -197,7 +197,7 @@ $primary-background: #f8ead0;
         background-size: 100% 100%;
         z-index: 25;
         scale: 1.2;
-        border-radius: 1rem;
+        border-radius: 0.5rem;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -206,21 +206,21 @@ $primary-background: #f8ead0;
 
         .mainArtist {
           display: inline-block;
-          width: 90%;
-          height: 80%;
-          object-fit: cover;
+          width: 11rem;
+          height: 13rem;
+          object-fit: 100% 100%;
           object-position: center;
-          padding-top: 0.5rem;
-          border-radius: 1rem;
+          padding-top: 0.7rem;
+          border-radius: 0.5rem;
         }
 
         .textBox {
-          width: 70%;
-          height: 30%;
+          width: 12rem;
+          height: 6rem;
           z-index: 35;
           background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742914836/TextFrame_yvekzx.png");
           background-size: 100% 100%;
-          scale: 1.5;
+          
         }
       }
 
@@ -384,13 +384,18 @@ $primary-background: #f8ead0;
    
       top: 28rem;
       left: 5rem;
-      z-index: 4;
+     
     }
   
     
       .artist_wrapper {
+        .artist1{
          scale: 0.8;
+         &:hover {
+          transform: scale(1);
+        }
       }
+    }
       .prev_Artists{
         scale: 0.9;
       }
@@ -405,7 +410,7 @@ $primary-background: #f8ead0;
       width: 20rem;
       height: 20rem;
       top: 28rem;
-      right: 3rem;
+      right: 4em;
     }
   
     .extraImage4 {
@@ -413,12 +418,17 @@ $primary-background: #f8ead0;
       width: 20rem;
       height: 20rem;
       top: 28rem;
-      left: 3rem;
-      z-index: 4;
+      left: 4rem;
+     
     }
     .artist_wrapper {
-      scale: 0.3;
-   }
+      .artist1{
+       scale: 0.75;
+       &:hover {
+        transform: scale(0.9);
+      }
+    }
+  }
       .prev_Artists {
         scale: 0.7;
       }
