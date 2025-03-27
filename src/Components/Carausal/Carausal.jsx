@@ -27,13 +27,13 @@ const Carousel = ({ children }) => {
     return () => clearInterval(interval);
   }, [count, active]);
 
-  const handlePrev = () => setActive((i) => (i - 1 + count) % count);
-  const handleNext = () => setActive((i) => (i + 1) % count);
+  // const handlePrev = () => setActive((i) => (i - 1 + count) % count);
+  // const handleNext = () => setActive((i) => (i + 1) % count);
 
   return (
     <div className={styles.carouselCont}>
       <div className={styles.carousel} ref={carouselRef}>
-        <button className={styles.left} onClick={handlePrev}>&lt;</button>
+        {/* <button className={styles.left} onClick={handlePrev}>&lt;</button> */}
         {Array.from({ length: VISIBLE_CARDS }, (_, index) => {
           const cardIndex = (active + index - Math.floor(VISIBLE_CARDS / 2) + count) % count;
           const offset = index - Math.floor(VISIBLE_CARDS / 2);
@@ -68,7 +68,7 @@ const Carousel = ({ children }) => {
             </div>
           );
         })}
-        <button className={styles.right} onClick={handleNext}>&gt;</button>
+        {/* <button className={styles.right} onClick={handleNext}>&gt;</button> */}
       </div>
     </div>
   );

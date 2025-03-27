@@ -26,12 +26,12 @@ body {
   margin: 0;
 }
 
-@font-face{
+/* @font-face{
   font-family: "MoglanDemo";
   src: url("/Fonts/Moglan_DEMO.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 @font-face{
   font-family: "AlexBrush";
@@ -89,7 +89,7 @@ body {
 }
 
 @theme components{
-    --font-moglan: "MoglanDemo", sans-serif;
+    --font-moglan: "Moglan Demo", sans-serif;
     --font-gotham: "Gotham", sans-serif;
     --font-ledger: "Ledger", sans-serif;
     --breakpoint-tablet: 1000px;

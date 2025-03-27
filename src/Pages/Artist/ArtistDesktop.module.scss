@@ -1,7 +1,7 @@
 // --- Variables ---
 $frame-color: #a94442;
 $text-color: #333;
-$primary-background: #F8EAD0;
+$primary-background: #f8ead0;
 
 // --- General Styles ---
 * {
@@ -14,6 +14,7 @@ $primary-background: #F8EAD0;
   height: 100vh; /* Full viewport height */
   background-color: $primary-background;
   // overflow-y: auto; /* Enables scrolling */
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
 
@@ -24,7 +25,7 @@ $primary-background: #F8EAD0;
 
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
+
 
 // --- Main Container ---
 .mainContainer {
@@ -106,7 +107,6 @@ $primary-background: #F8EAD0;
     z-index: 4;
   }
 
-
   // --- Heading Styles ---
   .heading {
     width: 100%;
@@ -131,7 +131,7 @@ $primary-background: #F8EAD0;
       font-size: 3rem;
       font-weight: 500;
       font-family: var(--font-moglan);
-      color: #CB2229;
+      color: #cb2229;
       text-align: center;
     }
   }
@@ -145,7 +145,6 @@ $primary-background: #F8EAD0;
     justify-content: center;
     align-items: center;
     margin-top: 5rem;
-   
 
     .artist1 {
       width: 45rem;
@@ -193,7 +192,7 @@ $primary-background: #F8EAD0;
         width: 12rem;
         height: 16rem;
         background-color: #b02227;
-        background-image: url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742914160/bgSvg_mzeadi.svg');
+        background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742914160/bgSvg_mzeadi.svg");
         background-size: 100% 100%;
         z-index: 25;
         scale: 1.2;
@@ -218,7 +217,7 @@ $primary-background: #F8EAD0;
           width: 70%;
           height: 30%;
           z-index: 35;
-          background-image: url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742914836/TextFrame_yvekzx.png');
+          background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742914836/TextFrame_yvekzx.png");
           background-size: 100% 100%;
           scale: 1.5;
         }
@@ -281,170 +280,163 @@ $primary-background: #F8EAD0;
           display: inline-block;
         }
       }
-      
     }
-
   }
 
-  // --- Previous Artists Styles ---
-  .prev_Artists {
-    width: 100%;
-    height: 48rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -4rem;
-    padding-bottom: 4rem;
-
-    .carouselWrapper {
+    // --- Previous Artists Styles ---
+    .prev_Artists {
       width: 100%;
-      height: 100%;
+      height: 48rem;
       display: flex;
       justify-content: center;
       align-items: center;
-    }
+      margin-top: -4rem;
+      padding-bottom: 4rem;
 
-    .card {
-      width: 22rem;
-      height: 30rem;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      text-align: center;
-      border-radius: 15px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      margin: 0 1.5rem;
-      background-image: url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742961127/GamusaFrame_zbbg30.webp');
-      background-size: 100% 100%;
-      background-color: orange;
-      &:hover {
-        transform: translateY(-5px);
-        transition: transform 0.3s ease;
+      .carouselWrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .card {
+          width: 22rem;
+          height: 30rem;
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          text-align: center;
+          border-radius: 15px;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          margin: 0 1.5rem;
+          background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742961127/GamusaFrame_zbbg30.webp");
+          background-size: 100% 100%;
+          background-color: orange;
+          &:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+          }
+
+          .cardImage {
+            padding-top: 2rem;
+            width: 80%;
+            height: 74%;
+            object-fit: cover;
+            z-index: 10;
+            border-radius: 10px 10px 0 0;
+          }
+
+          .textBox {
+            width: 80%;
+            height: 15%;
+            background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742914467/textFrame_bkdxll.webp");
+            background-size: 108% 110%;
+            background-color: #f8ead0;
+            padding: 0.5rem;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .artistName {
+              font-size: 1.2rem;
+              height: 40%;
+              width: 100%;
+              color: #b02227;
+              font-weight: 400;
+              margin: 0;
+              padding-top: 0.5rem;
+              font-family: var(--font-gotham);
+            }
+            .tit {
+              height: 30%;
+              width: 100%;
+              font-size: 0.8rem;
+              color: #b02227;
+              font-weight: 400;
+              padding-bottom: 1rem;
+            }
+          }
+        }
       }
     }
-
-    .cardImage {
-      padding-top: 2rem;
-      width: 80%;
-      height: 74%;
-      object-fit: cover;
-      z-index: 10;
-      border-radius: 10px 10px 0 0;
-    }
-
-    .textBox {
-      width: 80%;
-      height: 15%;
-      background-image: url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742914467/textFrame_bkdxll.webp');
-      background-size: 108% 110%;
-      background-color:  #F8EAD0;
-      padding: 0.5rem;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      
-
-    .artistName {
-      font-size: 1.2rem;
-      height: 40%;
-      width: 100%;
-      color: #B02227;
-      font-weight: 400;
-      margin: 0;
-      padding-top: 0.5rem;
-      font-family: var(--font-gotham);
-    }
-    .tit {
-      height: 30%;
-      width: 100%;
-      font-size: 0.8rem;
-      color: #B02227;
-      font-weight: 400;
-      padding-bottom: 1rem
-    }
-  }
   }
 }
 
 
 // --- Responsive Design ---
 @media (max-width: 1350px) {
-  .outerContainer{
+  .outerContainer {
     .extraImage3 {
-      
       top: 28rem;
       right: 15%;
     }
-  
+
     .extraImage4 {
-  
       top: 28rem;
       left: 15%;
       z-index: 4;
     }
     .mainContainer {
-      .artist_wrapper{
-          
-         .artist1{
-            scale: 0.8;
-                &:hover {
-                  transform: scale(1);
-                }
-              }
+      .artist_wrapper {
+        .artist1 {
+          scale: 0.8;
+          &:hover {
+            transform: scale(1);
+          }
+        }
       }
-
     }
   }
 }
 
-
 @media (max-width: 1024px) {
-  .outerContainer{
+  .outerContainer {
     .extraImage3 {
-   
       top: 28rem;
       right: 9%;
     }
-  
+
     .extraImage4 {
-   
       top: 28rem;
       left: 9%;
       z-index: 4;
     }
-   .mainContainer {
-  
-  .prev_Artists {
-    height: 40rem;
+    .mainContainer {
+      .prev_Artists {
+        height: 40rem;
 
-    .card {
-      width: 18rem;
-      height: 26rem;
-      margin: 0 1rem;
+        .card {
+          width: 18rem;
+          height: 26rem;
+          margin: 0 1rem;
+        }
+      }
     }
   }
 }
-}
-}
 
 @media (max-width: 768px) {
-  .mainContainer::before, .mainContainer::after {
+  .mainContainer::before,
+  .mainContainer::after {
     width: 12rem;
     height: 18rem;
     top: 2rem;
   }
 
-  .extraImage1, .extraImage2 {
+  .extraImage1,
+  .extraImage2 {
     width: 12rem;
     height: 12rem;
     top: 20rem;
   }
 
-  .extraImage3, .extraImage4 {
+  .extraImage3,
+  .extraImage4 {
     width: 16rem;
     height: 16rem;
     top: 20rem;
@@ -456,7 +448,8 @@ $primary-background: #F8EAD0;
       width: 25rem;
       height: 10rem;
 
-      .LeftDhol, .RightDhol {
+      .LeftDhol,
+      .RightDhol {
         width: 5rem;
         height: 12rem;
         scale: 1.2;
