@@ -7,6 +7,25 @@
     src: local("Moglan Demo"), url("/fonts/Moglan_DEMO.ttf") format("truetype");
 }
 
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* line-height: 1.5; */
+  font-weight: 400;
+
+  
+  /* background-color: #f8ead0; */
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
 @font-face{
   font-family: "MoglanDemo";
   src: url("/Fonts/Moglan_DEMO.ttf") format("truetype");
@@ -24,6 +43,13 @@
 @font-face{
   font-family: "Gotham";
   src: url("/Fonts/Gotham-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Ledger";
+  src: url("/Fonts/Ledger-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -69,13 +95,13 @@
   animation: scrollRight 25s linear infinite;
 }
 
-
-@theme components{
+@theme {
     --font-moglan: "MoglanDemo", sans-serif;
     --font-gotham: "Gotham", sans-serif;
     --font-ledger: "Ledger", sans-serif;
     --breakpoint-tablet: 1000px;
     --breakpoint-laptop:1150px;
+    --breakpoint-mobile: 550px;
 }
 @keyframes moveLeft {
   from { transform: translateX(0%); }

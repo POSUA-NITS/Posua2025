@@ -1,5 +1,4 @@
 import data from "../../assets/Editions.json";
-
 function BorhomthuriGallery() {
   return (
     <div className="md:hidden  w-[full]  mr-3 flex flex-col justify-center items-center">
@@ -9,7 +8,7 @@ function BorhomthuriGallery() {
           revious Editions
         </span>
       </h1>
-      <div className="scroll-container h-45 w-50 overflow-hidden ">
+      <div className="scroll-container h-50 w-50 overflow:hidden">
         <div className="scroll-content-horizontal h-[2rem] w-600 flex gap-3">
           {data.map((item, index) => (
             <a

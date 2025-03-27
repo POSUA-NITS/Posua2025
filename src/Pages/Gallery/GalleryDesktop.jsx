@@ -38,7 +38,7 @@ useEffect(() => {
      return () => clearInterval(interval);
    }, []);
   return (
-    <>
+    <section className='pt-20'>
       {showAll ? (
         <ViewAll onClose={handleCloseClick} />
       ) : (
@@ -80,7 +80,7 @@ useEffect(() => {
           </div>
         </div>
       )}
-    </>
+    </section>
   );
 };
 

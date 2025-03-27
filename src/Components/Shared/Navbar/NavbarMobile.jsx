@@ -33,6 +33,7 @@ const NavOptions = [
 const NavbarMobile = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
+  const [navBlur, setNavBlur] = useState(false);
 
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -43,6 +44,13 @@ const NavbarMobile = () => {
       setIsVisible(false);
     } else {
       setIsVisible(true);
+    }
+
+    if(currentScrollY > 50){
+      setNavBlur(true);
+    }
+    else{
+      setNavBlur(false);
     }
 
     setLastScrollY(currentScrollY);
@@ -59,7 +67,7 @@ const NavbarMobile = () => {
   return (
     <nav>
       <div
-        className={` ${isVisible ? "opacity-100" : "opacity-0"} font-gotham fixed z-[200] h-20 w-full transition-opacity duration-300 ease-linear`}
+        className={` ${isVisible ? "opacity-100" : "opacity-0"} ${navBlur?" backdrop-blur-lg shadow-xl":"" } font-gotham fixed z-[200] h-20 w-full transition-opacity duration-300 ease-linear`}
       >
         <div className="flex h-full w-full items-center justify-between px-6">
           <a href={"/"}>
@@ -71,7 +79,7 @@ const NavbarMobile = () => {
           </a>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="relative z-[350] flex h-full w-16 items-center justify-center"
+            className="relative z-[350] flex h-full w-16 items-center justify-center text-[#DC6B70]"
           >
             {isMenuOpen ? <X size={40} /> : <Menu size={40} />}
           </button>
