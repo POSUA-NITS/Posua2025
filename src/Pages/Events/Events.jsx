@@ -69,7 +69,7 @@ const Events = () => {
         <div className="hidden laptop2:block laptop2:w-[2px] laptop2:h-[95%] laptop2:top-[50%] laptop2:-translate-y-[50%] laptop2:right-0 laptop2:bg-gradient-to-b from-transparent to-transparent via-gray-200 absolute z-40"></div>
         <div className="laptop2:hidden mobile2:h-[2px] mobile2:w-[90%] mobile2:top-0 mobile2:left-[50%] mobile2:-translate-x-[50%] mobile2:bg-gradient-to-r from-transparent to-transparent via-gray-200 absolute z-40"></div>
         <h1 className="posua mobile2:text-3xl laptop2:text-6xl">{slide.head}</h1>
-        <p className="mobile2:w-[90%] laptop2:w-[80%] mt-4 gotham mobile2:text-base laptop2:text-lg">{slide.message}</p>
+        <p className="mobile2:w-[90%] laptop2:w-[80%] mt-4 gotham mobile2:text-[1.7vh] laptop2:text-lg">{slide.message}</p>
         </div>
             </SwiperSlide>
           ))}
