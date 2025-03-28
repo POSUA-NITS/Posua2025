@@ -27,7 +27,7 @@ body {
   &::-webkit-scrollbar {
     display: none;
   }
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 /* @font-face{
