@@ -1,7 +1,7 @@
 // --- Variables ---
 $frame-color: #a94442;
 $text-color: #333;
-$primary-background: #F8EAD0;
+$primary-background: #f8ead0;
 
 // --- General Styles ---
 * {
@@ -11,9 +11,9 @@ $primary-background: #F8EAD0;
 // --- Outer Container ---
 .outerContainer {
   width: 100vw;
-  height: 100vh; /* Full viewport height */
   background-color: $primary-background;
   // overflow-y: auto; /* Enables scrolling */
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
 
@@ -24,7 +24,7 @@ $primary-background: #F8EAD0;
 
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
+
 
 // --- Main Container ---
 .mainContainer {
@@ -41,7 +41,9 @@ $primary-background: #F8EAD0;
   &::before,
   &::after,
   .extraImage1,
-  .extraImage2 {
+  .extraImage2,
+  .extraImage3,
+  .extraImgae4 {
     content: "";
     position: absolute;
     background-size: contain;
@@ -50,6 +52,7 @@ $primary-background: #F8EAD0;
   }
 
   &::before {
+    position: fixed;
     background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742923319/rightGamusa_aadl38.png");
     width: 20rem;
     height: 30rem;
@@ -58,6 +61,7 @@ $primary-background: #F8EAD0;
   }
 
   &::after {
+    position: fixed;
     background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742922617/LeftGamusa_q8plub.png");
     width: 20rem;
     height: 30rem;
@@ -66,6 +70,7 @@ $primary-background: #F8EAD0;
   }
 
   .extraImage1 {
+    position: fixed;
     background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742923319/rightPhool_mfgw4o.png");
     width: 20rem;
     height: 20rem;
@@ -74,11 +79,31 @@ $primary-background: #F8EAD0;
   }
 
   .extraImage2 {
+    position: fixed;
     background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742922616/Phool_qmsxwd.png");
     width: 20rem;
     height: 20rem;
     top: 28rem;
     left: 0rem;
+  }
+  .extraImage3 {
+    position: fixed;
+    background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742965608/rightJapi_qlsahv.png");
+    width: 26rem;
+    height: 26rem;
+    top: 28rem;
+    right: 20%;
+  }
+
+  .extraImage4 {
+    position: fixed;
+    background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742922616/japi3_2_inf4pz.png");
+    background-size: cover;
+    width: 26rem;
+    height: 26rem;
+    top: 28rem;
+    left: 20%;
+   
   }
 
   // --- Heading Styles ---
@@ -89,10 +114,11 @@ $primary-background: #F8EAD0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 4rem;
 
     .image {
       display: block;
-      width: 15%;
+      width: 15rem;
       height: 4rem;
       object-fit: cover;
       object-position: center;
@@ -105,7 +131,7 @@ $primary-background: #F8EAD0;
       font-size: 3rem;
       font-weight: 500;
       font-family: var(--font-moglan);
-      color: #CB2229;
+      color: #cb2229;
       text-align: center;
     }
   }
@@ -116,7 +142,7 @@ $primary-background: #F8EAD0;
     height: 16rem;
     background-color: $primary-background;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin-top: 5rem;
 
@@ -127,7 +153,6 @@ $primary-background: #F8EAD0;
       justify-content: center;
       align-items: flex-start;
       transition: transform 0.3s ease;
-
       .leftMusic {
         margin-top: 1.05rem;
         display: hidden;
@@ -167,11 +192,11 @@ $primary-background: #F8EAD0;
         width: 12rem;
         height: 16rem;
         background-color: #b02227;
-        background-image: url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742914160/bgSvg_mzeadi.svg');
+        background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742914160/bgSvg_mzeadi.svg");
         background-size: 100% 100%;
         z-index: 25;
         scale: 1.2;
-        border-radius: 1rem;
+        border-radius: 0.5rem;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -180,21 +205,21 @@ $primary-background: #F8EAD0;
 
         .mainArtist {
           display: inline-block;
-          width: 10rem;
+          width: 11rem;
           height: 13rem;
-          object-fit: cover;
+          object-fit: 100% 100%;
           object-position: center;
-          padding-top: 0.5rem;
-          border-radius: 1rem;
+          padding-top: 0.7rem;
+          border-radius: 0.5rem;
         }
 
         .textBox {
-          width: 8rem;
-          height: 4rem;
+          width: 12rem;
+          height: 6rem;
           z-index: 35;
-          background-image: url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742914836/TextFrame_yvekzx.png');
+          background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742914836/TextFrame_yvekzx.png");
           background-size: 100% 100%;
-          scale: 1.5;
+          
         }
       }
 
@@ -258,59 +283,154 @@ $primary-background: #F8EAD0;
     }
   }
 
-  // --- Previous Artists Styles ---
-  .prev_Artists {
-    width: 100%;
-    height: 45rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .carouselWrapper {
+    // --- Previous Artists Styles ---
+    .prev_Artists {
       width: 100%;
-      height: 100%;
+      height: 48rem;
       display: flex;
       justify-content: center;
       align-items: center;
-    }
+      margin-top: -4rem;
+      padding-bottom: 4rem;
 
-    .card {
-      width: 22rem;
-      height: 25rem;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      text-align: center;
-      border-radius: 15px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      margin: 0 1.5rem;
+      .carouselWrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-      &:hover {
-        transform: translateY(-5px);
-        transition: transform 0.3s ease;
+        .card {
+          width: 22rem;
+          height: 30rem;
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          text-align: center;
+          border-radius: 15px;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          margin: 0 1.5rem;
+          background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742961127/GamusaFrame_zbbg30.webp");
+          background-size: 100% 100%;
+          background-color: orange;
+          &:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+          }
+
+          .cardImage {
+            padding-top: 2rem;
+            width: 80%;
+            height: 74%;
+            object-fit: cover;
+            z-index: 10;
+            border-radius: 10px 10px 0 0;
+          }
+
+          .textBox {
+            width: 80%;
+            height: 15%;
+            background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742914467/textFrame_bkdxll.webp");
+            background-size: 108% 110%;
+            background-color: #f8ead0;
+            padding: 0.5rem;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .artistName {
+              font-size: 1.2rem;
+              height: 40%;
+              width: 100%;
+              color: #b02227;
+              font-weight: 400;
+              margin: 0;
+              padding-top: 0.5rem;
+              font-family: var(--font-gotham);
+            }
+            .tit {
+              height: 30%;
+              width: 100%;
+              font-size: 0.8rem;
+              color: #b02227;
+              font-weight: 400;
+              padding-bottom: 1rem;
+            }
+          }
+        }
       }
     }
+  }
+}
 
-    .cardImage {
-      width: 100%;
-      height: 70%;
-      object-fit: cover;
-      border-radius: 10px 10px 0 0;
+
+// --- Responsive Design ---
+@media (max-width: 1350px) {
+  .outerContainer {
+    .mainContainer {
+    .extraImage3 {
+      
+      top: 28rem;
+      right: 5rem;
     }
-
-    .textBox {
-      width: 100%;
-      padding: 0.5rem;
-      box-sizing: border-box;
+  
+    .extraImage4 {
+      position: fixed;
+   
+      top: 28rem;
+      left: 5rem;
+     
     }
+  
+    
+      .artist_wrapper {
+        .artist1{
+         scale: 0.8;
+         &:hover {
+          transform: scale(1);
+        }
+      }
+    }
+      .prev_Artists{
+        scale: 0.9;
+      }
+    }
+  }
+}
 
-    .artistName {
-      font-size: 1.2rem;
-      color: $text-color;
-      margin: 0;
-      padding: 0.5rem;
+@media (max-width: 1024px) {
+  .outerContainer {
+    .mainContainer {
+    .extraImage3 {
+      width: 20rem;
+      height: 20rem;
+      top: 28rem;
+      right: 4em;
+    }
+  
+    .extraImage4 {
+     
+      width: 20rem;
+      height: 20rem;
+      top: 28rem;
+      left: 4rem;
+     
+    }
+    .artist_wrapper {
+      .artist1{
+       scale: 0.75;
+       &:hover {
+        transform: scale(0.9);
+      }
+    }
+  }
+      .prev_Artists {
+        scale: 0.7;
+      }
     }
   }
 }

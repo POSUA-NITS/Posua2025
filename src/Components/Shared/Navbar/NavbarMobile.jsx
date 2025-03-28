@@ -2,7 +2,8 @@
 
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import RedBorder from "../../RedBorder";
 
 const NavOptions = [
   {
@@ -33,6 +34,8 @@ const NavOptions = [
 const NavbarMobile = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
+  const [navBlur, setNavBlur] = useState(false);
+  const location = useLocation();
 
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -43,6 +46,13 @@ const NavbarMobile = () => {
       setIsVisible(false);
     } else {
       setIsVisible(true);
+    }
+
+    if (currentScrollY > 50) {
+      setNavBlur(true);
+    }
+    else {
+      setNavBlur(false);
     }
 
     setLastScrollY(currentScrollY);
@@ -59,7 +69,8 @@ const NavbarMobile = () => {
   return (
     <nav>
       <div
-        className={` ${isVisible ? "opacity-100" : "opacity-0"} font-gotham fixed z-[200] h-20 w-full transition-opacity duration-300 ease-linear`}
+        className={` ${isVisible ? "opacity-100" : "opacity-0"} ${navBlur ? " backdrop-blur-lg shadow-xl" : ""} font-gotham fixed z-[200] h-20 w-full transition-opacity duration-300 ease-linear  ${location.pathname.match("/gallery/viewall") ? "bg-[rgba(248,234,208,1)]" : ""
+          }`}
       >
         <div className="flex h-full w-full items-center justify-between px-6">
           <a href={"/"}>
@@ -71,14 +82,14 @@ const NavbarMobile = () => {
           </a>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="relative z-[350] flex h-full w-16 items-center justify-center"
+            className="relative z-[350] flex h-full w-16 items-center justify-center text-[#DC6B70]"
           >
             {isMenuOpen ? <X size={40} /> : <Menu size={40} />}
           </button>
         </div>
         <div
           className={`relative backdrop-blur-lg bottom-20 z-[300] flex border-l-4 border-white rounded-l-2xl h-screen w-[45vw] flex-col items-center gap-16 pt-10 ${isMenuOpen ? "left-[55vw]" : "left-[130vw]"
-            } overflow-scroll transition-all delay-100 duration-300 ease-in`}
+            } overflow-y-scroll overflow-x-hidden transition-all delay-100 duration-300 ease-in`}
         >
           <div
             key={1000}

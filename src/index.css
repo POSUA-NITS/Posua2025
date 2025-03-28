@@ -24,14 +24,18 @@
 
 body {
   margin: 0;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  /* overflow-x: hidden; */
 }
 
-@font-face{
+/* @font-face{
   font-family: "MoglanDemo";
   src: url("/Fonts/Moglan_DEMO.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 @font-face{
   font-family: "AlexBrush";
@@ -46,9 +50,23 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+@font-face{
+  font-family: "GothamMad";
+  src: url("/Fonts/GothamMedium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face{
+  font-family: "Ledger";
+  src: url("/Fonts/Ledger-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .moglan-font {
-  font-family: "MoglanDemo", sans-serif;
+  font-family: "Moglan Demo", sans-serif;
 }
 
 .alexBrush-font {
@@ -88,12 +106,14 @@ body {
   animation: scrollRight 25s linear infinite;
 }
 
-@theme components{
+@theme {
   --font-moglan: "Moglan Demo", sans-serif;
   --font-gotham: "Gotham", sans-serif;
   --font-ledger: "Ledger", sans-serif;
+  --font-gothamMad: "GothamMad", sans-serif;
   --breakpoint-tablet: 1000px;
   --breakpoint-laptop:1150px;
+    --breakpoint-mobile: 550px;
   --breakpoint-tablet2: 750px;
   --breakpoint-laptop2: 1200px;
   --breakpoint-ipadpro: 1000px;
