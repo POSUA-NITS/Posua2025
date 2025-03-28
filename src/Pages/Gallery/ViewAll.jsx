@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import styles from "./ViewAll.module.scss"; // Import the same CSS module if styles are shared
+import { useNavigate } from "react-router-dom";
 
-const ViewAll = ({ onClose }) => {
+const ViewAll = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [year1, setYear1] = useState(true);
   const [year2, setYear2] = useState(false);
@@ -258,9 +259,10 @@ const ViewAll = ({ onClose }) => {
   const handlePrev = (images) => {
     setSelectedImage((prev) => (prev - 1 + images.length) % images.length);
   };
+  const navigate = useNavigate();
 
   return (
-    <div className={styles.viewAllContainer+" pl-10 "}>
+    <div className={styles.viewAllContainer}>
       <div className={styles.flower}>
         <img
           src="https://res.cloudinary.com/dybzo3xly/image/upload/v1742904113/flower_oohmzu.svg"
@@ -314,7 +316,7 @@ const ViewAll = ({ onClose }) => {
               </button>
             </div>
 
-            <button className={styles.back_button} onClick={onClose}>
+            <button className={styles.back_button} onClick={()=>navigate('/gallery')}>
               <span>Back</span>
             </button>
           </div>
@@ -325,7 +327,7 @@ const ViewAll = ({ onClose }) => {
             {images1.map((image, index) => (
               <div
                 key={image.id}
-                className={styles.card}
+                className={styles.card+" scale-90"}
                 onClick={() => setSelectedImage(index)}
               >
                 <img
@@ -343,13 +345,13 @@ const ViewAll = ({ onClose }) => {
             {images2.map((image, index) => (
               <div
                 key={image.id}
-                className={styles.card}
+                className={styles.card+" scale-90"}
                 onClick={() => setSelectedImage(index)}
               >
                 <img
                   src={image.url}
                   alt={`Gallery ${image.id}`}
-                  className={styles.image}
+                  className={styles.image+" object-cover"}
                 />
               </div>
             ))}
@@ -361,13 +363,13 @@ const ViewAll = ({ onClose }) => {
             {images3.map((image, index) => (
               <div
                 key={image.id}
-                className={styles.card}
+                className={styles.card+" scale-90"}
                 onClick={() => setSelectedImage(index)}
               >
                 <img
                   src={image.url}
                   alt={`Gallery ${image.id}`}
-                  className={styles.image}
+                  className={styles.image+" object-cover"}
                 />
               </div>
             ))}
@@ -398,7 +400,7 @@ const ViewAll = ({ onClose }) => {
                   <img
                     src={images1[selectedImage].url}
                     alt="Popup"
-                    className={styles.popupImage}
+                    className={styles.popupImage+" object-cover"}
                   />
                   <button
                     className={styles.arrow}

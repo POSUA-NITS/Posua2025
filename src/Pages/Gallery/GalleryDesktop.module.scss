@@ -109,7 +109,7 @@
                 display: block;
                 margin-top: 3rem;
                 margin-left: 3rem;
-                font-family: var(--font-gotham);
+                font-family: var(--font-gothamMad);
                 font-weight: 800;
                 font-size: 20px;
                 line-height: 150%;
@@ -149,6 +149,7 @@
                 span {
                   position: relative;
                   z-index: 1;
+                  font-weight: 800;
                 }
               }
               .slider {

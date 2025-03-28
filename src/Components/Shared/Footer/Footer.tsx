@@ -23,8 +23,11 @@ const Footer = () => {
                         <p className='text-[#D54E54] text-xs'>+91 95347 56282</p>
                     </div>
                     <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742786301/%E0%A6%AA%E0%A6%9B%E0%A7%8B%E0%A7%B1%E0%A6%BE-1_chgze6.webp' className='w-[25vw] mobile:w-[30vw] object-contain block tablet:hidden h-auto relative z-10' />
-                    <div className='relative'>
-                        <input
+                    <div className='relative flex flex-col gap-1 items-center'>
+                        <p>Mail</p>
+                        <div className='bg-[#701317] h-[1.5px] w-full'/>
+                        <a href='mailto:posua@nits.ac.in'>posua@nits.ac.in</a>
+                        {/* <input
                             type="email"
                             name="email"
                             id="email"
@@ -39,7 +42,7 @@ const Footer = () => {
                         </label>
                         <button className='bg-[#578B29] text-[#284013] py-1 px-3 rounded-lg mt-10'>
                             Submit
-                        </button>
+                        </button> */}
                     </div>
                 </div>
                 <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742786301/%E0%A6%AA%E0%A6%9B%E0%A7%8B%E0%A7%B1%E0%A6%BE-1_chgze6.webp' className='w-[30%] hidden tablet:block right-20 h-auto relative z-10' />

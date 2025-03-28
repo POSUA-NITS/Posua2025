@@ -1,14 +1,17 @@
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./Carausal.module.scss";
+import { useMediaQuery } from "@mui/material";
 
 const MAX_VISIBILITY = 2;
-const VISIBLE_CARDS = 5;
 
 const Carousel = ({ children }) => {
   const [active, setActive] = useState(0);
   const count = React.Children.count(children);
   const carouselRef = useRef(null);
   const [cardWidth, setCardWidth] = useState(0);
+  const bigScreen = useMediaQuery("(min-width: 625px)");
+  const VISIBLE_CARDS = bigScreen?5:3;
+
 
   useEffect(() => {
     if (carouselRef.current && children) {
@@ -45,7 +48,7 @@ const Carousel = ({ children }) => {
             scale = Math.max(0.8, scale);
           }
 
-          const translationFactor = 0.7;
+          const translationFactor = bigScreen?0.7:0.47;
 
           return (
             <div

@@ -77,7 +77,7 @@ const Team = () => {
           <img
             src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742818600/Guwahati_Dibrugarh_Assamese_Bihu_Jaapi_PNG_-_Free_Download-removebg-preview_2_thdy7k.png"
             alt=""
-            className="mobile2:h-[35vw] laptop2:h-[25vw] laptop2:space-x-10"
+            className="mobile2:h-[35vw] laptop2:h-[25vw] laptop2:space-x-10 object-cover"
           />
           <div className="absolute mobile2:w-[11.7vh] mobile2:h-[11.7vh] laptop2:w-[38vh] laptop2:h-[38vh] mobile2:top-4 laptop2:top-10.5 mobile2:left-[3.8vh] laptop2:left-[11.7vh] bg-white rounded-full flex items-center justify-center shadow-md z-10 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"></div>
           <div className="mobile2:top-26 laptop2:top-72 mobile2:left-[4.5vh] laptop2:left-[13vh] mobile2:w-[10vh] laptop2:w-[33vh] mobile2:h-[4vh] laptop2:h-[9.5vh] posua mobile2:text-[12px] laptop2:text-[28px] bg-[#721B1E] text-white py-2.5 laptop2:py-4 px-4 rounded-full absolute z-20 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
