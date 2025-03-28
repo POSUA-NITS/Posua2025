@@ -263,13 +263,13 @@ const ViewAll = () => {
 
   return (
     <div className={styles.viewAllContainer}>
-      <div className={styles.flower}>
+      {/* <div className={styles.flower}>
         <img
           src="https://res.cloudinary.com/dybzo3xly/image/upload/v1742904113/flower_oohmzu.svg"
           alt="flower" 
           className={styles.sideFlower}
         />
-      </div>
+      </div> */}
 
       <div className={styles.content}>
         <div className={styles.section1}>
@@ -323,7 +323,7 @@ const ViewAll = () => {
         </div>
 
         {year1 && (
-          <div className={styles.section2}>
+          <div className={styles.section2+" place-items-center"}>
             {images1.map((image, index) => (
               <div
                 key={image.id}
