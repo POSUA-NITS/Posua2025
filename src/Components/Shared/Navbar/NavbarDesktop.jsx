@@ -42,6 +42,7 @@ const NavbarDesktop = () => {
   };
 
   useEffect(() => {
+    
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -49,13 +50,17 @@ const NavbarDesktop = () => {
     };
   }, [lastScrollY]);
 
+  // useEffect(() => {
+  //   console.log(navBlur);
+  // }, [navBlur]);
+
   return (
     <nav className={``}>
       <div
         className={`flex ${
           navBlur ? "backdrop-blur-2xl" : ""
         } items-center justify-between font-gotham h-20 px-44 gap-8 fixed z-[100] w-full ${
-          location.pathname === "/gallery" ? "bg-[rgba(248,234,208,1)]" : ""
+          location.pathname.startsWith("/gallery") ? "bg-[rgba(248,234,208,1)]" : ""
         } `}
       >
         <div className="w-1/4 relative z-10">
@@ -96,7 +101,7 @@ const NavbarDesktop = () => {
         </div>
         <div
           className={`w-full h-full absolute left-0 ${
-            location.pathname === "/gallery" ? "" : "hidden"
+            location.pathname.startsWith("/gallery") ? "" : "hidden"
           } z-5`}
         >
           <div className="w-4 md:w-6 absolute top-0 left-[6%] md:left-[9%] h-full z-[8]">

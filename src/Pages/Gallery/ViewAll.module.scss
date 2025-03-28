@@ -67,7 +67,7 @@
     //   background-color: azure;
     // overflow-y: scroll;
     overflow-x: visible;
-    padding-left: 2rem;
+    padding-left: 5rem;
     margin-right: -5rem;
     z-index: 10;
 
@@ -89,7 +89,7 @@
       height: 15rem;
       // background-color: orange;
       box-sizing: border-box;
-      padding-left: 4rem;
+      padding-left: 6rem;
       .title {
         width: 35rem;
         height: 4rem;
@@ -126,6 +126,10 @@
               font-family: var(--font-ledger);
               font-weight: 400;
               font-size: 16px;
+              @media (max-width: 680px){
+                font-size: 12px;
+                font-weight: 600;
+              }
               line-height: 100%;
               letter-spacing: -4%;
               vertical-align: middle;
@@ -144,6 +148,10 @@
               font-family: var(--font-ledger);
               font-weight: 400;
               font-size: 16px;
+              @media (max-width: 680px){
+                font-size: 12px;
+                font-weight: 600;
+              }
               line-height: 100%;
               letter-spacing: -4%;
               vertical-align: middle;
@@ -158,6 +166,11 @@
           height: 2rem;
           width: fit-content; // Ensures the container wraps around content
           padding: 0.2rem 1rem;
+          @media (max-width: 680px){
+            padding: 0.15rem 0.7rem;
+          }
+          display: flex;
+          align-items: center;
           background-color: aliceblue;
           border-radius: 3rem;
           background-color: rgba(255, 213, 134, 1);
@@ -168,6 +181,10 @@
             font-family: var(--font-ledger);
             font-weight: 400;
             font-size: 16px;
+            @media (max-width: 680px){
+              font-size: 12px;
+              font-weight: 600;
+            }
             // line-height: 100%;
             letter-spacing: -4%;
             vertical-align: middle;
@@ -353,12 +370,12 @@
     }
 
     .content {
-      padding: 1rem;
+      // padding: 1rem;
       margin-left: 0;
       margin-right: 0;
 
       .section1 {
-        padding-left: 1rem;
+        // padding-left: 1rem;
 
         .title {
           font-size: 5rem;
@@ -367,18 +384,16 @@
         }
 
         .wrapper1 {
-          flex-direction: row;
+          display: flex;
           align-items: center;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          width: 100%;
 
           .year_container {
             width: 100%;
             justify-content: center;
             gap: 0.5rem;
-            margin-bottom: 1rem;
-          }
-
-          .back_button {
-            margin-top: -0.5rem;
           }
         }
       }
@@ -418,6 +433,7 @@
 @media (max-width: 680px) {
   .viewAllContainer {
     .content {
+      padding-left: 1rem;
       .section1 {
         .title {
           font-size: 3.5rem;
@@ -463,15 +479,18 @@
 // Mobile view (480px and below)
 @media (max-width: 480px) {
   .viewAllContainer {
+    
     .content {
+      padding-left: 1rem;
       .section1 {
+        padding-left: 0;
+        margin-left: -1rem;
         .title {
           font-size: 3rem;
           text-wrap: nowrap;
         }
         .wrapper1{
           .back_button {
-            margin-top: -0.65rem;
           }
         }
       }
@@ -480,7 +499,7 @@
         grid-template-columns: 1fr; // 1 card per row on small screens
         padding-left: 1rem;
         .card {
-          width: 18rem;
+          width: 16rem;
           height: 19rem;
         }
       }

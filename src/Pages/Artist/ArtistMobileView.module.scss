@@ -10,6 +10,7 @@
     white 100%
   );
 
+  overflow-x: hidden;
   overflow-y: scroll;
 
   &::before,
@@ -88,7 +89,7 @@
     }
     .section2 {
       width: 100vw;
-      height: 64rem;
+      height: max-content;
       box-sizing: border-box;
       display: flex;
       justify-content: center;
@@ -148,6 +149,7 @@
           text-align: center;
           padding: 1rem;
           color: #5f1516;
+          white-space: nowrap;
         }
         .assameseText {
           font-size: 15px;
@@ -227,7 +229,6 @@
           text-align: center;
           border-radius: 15px;
           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-          margin: 0 1.5rem;
           background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742961127/GamusaFrame_zbbg30.webp");
           background-size: 100% 100%;
           &:hover {

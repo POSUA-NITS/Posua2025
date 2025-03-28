@@ -34,6 +34,10 @@ const Artist = lazy(() =>
   import("./Pages/index").then((module) => ({ default: module.Artist }))
 );
 
+const ViewAll = lazy(() =>
+  import("./Pages/index").then((module) => ({ default: module.ViewAll }))
+);
+
 const App = () => (
   <main className="relative">
     {/* <InitialLoadingForHome /> */}
@@ -49,6 +53,7 @@ const App = () => (
           <Route path="/artist" element={<Artist />} />
           <Route path="/team" element={<Team />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/gallery/viewall" element={<ViewAll />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <div className="w-4 md:w-6 fixed top-0 left-[6%] md:left-[9%] h-screen z-[8]">

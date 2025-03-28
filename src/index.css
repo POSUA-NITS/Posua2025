@@ -50,6 +50,13 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+@font-face{
+  font-family: "GothamMad";
+  src: url("/Fonts/GothamMedium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 @font-face{
   font-family: "Ledger";
@@ -103,6 +110,7 @@ body {
   --font-moglan: "Moglan Demo", sans-serif;
   --font-gotham: "Gotham", sans-serif;
   --font-ledger: "Ledger", sans-serif;
+  --font-gothamMad: "GothamMad", sans-serif;
   --breakpoint-tablet: 1000px;
   --breakpoint-laptop:1150px;
     --breakpoint-mobile: 550px;
