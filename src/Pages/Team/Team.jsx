@@ -11,7 +11,7 @@ const union = [
 
 const Team = () => {
   return (
-    <div className="bg-[#F8EAD0] xs:h-screen-md min-h-screen w-full flex flex-col items-center text-center relative pt-[12vh] overflow-x-hidden">
+    <div className="bg-[#F8EAD0] min-h-screen w-full max-w-screen flex flex-col items-center text-center relative pt-[12vh] overflow-hidden ">
       {/* Side and Top Lines */}
       <div className="absolute top-0 mobile2:left-[10vw] laptop2:left-[10.2vw] w-[7px] h-full bg-[#DC6B70] opacity-50"></div>
       <div className="absolute top-0 mobile2:left-[7vw] laptop2:left-[9vw] w-[7px] h-full bg-[#DC6B70] opacity-50"></div>
@@ -36,56 +36,50 @@ const Team = () => {
       </div>
       
       {/* Team Section */}
-      <div className="mt-10 flex justify-center laptop2:gap-x-[16vw] flex-wrap ">
-        <div className="relative text-center group">
-          <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742818600/Guwahati_Dibrugarh_Assamese_Bihu_Jaapi_PNG_-_Free_Download-removebg-preview_2_thdy7k.png" alt="" 
-          className="mobile2:h-[35vw] laptop2:h-[25vw] laptop2:space-x-10"/>
-          <div className="absolute mobile2:w-[11.7vh] mobile2:h-[11.7vh] laptop2:w-[36vh] laptop2:h-[36vh] mobile2:top-4 laptop2:top-11 mobile2:left-[3.8vh] laptop2:left-[11.4vh] bg-white rounded-full flex items-center justify-center shadow-md z-10 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"></div>
-          <div className="mobile2:top-26 laptop2:top-72 mobile2:left-[4.5vh] laptop2:left-[13vh] mobile2:w-[10vh] laptop2:w-[33vh] mobile2:h-[4vh] laptop2:h-[9.5vh] posua mobile2:text-[12px] laptop2:text-[28px] bg-[#721B1E] text-white py-2.5 laptop2:py-4 px-4 rounded-full absolute z-20 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
+      <div className="mt-10 flex justify-center items-center gap-x-[20vw] flex-wrap w-[80%]">
+        <div className="relative text-center group z-10 bg-[url('https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743189245/hobo_japi_ymvf2t.png')] bg-cover bg-center h-auto aspect-square w-[19.5vw] flex justify-center items-center">
+          <div className="w-[18.6vw] h-auto aspect-square bg-white rounded-full flex items-center justify-center shadow-md z-10 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"></div>
+          <div className="absolute top-[16vw] w-[16vw] h-[4.6vw] posua mobile2:text-[1.3vh] laptop2:text-[3.6vh] bg-[#721B1E] text-white py-2.5 laptop2:py-4 px-4 rounded-full z-20 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
           <h1 className="group-hover:-translate-y-3 transition-transform duration-300">
               John Doe
               </h1>
               <h1 className="posua text-white opacity-0 absolute bottom-1 left-[50%] -translate-x-[50%] text-2xl group-hover:opacity-100 z-40 transition-all duration-300">Head</h1>
           </div>
           <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742828414/1_81_gj3nn0.png" alt="" 
-          className="absolute mobile2:top-18 mobile2:h-[10vh] mobile2:left-2.5 laptop2:top-44 laptop2:left-4 laptop2:h-[26vh] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"/>
+          className="absolute top-[50%] -left-[3rem] h-[70%] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"/>
           <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742829354/1_82_ujxqrd.png" alt="" 
-          className="absolute mobile2:top-18 mobile2:h-[10vh] mobile2:right-4 laptop2:top-44 laptop2:right-7 laptop2:h-[26vh] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"/>
+          className="absolute top-[50%] -right-[3.1rem] h-[70%] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"/>
         </div>
-        <div className="relative text-center group">
-          <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742818600/Guwahati_Dibrugarh_Assamese_Bihu_Jaapi_PNG_-_Free_Download-removebg-preview_2_thdy7k.png" alt="" 
-          className="mobile2:h-[35vw] laptop2:h-[25vw] space-x-10"/>
-          <div className="absolute mobile2:w-[11.7vh] mobile2:h-[11.7vh] laptop2:w-[36vh] laptop2:h-[36vh] mobile2:top-4 laptop2:top-11 mobile2:left-[3.8vh] laptop2:left-[11.4vh] bg-white rounded-full flex items-center justify-center shadow-md z-10 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"></div>
-          <div className="mobile2:top-26 laptop2:top-72 mobile2:left-[4.5vh] laptop2:left-[13vh] mobile2:w-[10vh] laptop2:w-[33vh] mobile2:h-[4vh] laptop2:h-[9.5vh] posua mobile2:text-[12px] laptop2:text-[28px] bg-[#721B1E] text-white py-2.5 laptop2:py-4 px-4 rounded-full absolute z-20 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
+        <div className="relative text-center group z-10 bg-[url('https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743189245/hobo_japi_ymvf2t.png')] bg-cover bg-center h-auto aspect-square w-[19.5vw] flex justify-center items-center">
+          <div className="w-[18.6vw] h-auto aspect-square bg-white rounded-full flex items-center justify-center shadow-md z-10 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"></div>
+          <div className="absolute top-[16vw] w-[16vw] h-[4.6vw] posua mobile2:text-[1.3vh] laptop2:text-[3.6vh] bg-[#721B1E] text-white py-2.5 laptop2:py-4 px-4 rounded-full z-20 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
           <h1 className="group-hover:-translate-y-3 transition-transform duration-300">
               John Doe
               </h1>
               <h1 className="posua text-white opacity-0 absolute bottom-1 left-[50%] -translate-x-[50%] text-2xl group-hover:opacity-100 z-40 transition-all duration-300">Head</h1>
           </div>
           <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742828414/1_81_gj3nn0.png" alt="" 
-          className="absolute mobile2:top-18 mobile2:h-[10vh] mobile2:left-2.5 laptop2:top-44 laptop2:left-4 laptop2:h-[26vh] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"/>
+          className="absolute top-[50%] -left-[3rem] h-[70%] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"/>
           <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742829354/1_82_ujxqrd.png" alt="" 
-          className="absolute mobile2:top-18 mobile2:h-[10vh] mobile2:right-4 laptop2:top-44 laptop2:right-7 laptop2:h-[26vh] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"/>
+          className="absolute top-[50%] -right-[3.1rem] h-[70%] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"/>
         </div>
-        <div className="hidden laptop2:block relative text-center -translate-y-46 group">
-          <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742818600/Guwahati_Dibrugarh_Assamese_Bihu_Jaapi_PNG_-_Free_Download-removebg-preview_2_thdy7k.png" alt="" 
-          className="h-[25vw] space-x-10"/>
-          <div className="absolute w-[36vh] h-[36vh] top-11 left-[11.4vh] bg-white rounded-full flex items-center justify-center shadow-md z-10 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"></div>
-          <div className="mobile2:top-26 laptop2:top-72 mobile2:left-[4.5vh] laptop2:left-[13vh] mobile2:w-[10vh] laptop2:w-[33vh] mobile2:h-[4vh] laptop2:h-[9.5vh] posua mobile2:text-[12px] laptop2:text-[28px] bg-[#721B1E] text-white py-2.5 laptop2:py-4 px-4 rounded-full absolute z-20 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
-            <h1 className="group-hover:-translate-y-3 transition-transform duration-300">
+        <div className=" relative text-center group z-30 bg-[url('https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743189245/hobo_japi_ymvf2t.png')]  bg-cover bg-center h-auto aspect-square w-[19.5vw] flex justify-center items-center">
+        <div className="w-[18.6vw] h-auto aspect-square bg-white rounded-full flex items-center justify-center shadow-md z-10 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"></div>
+          <div className="absolute top-[16vw] w-[16vw] h-[4.6vw] posua mobile2:text-[1.3vh] laptop2:text-[3.6vh] bg-[#721B1E] text-white py-2.5 laptop2:py-4 px-4 rounded-full z-20 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
+          <h1 className="group-hover:-translate-y-3 transition-transform duration-300">
               John Doe
               </h1>
               <h1 className="posua text-white opacity-0 absolute bottom-1 left-[50%] -translate-x-[50%] text-2xl group-hover:opacity-100 z-40 transition-all duration-300">Head</h1>
           </div>
           <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742828414/1_81_gj3nn0.png" alt="" 
-          className="absolute top-44 left-4 h-[26vh] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"/>
+          className="absolute top-[50%] -left-[3rem] h-[70%] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"/>
           <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742829354/1_82_ujxqrd.png" alt="" 
-          className="absolute top-44 right-7 h-[26vh] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"/>
+          className="absolute top-[50%] -right-[3.1rem] h-[70%] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"/>
         </div>
       </div>
 
       <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742815614/frame1-removebg-preview_2_1_m9yltj.png" alt="" 
-      className=" laptop2:w-[360px] mobile2:w-[200px] hidden laptop2:block"/>
+      className=" laptop2:w-[360px] mobile2:w-[200px] hidden laptop2:block mt-[20vh]"/>
       <div className="flex mobile2:mt-40 laptop2:mt-0">
         <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742835372/bohag_bihu-removebg-preview_1_et3m2s.png" alt="" 
         className="mobile2:h-[10vh] laptop2:h-[24vh] mobile2:-translate-y-9.5 laptop2:-translate-y-16 z-10"/>
@@ -93,7 +87,7 @@ const Team = () => {
       <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742835372/bohag_bihu-removebg-preview_1_et3m2s.png" alt="" 
         className="mobile2:h-[10vh] laptop2:h-[24vh] mobile2:-translate-y-9.5 laptop2:-translate-y-16 scale-x-[-1] z-10"/>
       </div>
-      <div className="flex w-[78%] flex-wrap gap-x-30 z-30 ">
+      <div className="flex mobile2:w-[78%] tablet2:w-[90%] tablet2:gap-x-[1.8vw] laptop2:w-[78%] flex-wrap laptop2:gap-x-30 z-30 justify-center">
         {union.map((image) => (
           <div key={image.id} className="relative bg-transparent">
             {/* Bamboo Frame */}
@@ -106,9 +100,9 @@ const Team = () => {
               </div>
               <h1 className="posua text-white opacity-0 absolute bottom-9 left-[50%] -translate-x-[50%] text-2xl group-hover:opacity-100 z-40 transition-all duration-300">Head</h1>
               <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742837716/5_2_xosmnn.png" alt="" 
-              className="absolute mobile2:h-[49vh] laptop2:h-[58vh] mobile2:-top-[13vw] laptop2:-top-14 mobile2:-left-[8.4vh] laptop2:-left-[9.5vh] z-20"/>
+              className="absolute h-[58vh] -top-[13%] -left-[9.5vh] z-20"/>
               <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742838523/5_3_mazixq.png" alt="" 
-              className="absolute mobile2:h-[49vh] laptop2:h-[58vh] -top-[13vw] laptop2:-top-13 mobile2:-right-[8.4vh] laptop2:-right-[9.9vh] z-20"/>
+              className="absolute h-[58vh] -top-[13%] -right-[9.9vh] z-20"/>
               <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742839250/woood-removebg-preview_1_2_zyapin.png" alt="" 
               className="absolute bottom-0 w-[90%] z-30"/>
             </div>
@@ -125,7 +119,7 @@ const Team = () => {
       <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742835372/bohag_bihu-removebg-preview_1_et3m2s.png" alt="" 
         className="mobile2:h-[10vh] laptop2:h-[24vh] mobile2:-translate-y-9.5 laptop2:-translate-y-16 scale-x-[-1] z-10"/>
       </div>
-      <div className="flex w-[78%] flex-wrap gap-x-30 z-30 ">
+      <div className="flex mobile2:w-[78%] tablet2:w-[90%] tablet2:gap-x-[1.8vw] laptop2:w-[78%] flex-wrap laptop2:gap-x-30 z-30 justify-center">
         {union.map((image) => (
           <div key={image.id} className="relative bg-transparent">
             {/* Bamboo Frame */}
@@ -138,9 +132,9 @@ const Team = () => {
               </div>
               <h1 className="posua text-white opacity-0 absolute bottom-9 left-[50%] -translate-x-[50%] text-2xl group-hover:opacity-100 z-40 transition-all duration-300">Head</h1>
               <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742837716/5_2_xosmnn.png" alt="" 
-              className="absolute mobile2:h-[49vh] laptop2:h-[58vh] mobile2:-top-15 laptop2:-top-14 mobile2:-left-[8.4vh] laptop2:-left-[9.5vh] z-20"/>
+              className="absolute h-[58vh] -top-[13%] -left-[9.5vh] z-20"/>
               <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742838523/5_3_mazixq.png" alt="" 
-              className="absolute mobile2:h-[49vh] laptop2:h-[58vh] -top-15 laptop2:-top-13 mobile2:-right-[8.4vh] laptop2:-right-[9.9vh] z-20"/>
+              className="absolute h-[58vh] -top-[13%] -right-[9.9vh] z-20"/>
               <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742839250/woood-removebg-preview_1_2_zyapin.png" alt="" 
               className="absolute bottom-0 w-[90%] z-30"/>
             </div>
@@ -157,7 +151,7 @@ const Team = () => {
       <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742835372/bohag_bihu-removebg-preview_1_et3m2s.png" alt="" 
         className="mobile2:h-[10vh] laptop2:h-[24vh] mobile2:-translate-y-9.5 laptop2:-translate-y-16 scale-x-[-1] z-10"/>
       </div>
-      <div className="flex w-[78%] flex-wrap gap-x-30 z-30 ">
+      <div className="flex mobile2:w-[78%] tablet2:w-[90%] tablet2:gap-x-[1.8vw] laptop2:w-[78%] flex-wrap laptop2:gap-x-30 z-30 justify-center">
         {union.map((image) => (
           <div key={image.id} className="relative bg-transparent">
             {/* Bamboo Frame */}
@@ -170,9 +164,9 @@ const Team = () => {
               </div>
               <h1 className="posua text-white opacity-0 absolute bottom-9 left-[50%] -translate-x-[50%] text-2xl group-hover:opacity-100 z-40 transition-all duration-300">Head</h1>
               <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742837716/5_2_xosmnn.png" alt="" 
-              className="absolute mobile2:h-[49vh] laptop2:h-[58vh] mobile2:-top-15 laptop2:-top-14 mobile2:-left-[8.4vh] laptop2:-left-[9.5vh] z-20"/>
+              className="absolute h-[58vh] -top-[13%] -left-[9.5vh] z-20"/>
               <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742838523/5_3_mazixq.png" alt="" 
-              className="absolute mobile2:h-[49vh] laptop2:h-[58vh] -top-15 laptop2:-top-13 mobile2:-right-[8.4vh] laptop2:-right-[9.9vh] z-20"/>
+              className="absolute h-[58vh] -top-[13%] -right-[9.9vh] z-20"/>
               <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742839250/woood-removebg-preview_1_2_zyapin.png" alt="" 
               className="absolute bottom-0 w-[90%] z-30"/>
             </div>
