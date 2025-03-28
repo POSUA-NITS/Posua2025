@@ -24,15 +24,15 @@ function Hero({ setLoading }) {
   }
 
   useEffect(() => {
-    if (progress >= 100) {
+    // if (progress >= 100) {
       setTimeout(() => {
         setStopGif(false);
         setStopAnimation(true);
         startGif();
       }, 2600);
-      setLoading(false);
-    }
-  }, [progress]);
+      // setLoading(false);
+    // }
+  }, []);
 
   useEffect(() => {
     setProgress((prev) => {
@@ -44,14 +44,14 @@ function Hero({ setLoading }) {
     <div className="relative w-full h-screen overflow-hidden">
       {!stopAnimation && (
         <div className="w-full h-screen absolute z-1000">
-          <div onLoad={() => { setLoaded(loaded + 1) }} className="w-full h-full absolute right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/1_qwyup9.webp')] animate-[topRight_3s_ease-in-out_forwards] "></div>
-          <div onLoad={() => { setLoaded(loaded + 1) }} className="w-full h-full absolute left-0 top-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/2_m7k0ic.webp')] animate-[top_3s_ease-in-out_forwards]"></div>
-          <div onLoad={() => { setLoaded(loaded + 1) }} className="w-full h-full absolute left-0 top-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/3_uiqehz.webp')] animate-[right_3s_ease-in-out_forwards]"></div>
-          <div onLoad={() => { setLoaded(loaded + 1) }} className="w-[70%] h-full absolute right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/4_xusz8v.webp')] animate-[right_3s_ease-in-out_forwards]"></div>
-          <div onLoad={() => { setLoaded(loaded + 1) }} className="w-full h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/5_haotid.webp')] animate-[top_3s_ease-in-out_forwards]  md:animate-[topLeft_3s_ease-in-out_forwards]"></div>
-          <div onLoad={() => { setLoaded(loaded + 1) }} className="w-full h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/6_mrzniy.webp')] animate-[bottom_3s_ease-in-out_forwards]"></div>
-          <div onLoad={() => { setLoaded(loaded + 1) }} className="w-full md:w-[60%] h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/7_i1a56b.webp')] animate-[bottom_3s_ease-in-out_forwards] md:animate-[bottomLeft_3s_ease-in-out_forwards]"></div>
-          <div onLoad={() => { setLoaded(loaded + 1) }} className="w-[65rem] md:w-[60%] h-[90%] absolute left-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/8_no4cmw.webp')] animate-[left_3s_ease-in-out_forwards]"></div>
+          <div className="w-full h-full absolute right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/1_qwyup9.webp')] animate-[topRight_3s_ease-in-out_forwards] "></div>
+          <div className="w-full h-full absolute left-0 top-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/2_m7k0ic.webp')] animate-[top_3s_ease-in-out_forwards]"></div>
+          <div className="w-full h-full absolute left-0 top-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/3_uiqehz.webp')] animate-[right_3s_ease-in-out_forwards]"></div>
+          <div className="w-[70%] h-full absolute right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/4_xusz8v.webp')] animate-[right_3s_ease-in-out_forwards]"></div>
+          <div className="w-full h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/5_haotid.webp')] animate-[top_3s_ease-in-out_forwards]  md:animate-[topLeft_3s_ease-in-out_forwards]"></div>
+          <div className="w-full h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/6_mrzniy.webp')] animate-[bottom_3s_ease-in-out_forwards]"></div>
+          <div className="w-full md:w-[100%] lg:w-[60%] h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/7_i1a56b.webp')] animate-[bottom_3s_ease-in-out_forwards] md:animate-[bottomLeft_3s_ease-in-out_forwards]"></div>
+          <div className="w-[65rem] md:w-[100%] lg:w-[70%] md:h-[70%] lg:h-[100%] absolute left-0 bg-contain bg-no-repeat bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/8_no4cmw.webp')] animate-[left_3s_ease-in-out_forwards]"></div>
         </div>
       )}
       <div onLoad={() => { setLoaded(loaded + 1) }} className="absolute bg-linear-to-b from-[#53b8f7] to-[#f9f9f9] w-full h-[30%] md:h-[50%]"></div>
@@ -76,17 +76,17 @@ function Hero({ setLoading }) {
       <div onLoad={() => { setLoaded(loaded + 1) }} className="absolute w-[5rem] h-[6rem] md:w-[10rem] md:h-[10.5rem] left-[11.5rem] md:left-[16rem] bottom-3  bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841696/nasoni2_eikwz3.gif')] bg-cover"></div>
 
       <div className="w-full h-full absolute top-[41%] left-[53%] md:left-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center space-y-2">
-        <div className="w-[100%] md:w-[50%] h-[7rem]  md:h-[13rem] px-[1rem]  flex justify-center items-center">
-          <img onLoad={() => { setLoaded(loaded + 1) }}
+        <div className="w-[100%] md:w-[40rem] h-[7rem]  md:h-[13rem] px-[1rem]  flex justify-center items-center  relative">
+          <img 
             src="https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841315/%E0%A6%AA%E0%A6%9B%E0%A7%8B%E0%A7%B1%E0%A6%BE_bmpyok.webp"
             alt=""
-            className="bg-cover h-full"
+            className="absolute w-[22rem] md:w-[35rem] bg-cover"
           />
           {!stopGif && (
-            <img onLoad={() => { setLoaded(loaded + 1) }}
+            <img
               src="https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841699/posua_eoalhx.gif"
               alt=""
-              className="absolute w-[80%] md:w-[31%] hidden md:block"
+              className="absolute w-[23rem] md:w-[36rem]  md:block"
             />
           )}
         </div>

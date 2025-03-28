@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Borhomthuri from "../../Components/Borhomthuri";
 import BorhomthuriGallery from "../../Components/Borhomthuri-gallery";
 import Hero from "../../Components/Hero";
@@ -7,18 +6,9 @@ import { AboutUs } from "../AboutUs";
 import Invitation from "../Invitation";
 
 function Home() {
-  const [loading, setLoading] = useState(true);
-
-  if (!loading) {
-    return (
-      <div className="flex justify-center items-center h-screen">
-        <div className="loader"></div>
-      </div>
-    );
-  }
-  else return (
+  return (
     <section>
-      <Hero setLoading={setLoading}/>
+      <Hero />
       <section className="bg-[#f8ead0] min-h-screen w-full flex justify-between px-[6%] md:px-[9%] relative">
         <div className="w-4 md:w-6">
           <RedBorder />

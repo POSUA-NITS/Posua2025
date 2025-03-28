@@ -126,13 +126,13 @@
               font-family: var(--font-ledger);
               font-weight: 400;
               font-size: 16px;
+              line-height: 100%;
+              letter-spacing: -4%;
+              vertical-align: middle;
               @media (max-width: 680px){
                 font-size: 12px;
                 font-weight: 600;
               }
-              line-height: 100%;
-              letter-spacing: -4%;
-              vertical-align: middle;
             }
           }
 
@@ -148,13 +148,13 @@
               font-family: var(--font-ledger);
               font-weight: 400;
               font-size: 16px;
+              letter-spacing: -4%;
+              vertical-align: middle;
+              line-height: 100%;
               @media (max-width: 680px){
                 font-size: 12px;
                 font-weight: 600;
               }
-              line-height: 100%;
-              letter-spacing: -4%;
-              vertical-align: middle;
             }
           }
         }
@@ -166,9 +166,7 @@
           height: 2rem;
           width: fit-content; // Ensures the container wraps around content
           padding: 0.2rem 1rem;
-          @media (max-width: 680px){
-            padding: 0.15rem 0.7rem;
-          }
+
           display: flex;
           align-items: center;
           background-color: aliceblue;
@@ -181,13 +179,16 @@
             font-family: var(--font-ledger);
             font-weight: 400;
             font-size: 16px;
+            // line-height: 100%;
+            letter-spacing: -4%;
+            vertical-align: middle;
             @media (max-width: 680px){
               font-size: 12px;
               font-weight: 600;
             }
-            // line-height: 100%;
-            letter-spacing: -4%;
-            vertical-align: middle;
+          }
+          @media (max-width: 680px){
+            padding: 0.15rem 0.7rem;
           }
         }
       }

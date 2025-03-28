@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className="relative font-gotham">
             <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742786690/footer-img_oqvtil.gif' className='absolute h-full tablet:w-screen tablet:h-auto z-5 opacity-80 object-[55%_0%] md:object-center object-cover' />
             <div className=' w-full h-full relative pt-20 pl-18 pr-14 mobile:pl-32 mobile:pr-24 tablet:px-28 laptop:px-44 z-10 opacity-90 overflow-hidden'>
-                <div className='text-[#6B2C2C] text-xs mobile:text-sm md:text-base font-semibold flex gap-y-12 gap-x-[10vw] md:gap-x-16 tablet:gap-x-18 relative z-10 flex-wrap'>
+                <div className='text-[#6B2C2C] text-xs mobile:text-sm md:text-base font-semibold flex gap-y-12 gap-x-[10vw] md:gap-x-16 tablet:gap-x-18 relative z-10 flex-wrap pb-5'>
                     <div className='flex flex-col gap-2'>
                         <a href='/'>Instagram</a>
                         <a href='/'>Facebook</a>
@@ -45,11 +45,11 @@ const Footer = () => {
                         </button> */}
                     </div>
                 </div>
-                <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742786301/%E0%A6%AA%E0%A6%9B%E0%A7%8B%E0%A7%B1%E0%A6%BE-1_chgze6.webp' className='w-[30%] hidden tablet:block right-20 h-auto relative z-10' />
+                <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742786301/%E0%A6%AA%E0%A6%9B%E0%A7%8B%E0%A7%B1%E0%A6%BE-1_chgze6.webp' className='w-[30%] hidden tablet:block right-0 h-auto relative z-10' />
             </div>
-            <div className='w-full tablet:bg-[#f8ead0] relative z-[7] overflow-x-hidden'>
-                <div className='hidden tablet:block z-[7] w-full h-[8px] bg-[#dc6b71c6]'></div>
-                <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742785498/gamosa2_b2jrb6.webp' className='w-full relative z-[7] mt-20 tablet:mt-0 scale-200 md:scale-100' />
+            <div className='w-full tablet:bg-[#f8ead0] relative z-[700] overflow-x-hidden'>
+                <div className='hidden tablet:block z-[700] w-full h-[8px] bg-[#dc6b71c6]'></div>
+                <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742785498/gamosa2_b2jrb6.webp' className='w-full relative z-[700] mt-20 tablet:mt-0 scale-200 md:scale-100' />
             </div>
         </footer>
     )
