@@ -41,7 +41,7 @@ function Hero() {
           <div className="w-full h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/5_haotid.webp')] animate-[top_3s_ease-in-out_forwards]  md:animate-[topLeft_3s_ease-in-out_forwards]"></div>
           <div className="w-full h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/6_mrzniy.webp')] animate-[bottom_3s_ease-in-out_forwards]"></div>
           <div className="w-full md:w-[100%] lg:w-[60%] h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/7_i1a56b.webp')] animate-[bottom_3s_ease-in-out_forwards] md:animate-[bottomLeft_3s_ease-in-out_forwards]"></div>
-          <div className="w-[65rem] md:w-[100%] lg:w-[60%] h-[90%] absolute left-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/8_no4cmw.webp')] animate-[left_3s_ease-in-out_forwards]"></div>
+          <div className="w-[65rem] md:w-[100%] lg:w-[70%] md:h-[70%] lg:h-[100%] absolute left-0 bg-contain bg-no-repeat bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/8_no4cmw.webp')] animate-[left_3s_ease-in-out_forwards]"></div>
         </div>
       )}
       <div className="absolute bg-linear-to-b from-[#53b8f7] to-[#f9f9f9] w-full h-[30%] md:h-[50%]"></div>
