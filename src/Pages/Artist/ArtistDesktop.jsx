@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './ArtistDesktop.module.scss';
 import Carousel from '../../Components/Carausal/Carausal.jsx';
+import { useState } from 'react';
 
 
 const ArtistDesktop = () => {
@@ -20,6 +21,25 @@ const ArtistDesktop = () => {
     { id: 13, url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677847519/POSUA%20Gallery/2021/p61_Small_hpddcy.webp",alt: "Lakshey Das",tit:"Singer" },
   ];
 
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const [popupClass, setPopupClass] = useState(styles.popupOverlay);
+
+  const openPopup = () => {
+    setIsPopupOpen(true);
+    setTimeout(() => {
+      setPopupClass(`${styles.popupOverlay} ${styles.active}`);
+    }, 10);
+  };
+
+  const closePopup = () => {
+    setPopupClass(`${styles.popupOverlay} ${styles.closing}`);
+    setTimeout(() => {
+      setIsPopupOpen(false);
+      setPopupClass(styles.popupOverlay);
+    }, 500); // Match duration with CSS transition
+  };
+
   return (
     <div className={styles.outerContainer}>
       <div className={styles.mainContainer}>
@@ -32,7 +52,7 @@ const ArtistDesktop = () => {
           <p className={styles.title}>UPCOMING ARTISTS</p>
         </div>
         <div className={styles.artist_wrapper}>
-          <div className={styles.artist1}>
+          <div className={styles.artist1}   onClick={openPopup}>
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className={styles.leftMusic} alt='leftMusic' />
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914466/papLeft_esh2ke.svg' className={styles.LeftPepa} alt='LeftPepa' />
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914464/LeftDhol_mqch8f.svg' className={styles.LeftDhol} alt='LeftDhol' />
@@ -44,17 +64,17 @@ const ArtistDesktop = () => {
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914467/papRight_vdsite.svg' className={styles.RightPepa} alt='RightPepa' />
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className={styles.rightMusic} alt='rightMusic' />
           </div>
-          <div className={styles.artist1}>
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className={styles.leftMusic} alt='leftMusic' />
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914466/papLeft_esh2ke.svg' className={styles.LeftPepa} alt='LeftPepa' />
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914464/LeftDhol_mqch8f.svg' className={styles.LeftDhol} alt='LeftDhol' />
-            <div className={styles.artistImage}>
-              <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914468/Zubeen_kalp5x.svg' className={styles.mainArtist} alt='Zubeen Garg' />
-              <div className={styles.textBox}></div>
+          <div className={styles.artist2}  onClick={openPopup}>
+            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className={styles.leftMusic2} alt='leftMusic' />
+            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914466/papLeft_esh2ke.svg' className={styles.LeftPepa2} alt='LeftPepa' />
+            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914464/LeftDhol_mqch8f.svg' className={styles.LeftDhol2} alt='LeftDhol' />
+            <div className={styles.artistImage2}>
+              <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914468/Zubeen_kalp5x.svg' className={styles.mainArtist2} alt='Zubeen Garg' />
+              <div className={styles.textBox2}></div>
             </div>
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914468/RightDhol_wvr36b.svg' className={styles.RightDhol} alt='RightDhol' />
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914467/papRight_vdsite.svg' className={styles.RightPepa} alt='RightPepa' />
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className={styles.rightMusic} alt='rightMusic' />
+            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914468/RightDhol_wvr36b.svg' className={styles.RightDhol2} alt='RightDhol' />
+            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914467/papRight_vdsite.svg' className={styles.RightPepa2} alt='RightPepa' />
+            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className={styles.rightMusic2} alt='rightMusic' />
           </div>
         </div>
         <div className={styles.heading}>
@@ -76,6 +96,34 @@ const ArtistDesktop = () => {
             </Carousel>
           </div>
         </div>
+
+        {isPopupOpen && (
+        <div className={popupClass}>
+    
+           
+             <div className={styles.wrapper}>
+                      <button className={styles.closeButton} onClick={closePopup}>
+                        &times;
+                      </button>
+                          <div className={styles.wrapper1}>
+                           <div className={styles.profile}>
+                                 <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914468/Zubeen_kalp5x.svg' className={styles.mainArtist} alt='Zubeen Garg' />
+                                 <div className={styles.textBox}></div>
+                           </div>
+                           </div>
+                           <div className={styles.wrapper2}>
+                           <p className={styles.artistName}>Zubeen Garg</p>
+                           <p className={styles.assameseText}>
+                           অসমৰ গাঁৱে-ভূঞে, চহৰে-নগৰে অসমীয়াৰ হুচৰিক মঞ্চত উপস্থাপন কৰি দৰ্শকৰ অপূৰ্ব খ্যাতি লাভ কৰিবলৈ সক্ষম হোৱা "দেউচিলা বিহুদল" আহি আজি এন. আই. টি. ৰ বাকৰি শুৱনি কৰিছেহি। এন. আই. টি. ৰ বিহুবলীয়া ৰাইজৰ মন প্ৰাণ জিনিবলৈ নিজৰ ঢোল, পেঁপা, গগনাৰ লগতে বিভিন্ন বাদ্যযন্ত্ৰৰ সুৰেৰে আপ্লুত কৰি তুলিবলৈ সাজু "দেউচিলা বিহুদল"। ঢোলৰ চাপৰত হুঁচৰিৰ চেঁৱত আকৌ এবাৰ কঁকাল ভাঙি নাচিবলৈ, এতিয়া মাথোঁ অপেক্ষা ৫ মাৰ্চ তাৰিখলৈ। 
+                           </p>
+                           <p className={styles.englishText}>
+                           Spring has finally arrived, and the anticipation has culminated in the sounds of Bihu beats all around the corner. And with this, NIT Silchar is all set to host performance of 'Deusila Bihudol', a renowned folk group whose mesmerizing shows have captivated audiences and made them groove to the beats of Bihu. Brace yourselves for a magnificent cultural event as 'Deusila Bihudal' takes the stage with their drums, pepas, gaganas and various other musical instruments, ready to win the hearts of many. Hoping to see you all there promptly!
+            
+                             </p>
+                             </div>
+            </div>
+        </div>
+      )}
       </div>
     </div>
   )
