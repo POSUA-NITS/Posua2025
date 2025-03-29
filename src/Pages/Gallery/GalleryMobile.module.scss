@@ -19,9 +19,9 @@
      linear-gradient(to bottom, rgb(234, 213, 176), white), 
      url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742904115/Texture_janxil.svg');
         .Heading{
-        width: 100%;
+        display: none;
+        width: auto;
         height: 20vh;
-
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -51,12 +51,11 @@
         }
      }
      .yearSection{
-        width: 95%;
+        width: 75vw;
         height: 50vh;
-        
         border-radius: 2rem;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        // margin-left: 0.5rem;
+        // margin-right: 0.5rem;
         // &::before {
         //     content: "";
         //     position: absolute;
@@ -98,7 +97,7 @@
      }
      .photos{
         z-index: 4;
-        width: 100%;
+        width: 75vw;
         height: 15vh;
         display: flex;
         justify-content: space-evenly;
