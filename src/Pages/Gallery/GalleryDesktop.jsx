@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from "./GalleryDesktop.module.scss";
 
-
-import ViewAll from './ViewAll';
+import { useNavigate } from 'react-router-dom';
 
 const backgrounds = [
     'https://res.cloudinary.com/dybzo3xly/image/upload/v1742901479/pic1_czdese.svg',
@@ -17,8 +16,8 @@ const sliders = [
 const GalleryDesktop = () => {
   const [showAll, setShowAll] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const navigate = useNavigate();
 
-  const handleViewAllClick = () => setShowAll(true);
   const handleCloseClick = () => setShowAll(false);
  
   const [isFading, setIsFading] = useState(false);
@@ -39,10 +38,7 @@ useEffect(() => {
    }, []);
   return (
     <section className='pt-20'>
-      {showAll ? (
-        <ViewAll onClose={handleCloseClick} />
-      ) : (
-          <div
+        <div
           className={styles.main_Container}
           style={{
             backgroundImage: `url(${backgrounds[currentIndex]})`,
@@ -60,7 +56,7 @@ useEffect(() => {
   {years[currentIndex]}
 </p>
 
-              <button className={styles.button} onClick={handleViewAllClick}>
+              <button className={styles.button} onClick={() => navigate('/gallery/viewall')}>
                 <span>VIEW ALL</span>
               </button>
               <img className={styles.slider} src={sliders[currentIndex]} alt='slider' />
@@ -79,7 +75,6 @@ useEffect(() => {
             </div>
           </div>
         </div>
-      )}
     </section>
   );
 };

@@ -17,7 +17,7 @@ const Sponsors = () => {
     return (
         <section className="relative max-w-screen overflow-hidden font-gotham flex flex-col items-center justify-center px-10 md:px-16 tablet:px-52 bg-gradient-to-b from-[#29E5FF] via-[#FEFEFE] to-[#FEFEFE] md:bg-[#f8ead0] md:bg-none">
             <img src="https://res.cloudinary.com/dmezugavw/image/upload/v1742785498/header-img_brrtbl.webp" alt="" className="w-1/2 md:w-1/5 mt-32 md:mt-52" />
-            <h1 className="text-5xl text-[#CB2229] mb-8 font-moglan">Sponsors</h1>
+            <h1 className="text-4xl tablet:text-5xl text-[#CB2229] mb-8 font-moglan">Sponsors</h1>
             <div className="grid grid-cols-1 tablet:grid-cols-3 w-[95%] gap-y-16 place-items-center">
                 <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742785499/japi_ij9nt2.webp' alt="" className="w-1/3 absolute z-0 opacity-50 -left-[15%] hidden md:block" />
                 {Sponsor("Sponsor 1", "https://picsum.photos/200")}
@@ -25,8 +25,8 @@ const Sponsors = () => {
                 {Sponsor("Sponsor 1", "https://picsum.photos/200")}
             </div>
             <img src="https://res.cloudinary.com/dmezugavw/image/upload/v1742785498/header-img_brrtbl.webp" alt="" className="w-1/2 md:w-1/5 mt-32 md:mt-28" />
-            <h1 className="text-5xl text-[#CB2229] mb-8 font-moglan">Past Sponsors</h1>
-            <div className="grid grid-cols-2 tablet:grid-cols-3 gap-y-20 place-items-center w-[95%]">
+            <h1 className="text-4xl tablet:text-5xl text-[#CB2229] mb-8 font-moglan">Past Sponsors</h1>
+            <div className="grid grid-cols-2 tablet:grid-cols-3 gap-y-20 gap-x-4 tablet:gap-x-0 place-items-center w-[95%]">
                 {Sponsor("Sponsor 1", "https://picsum.photos/200")}
                 {Sponsor("Sponsor 1", "https://picsum.photos/200")}
                 {Sponsor("Sponsor 1", "https://picsum.photos/200")}

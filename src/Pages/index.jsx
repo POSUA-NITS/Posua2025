@@ -1,14 +1,10 @@
 import { AboutUs } from "./AboutUs";
 import { Error } from "./Error";
 import { Home } from "./Home";
-import {Sponsors} from "./Sponsors";
+import { Sponsors } from "./Sponsors";
 import Gallery from "./Gallery/Gallery";
 import Artist from "./Artist/Artist";
-export {
-    AboutUs,
-    Home,
-    Sponsors,
-    Error,
-    Gallery,
-    Artist
-};
+import { Events } from "./Events/Events";
+import { Team } from "./Team/Team";
+import ViewAll from "./Gallery/ViewAll";
+export { AboutUs, Home, Events, Team, Sponsors, Error, Gallery, Artist, ViewAll };
