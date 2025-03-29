@@ -69,7 +69,7 @@ const NavbarMobile = () => {
   return (
     <nav>
       <div
-        className={` ${isVisible ? "opacity-100" : "opacity-0"} ${navBlur ? " backdrop-blur-lg shadow-xl" : ""} font-gotham fixed z-[200] h-20 w-full transition-opacity duration-300 ease-linear  ${location.pathname.match("/gallery/viewall") ? "bg-[rgba(248,234,208,1)]" : ""
+        className={` ${isVisible ? "opacity-100" : "opacity-0"} ${navBlur ? " backdrop-blur-lg shadow-xl bg-[rgba(248,234,208,0.5)]" : ""} font-gotham fixed z-[200] h-20 w-full transition-opacity duration-300 ease-linear  ${location.pathname.match("/gallery/viewall") ? "bg-[rgba(248,234,208,1)]" : ""
           }`}
       >
         <div className="flex h-full w-full items-center justify-between px-6">

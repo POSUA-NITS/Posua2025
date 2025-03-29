@@ -84,14 +84,14 @@ function Hero({ setLoading }) {
     <div className="relative w-full h-screen overflow-hidden">
       {!stopAnimation && (
         <div className="w-full h-screen absolute z-1000">
-          <div className={`w-full h-full absolute right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/1_qwyup9.webp')] ${loaded >= 33 ? "animate-[topRight_3s_ease-in-out_0.5s_forwards]" : ""}`}></div>
-          <div className={`w-full h-full absolute left-0 top-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/2_m7k0ic.webp')] ${loaded >= 33 ? "animate-[top_3s_ease-in-out_0.5s_forwards]" : ""}`}></div>
-          <div className={`w-full h-full absolute left-0 top-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/3_uiqehz.webp')] ${loaded >= 33 ? "animate-[right_3s_ease-in-out_0.5s_forwards]" : ""}`}></div>
-          <div className={`w-[70%] h-full absolute right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/4_xusz8v.webp')] ${loaded >= 33 ? "animate-[right_3s_ease-in-out_0.5s_forwards]" : ""}`}></div>
-          <div className={`w-full h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/5_haotid.webp')] ${loaded >= 33 ? "animate-[top_3s_ease-in-out_0.5s_forwards] md:animate-[topLeft_3s_ease-in-out_0.5s_forwards]" : ""}`}></div>
-          <div className={`w-full h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/6_mrzniy.webp')] ${loaded >= 33 ? "animate-[bottom_3s_ease-in-out_0.5s_forwards]" : ""}`}></div>
-          <div className={`w-full md:w-[100%] lg:w-[60%] h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/7_i1a56b.webp')] ${loaded >= 33 ? "animate-[bottom_3s_ease-in-out_0.5s_forwards] md:animate-[bottomLeft_3s_ease-in-out_0.5s_forwards]" : ""}`}></div>
-          <div className={`w-[65rem] md:w-[100%] lg:w-[70%] md:h-[70%] lg:h-[100%] absolute left-0 bg-contain bg-no-repeat bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/8_no4cmw.webp')] ${loaded >= 33 ? "animate-[left_3s_ease-in-out_0.5s_forwards]" : ""}`}></div>
+          <div className={`w-full h-full absolute right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/1_qwyup9.webp')] ${loaded >= 33 ? "animate-[topRight_3s_ease-in-out_forwards]" : ""}`}></div>
+          <div className={`w-full h-full absolute left-0 top-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/2_m7k0ic.webp')] ${loaded >= 33 ? "animate-[top_3s_ease-in-out_forwards]" : ""}`}></div>
+          <div className={`w-full h-full absolute left-0 top-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/3_uiqehz.webp')] ${loaded >= 33 ? "animate-[right_3s_ease-in-out_forwards]" : ""}`}></div>
+          <div className={`w-[70%] h-full absolute right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/4_xusz8v.webp')] ${loaded >= 33 ? "animate-[right_3s_ease-in-out_forwards]" : ""}`}></div>
+          <div className={`w-full h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/5_haotid.webp')] ${loaded >= 33 ? "animate-[top_3s_ease-in-out_forwards] md:animate-[topLeft_3s_ease-in-out_forwards]" : ""}`}></div>
+          <div className={`w-full h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/6_mrzniy.webp')] ${loaded >= 33 ? "animate-[bottom_3s_ease-in-out_forwards]" : ""}`}></div>
+          <div className={`w-full md:w-[100%] lg:w-[60%] h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/7_i1a56b.webp')] ${loaded >= 33 ? "animate-[bottom_3s_ease-in-out_forwards] md:animate-[bottomLeft_3s_ease-in-out_forwards]" : ""}`}></div>
+          <div className={`w-[65rem] md:w-[100%] lg:w-[70%] md:h-[70%] lg:h-[100%] absolute left-0 bg-contain bg-no-repeat bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/8_no4cmw.webp')] ${loaded >= 33 ? "animate-[left_3s_ease-in-out_forwards]" : ""}`}></div>
         </div>
       )}
       <div className="absolute bg-linear-to-b from-[#53b8f7] to-[#f9f9f9] w-full h-[30%] md:h-[50%]"></div>
@@ -155,7 +155,7 @@ function Hero({ setLoading }) {
         </div>
       </div>
       <div
-        className="hidden md:block z-100 h-20 w-20 rounded-full border-3 border-red-900 absolute bottom-[-4%] left-[50%] -translate-x-1/2 -translate-y-1/2 cursor-pointer"
+        className="hidden md:block z-10 h-20 w-20 rounded-full border-3 border-red-900 absolute bottom-[-4%] left-[50%] -translate-x-1/2 -translate-y-1/2 cursor-pointer"
         onClick={handleScroll}
       >
         <ArrowDown className="w-12 h-20 absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 text-red-900" />

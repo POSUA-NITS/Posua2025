@@ -49,7 +49,7 @@ const Footer = () => {
             </div>
             <div className='w-full tablet:bg-[#f8ead0] relative z-[700] overflow-x-hidden'>
                 <div className='hidden tablet:block z-[700] w-full h-[8px] bg-[#dc6b71c6]'></div>
-                <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742785498/gamosa2_b2jrb6.webp' className='w-full relative z-[700] mt-20 tablet:mt-0 scale-200 md:scale-100' />
+                <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742785498/gamosa2_b2jrb6.webp' className='w-full relative z-[700] backdrop-blur-[0.8px] mt-20 tablet:mt-0 scale-200 md:scale-100' />
             </div>
         </footer>
     )
