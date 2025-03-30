@@ -1,0 +1,269 @@
+.outerContainer {
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgb(104, 200, 242) 0%, rgb(104, 200, 242) 30%, white 40%, white 100%);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.outerContainer::before, .outerContainer::after,
+.outerContainer .extraImage1 {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: brightness(0.8);
+}
+.outerContainer::before {
+  position: fixed;
+  background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742998824/taal_hve4gt.webp");
+  width: 20rem;
+  height: 30rem;
+  top: -2rem;
+  right: 0rem;
+}
+.outerContainer::after {
+  position: fixed;
+  background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742999238/Untitled_design_2_1_aflj3k.webp");
+  width: 30rem;
+  height: 40rem;
+  top: 20rem;
+  right: -5rem;
+}
+.outerContainer .extraImage1 {
+  position: fixed;
+  background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742965608/rightJapi_qlsahv.png");
+  width: 26rem;
+  height: 26rem;
+  bottom: 4rem;
+  right: 20%;
+}
+.outerContainer .mainContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.outerContainer .mainContainer .section1 {
+  width: 100%;
+  height: 12rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scale: 0.8;
+  margin-top: 4rem;
+}
+.outerContainer .mainContainer .section1 .headingImage {
+  display: inline-block;
+  width: 60%;
+  height: 40%;
+  -o-object-fit: 100% 100%;
+     object-fit: 100% 100%;
+  scale: 3;
+}
+.outerContainer .mainContainer .section1 .headingText {
+  margin-top: -0.5rem;
+  height: 50%;
+  width: 90%;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: var(--font-moglan);
+  color: #cb2229;
+  text-align: center;
+  z-index: 4;
+}
+.outerContainer .mainContainer .section2 {
+  width: 100vw;
+  height: -moz-max-content;
+  height: max-content;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.outerContainer .mainContainer .section2 .wrapper {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4e0b9;
+  padding: 0;
+  z-index: 20;
+  padding: 3rem;
+  border: 12px solid #e7bb67;
+}
+.outerContainer .mainContainer .section2 .wrapper .profile {
+  width: 12rem;
+  height: 16rem;
+  background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742914160/bgSvg_mzeadi.svg");
+  background-size: cover;
+  z-index: 25;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.outerContainer .mainContainer .section2 .wrapper .profile .mainArtist {
+  display: inline-block;
+  width: 10rem;
+  height: 13rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  padding-top: 0.5rem;
+  border-radius: 1rem;
+}
+.outerContainer .mainContainer .section2 .wrapper .profile .textBox {
+  width: 8rem;
+  height: 4rem;
+  z-index: 35;
+  background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742914836/TextFrame_yvekzx.png");
+  background-size: 100% 100%;
+  scale: 1.5;
+}
+.outerContainer .mainContainer .section2 .wrapper .artistName {
+  font-family: var(--font-moglan);
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  color: #5f1516;
+  white-space: nowrap;
+}
+.outerContainer .mainContainer .section2 .wrapper .assameseText {
+  font-size: 15px;
+  font-family: var(--font-gotham);
+  letter-spacing: 0%;
+  text-align: center;
+  color: #5f1516;
+  font-weight: 300;
+  text-indent: 1rem;
+}
+.outerContainer .mainContainer .section2 .wrapper .englishText {
+  font-size: 16px;
+  font-family: var(--font-gotham);
+  letter-spacing: 0%;
+  text-align: center;
+  color: #5f1516;
+  font-weight: 600;
+  text-indent: 1rem;
+}
+.outerContainer .mainContainer .section3 {
+  width: 100%;
+  height: 12rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scale: 0.8;
+  margin-top: 2rem;
+}
+.outerContainer .mainContainer .section3 .UpcomingImage {
+  display: inline-block;
+  width: 60%;
+  height: 40%;
+  z-index: 0;
+  -o-object-fit: 100% 100%;
+     object-fit: 100% 100%;
+  scale: 3;
+}
+.outerContainer .mainContainer .section3 .upcomingText {
+  margin-top: -0.5rem;
+  height: 50%;
+  width: 90%;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: var(--font-moglan);
+  color: #cb2229;
+  text-align: center;
+  z-index: 4;
+}
+.outerContainer .mainContainer .section4 {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -4rem;
+  padding-bottom: 4rem;
+}
+.outerContainer .mainContainer .section4 .carouselWrapper {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outerContainer .mainContainer .section4 .carouselWrapper .card {
+  width: 12rem;
+  height: 18rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742961127/GamusaFrame_zbbg30.webp");
+  background-size: 100% 100%;
+}
+.outerContainer .mainContainer .section4 .carouselWrapper .card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+.outerContainer .mainContainer .section4 .carouselWrapper .card .cardImage {
+  padding-top: 2rem;
+  width: 80%;
+  height: 74%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 10;
+  border-radius: 10px 10px 0 0;
+}
+.outerContainer .mainContainer .section4 .carouselWrapper .card .textBox {
+  width: 80%;
+  height: 15%;
+  background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742914467/textFrame_bkdxll.webp");
+  background-size: 108% 110%;
+  background-color: #f8ead0;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.outerContainer .mainContainer .section4 .carouselWrapper .card .textBox .artistName {
+  font-size: 0.6rem;
+  height: 40%;
+  width: 100%;
+  color: #b02227;
+  font-weight: 400;
+  margin: 0;
+  font-family: var(--font-gotham);
+}
+.outerContainer .mainContainer .section4 .carouselWrapper .card .textBox .tit {
+  height: 30%;
+  width: 100%;
+  font-size: 0.4rem;
+  color: #b02227;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 480px) {
+  .outerContainer .mainContainer .section2 .artistName {
+    font-size: 2.2rem !important;
+  }
+}/*# sourceMappingURL=ArtistMobileView.module.css.map */

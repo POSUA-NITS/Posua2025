@@ -1,0 +1,654 @@
+* {
+  box-sizing: border-box;
+}
+
+.outerContainer {
+  width: 100vw;
+  background-color: #f8ead0;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  /* Hide scrollbar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.outerContainer::-webkit-scrollbar {
+  display: none;
+}
+.outerContainer .mainContainer {
+  width: 100%;
+  flex-grow: 1; /* Allows the content to grow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8ead0;
+  position: relative;
+}
+.outerContainer .mainContainer::before, .outerContainer .mainContainer::after,
+.outerContainer .mainContainer .extraImage1,
+.outerContainer .mainContainer .extraImage2,
+.outerContainer .mainContainer .extraImage3,
+.outerContainer .mainContainer .extraImgae4 {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: brightness(0.8);
+}
+.outerContainer .mainContainer::before {
+  position: fixed;
+  background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742923319/rightGamusa_aadl38.png");
+  width: 20rem;
+  height: 30rem;
+  top: 4rem;
+  right: 0rem;
+}
+.outerContainer .mainContainer::after {
+  position: fixed;
+  background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742922617/LeftGamusa_q8plub.png");
+  width: 20rem;
+  height: 30rem;
+  top: 4rem;
+  left: 0rem;
+}
+.outerContainer .mainContainer .extraImage1 {
+  position: fixed;
+  background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742923319/rightPhool_mfgw4o.png");
+  width: 20rem;
+  height: 20rem;
+  top: 28rem;
+  right: -2rem;
+}
+.outerContainer .mainContainer .extraImage2 {
+  position: fixed;
+  background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742922616/Phool_qmsxwd.png");
+  width: 20rem;
+  height: 20rem;
+  top: 28rem;
+  left: 0rem;
+}
+.outerContainer .mainContainer .extraImage3 {
+  position: fixed;
+  background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742965608/rightJapi_qlsahv.png");
+  width: 26rem;
+  height: 26rem;
+  top: 28rem;
+  right: 20%;
+}
+.outerContainer .mainContainer .extraImage4 {
+  position: fixed;
+  background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742922616/japi3_2_inf4pz.png");
+  background-size: cover;
+  width: 26rem;
+  height: 26rem;
+  top: 28rem;
+  left: 20%;
+}
+.outerContainer .mainContainer .heading {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.outerContainer .mainContainer .heading .image {
+  display: block;
+  width: 15rem;
+  height: 4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.outerContainer .mainContainer .heading .title {
+  margin-top: -0.5rem;
+  height: 1rem;
+  width: 80%;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: var(--font-moglan);
+  color: #cb2229;
+  text-align: center;
+}
+.outerContainer .mainContainer .artist_wrapper {
+  width: 100%;
+  height: 16rem;
+  background-color: #f8ead0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.outerContainer .mainContainer .artist_wrapper .artist1 {
+  width: 45rem;
+  height: 16rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.outerContainer .mainContainer .artist_wrapper .artist1 .leftMusic {
+  margin-top: 1.05rem;
+  display: hidden;
+  width: 6rem;
+  height: 6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  transform: rotate(-45deg);
+  mix-blend-mode: multiply;
+  z-index: -3;
+}
+.outerContainer .mainContainer .artist_wrapper .artist1 .LeftPepa {
+  display: inline-block;
+  margin-top: 1.05rem;
+  width: 6rem;
+  height: 6rem;
+  margin-right: -0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  transition: margin-right 0.3s ease, transform 0.3s ease;
+}
+.outerContainer .mainContainer .artist_wrapper .artist1 .LeftDhol {
+  margin-top: 2rem;
+  display: inline-block;
+  width: 8rem;
+  height: 16rem;
+  margin-left: -2rem;
+  -o-object-fit: 100% 100%;
+     object-fit: 100% 100%;
+  -o-object-position: center;
+     object-position: center;
+  scale: 1.5;
+  margin-right: -2rem;
+}
+.outerContainer .mainContainer .artist_wrapper .artist1 .artistImage {
+  width: 12rem;
+  height: 16rem;
+  background-color: #b02227;
+  background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742914160/bgSvg_mzeadi.svg");
+  background-size: 100% 100%;
+  z-index: 25;
+  scale: 1.2;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.outerContainer .mainContainer .artist_wrapper .artist1 .artistImage .mainArtist {
+  display: inline-block;
+  width: 11rem;
+  height: 13rem;
+  -o-object-fit: 100% 100%;
+     object-fit: 100% 100%;
+  -o-object-position: center;
+     object-position: center;
+  padding-top: 0.7rem;
+  border-radius: 0.5rem;
+}
+.outerContainer .mainContainer .artist_wrapper .artist1 .artistImage .textBox {
+  width: 12rem;
+  height: 6rem;
+  z-index: 35;
+  background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742914836/TextFrame_yvekzx.png");
+  background-size: 100% 100%;
+}
+.outerContainer .mainContainer .artist_wrapper .artist1 .RightDhol {
+  margin-right: -2rem;
+  display: inline-block;
+  width: 8rem;
+  height: 20rem;
+  -o-object-fit: 100% 100%;
+     object-fit: 100% 100%;
+  -o-object-position: center;
+     object-position: center;
+  scale: 1.5;
+  z-index: 10;
+  margin-left: -2rem;
+}
+.outerContainer .mainContainer .artist_wrapper .artist1 .RightPepa {
+  display: inline-block;
+  margin-top: 1.05rem;
+  width: 6rem;
+  height: 6rem;
+  margin-left: -0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  transition: margin-left 0.3s ease, transform 0.3s ease;
+}
+.outerContainer .mainContainer .artist_wrapper .artist1 .rightMusic {
+  width: 6rem;
+  margin-top: 1.05rem;
+  height: 6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  transform: rotate(45deg);
+  mix-blend-mode: multiply;
+  display: hidden;
+  z-index: -3;
+}
+.outerContainer .mainContainer .artist_wrapper .artist1:hover {
+  transform: scale(1.15);
+}
+.outerContainer .mainContainer .artist_wrapper .artist1:hover .leftMusic {
+  display: inline-block;
+}
+.outerContainer .mainContainer .artist_wrapper .artist1:hover .LeftPepa {
+  margin-right: -1rem;
+  transform: scale(1.05) rotate(30deg);
+}
+.outerContainer .mainContainer .artist_wrapper .artist1:hover .RightPepa {
+  margin-left: -1rem;
+  transform: scale(1.05) rotate(-30deg);
+}
+.outerContainer .mainContainer .artist_wrapper .artist1:hover .rightMusic {
+  display: inline-block;
+}
+.outerContainer .mainContainer .artist_wrapper .artist2 {
+  width: 45rem;
+  height: 16rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.outerContainer .mainContainer .artist_wrapper .artist2 .leftMusic2 {
+  margin-top: 1.05rem;
+  display: hidden;
+  width: 6rem;
+  height: 6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  transform: rotate(-45deg);
+  mix-blend-mode: multiply;
+  z-index: -3;
+}
+.outerContainer .mainContainer .artist_wrapper .artist2 .LeftPepa2 {
+  display: inline-block;
+  margin-top: 1.05rem;
+  width: 6rem;
+  height: 6rem;
+  margin-right: -0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  transition: margin-right 0.3s ease, transform 0.3s ease;
+}
+.outerContainer .mainContainer .artist_wrapper .artist2 .LeftDhol2 {
+  margin-top: 2rem;
+  display: inline-block;
+  width: 8rem;
+  height: 16rem;
+  margin-left: -2rem;
+  -o-object-fit: 100% 100%;
+     object-fit: 100% 100%;
+  -o-object-position: center;
+     object-position: center;
+  scale: 1.5;
+  margin-right: -2rem;
+}
+.outerContainer .mainContainer .artist_wrapper .artist2 .artistImage2 {
+  width: 12rem;
+  height: 16rem;
+  background-color: #b02227;
+  background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742914160/bgSvg_mzeadi.svg");
+  background-size: 100% 100%;
+  z-index: 25;
+  scale: 1.2;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.outerContainer .mainContainer .artist_wrapper .artist2 .artistImage2 .mainArtist2 {
+  display: inline-block;
+  width: 11rem;
+  height: 13rem;
+  -o-object-fit: 100% 100%;
+     object-fit: 100% 100%;
+  -o-object-position: center;
+     object-position: center;
+  padding-top: 0.7rem;
+  border-radius: 0.5rem;
+}
+.outerContainer .mainContainer .artist_wrapper .artist2 .artistImage2 .textBox2 {
+  width: 12rem;
+  height: 6rem;
+  z-index: 35;
+  background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742914836/TextFrame_yvekzx.png");
+  background-size: 100% 100%;
+}
+.outerContainer .mainContainer .artist_wrapper .artist2 .RightDhol2 {
+  margin-right: -2rem;
+  display: inline-block;
+  width: 8rem;
+  height: 20rem;
+  -o-object-fit: 100% 100%;
+     object-fit: 100% 100%;
+  -o-object-position: center;
+     object-position: center;
+  scale: 1.5;
+  z-index: 10;
+  margin-left: -2rem;
+}
+.outerContainer .mainContainer .artist_wrapper .artist2 .RightPepa2 {
+  display: inline-block;
+  margin-top: 1.05rem;
+  width: 6rem;
+  height: 6rem;
+  margin-left: -0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  transition: margin-left 0.3s ease, transform 0.3s ease;
+}
+.outerContainer .mainContainer .artist_wrapper .artist2 .rightMusic2 {
+  width: 6rem;
+  margin-top: 1.05rem;
+  height: 6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  transform: rotate(45deg);
+  mix-blend-mode: multiply;
+  display: hidden;
+  z-index: -3;
+}
+.outerContainer .mainContainer .artist_wrapper .artist2:hover {
+  transform: scale(1.15);
+}
+.outerContainer .mainContainer .artist_wrapper .artist2:hover .leftMusic2 {
+  display: inline-block;
+}
+.outerContainer .mainContainer .artist_wrapper .artist2:hover .LeftPepa2 {
+  margin-right: -1rem;
+  transform: scale(1.05) rotate(30deg);
+}
+.outerContainer .mainContainer .artist_wrapper .artist2:hover .RightPepa2 {
+  margin-left: -1rem;
+  transform: scale(1.05) rotate(-30deg);
+}
+.outerContainer .mainContainer .artist_wrapper .artist2:hover .rightMusic2 {
+  display: inline-block;
+}
+.outerContainer .mainContainer .prev_Artists {
+  width: 100%;
+  height: 48rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -4rem;
+  padding-bottom: 4rem;
+}
+.outerContainer .mainContainer .prev_Artists .carouselWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outerContainer .mainContainer .prev_Artists .carouselWrapper .card {
+  width: 22rem;
+  height: 30rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin: 0 1.5rem;
+  background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742961127/GamusaFrame_zbbg30.webp");
+  background-size: 100% 100%;
+  background-color: orange;
+}
+.outerContainer .mainContainer .prev_Artists .carouselWrapper .card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+.outerContainer .mainContainer .prev_Artists .carouselWrapper .card .cardImage {
+  padding-top: 2rem;
+  width: 80%;
+  height: 74%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 10;
+  border-radius: 10px 10px 0 0;
+}
+.outerContainer .mainContainer .prev_Artists .carouselWrapper .card .textBox {
+  width: 80%;
+  height: 15%;
+  background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742914467/textFrame_bkdxll.webp");
+  background-size: 108% 110%;
+  background-color: #f8ead0;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.outerContainer .mainContainer .prev_Artists .carouselWrapper .card .textBox .artistName {
+  font-size: 1.2rem;
+  height: 40%;
+  width: 100%;
+  color: #b02227;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 0.5rem;
+  font-family: var(--font-gotham);
+}
+.outerContainer .mainContainer .prev_Artists .carouselWrapper .card .textBox .tit {
+  height: 30%;
+  width: 100%;
+  font-size: 0.8rem;
+  color: #b02227;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+.outerContainer .mainContainer .popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 100%; /* Start from outside the viewport (right) */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0); /* Default state */
+}
+.outerContainer .mainContainer .popupOverlay.active {
+  transform: translateX(-100%); /* Slide in from right */
+}
+.outerContainer .mainContainer .popupOverlay.closing {
+  transform: translateX(100%); /* Slide out to left */
+}
+.outerContainer .mainContainer .popupOverlay .wrapper {
+  width: 70vw;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4e0b9;
+  padding: 0;
+  z-index: 20;
+  position: relative;
+  padding: 3rem;
+  border: 12px solid #e7bb67;
+}
+.outerContainer .mainContainer .popupOverlay .wrapper .closeButton {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  height: 3rem;
+  width: 3rem;
+  box-sizing: border-box;
+  font-size: 2rem;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outerContainer .mainContainer .popupOverlay .wrapper .closeButton:hover {
+  background-color: #e7bb67;
+}
+.outerContainer .mainContainer .popupOverlay .wrapper .wrapper1 {
+  width: 40%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.outerContainer .mainContainer .popupOverlay .wrapper .wrapper1 .profile {
+  width: 12rem;
+  height: 16rem;
+  background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742914160/bgSvg_mzeadi.svg");
+  background-size: cover;
+  z-index: 25;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.outerContainer .mainContainer .popupOverlay .wrapper .wrapper1 .profile .mainArtist {
+  display: inline-block;
+  width: 10rem;
+  height: 13rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  padding-top: 0.5rem;
+  border-radius: 1rem;
+}
+.outerContainer .mainContainer .popupOverlay .wrapper .wrapper1 .profile .textBox {
+  width: 8rem;
+  height: 4rem;
+  z-index: 35;
+  background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742914836/TextFrame_yvekzx.png");
+  background-size: 100% 100%;
+  scale: 1.5;
+}
+.outerContainer .mainContainer .popupOverlay .wrapper .wrapper2 {
+  width: 80vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+}
+.outerContainer .mainContainer .popupOverlay .wrapper .wrapper2 .artistName {
+  font-family: var(--font-moglan);
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 1rem;
+  color: #5f1516;
+  white-space: nowrap;
+}
+.outerContainer .mainContainer .popupOverlay .wrapper .wrapper2 .assameseText {
+  font-size: 15px;
+  font-family: var(--font-gotham);
+  letter-spacing: 0%;
+  text-align: center;
+  color: #5f1516;
+  font-weight: 300;
+  text-indent: 1rem;
+}
+.outerContainer .mainContainer .popupOverlay .wrapper .wrapper2 .englishText {
+  margin-top: 1rem;
+  font-size: 16px;
+  font-family: var(--font-gotham);
+  letter-spacing: 0%;
+  text-align: center;
+  color: #5f1516;
+  font-weight: 600;
+  text-indent: 1rem;
+}
+
+@media (max-width: 1350px) {
+  .outerContainer .mainContainer .extraImage3 {
+    top: 28rem;
+    right: 5rem;
+  }
+  .outerContainer .mainContainer .extraImage4 {
+    position: fixed;
+    top: 28rem;
+    left: 5rem;
+  }
+  .outerContainer .mainContainer .artist_wrapper .artist1 {
+    scale: 0.8;
+  }
+  .outerContainer .mainContainer .artist_wrapper .artist1:hover {
+    transform: scale(1);
+  }
+  .outerContainer .mainContainer .artist_wrapper .artist2 {
+    scale: 0.8;
+  }
+  .outerContainer .mainContainer .artist_wrapper .artist2:hover {
+    transform: scale(1);
+  }
+  .outerContainer .mainContainer .prev_Artists .carouselWrapper .card {
+    scale: 0.9;
+  }
+}
+@media (max-width: 1024px) {
+  .outerContainer .mainContainer .extraImage3 {
+    width: 20rem;
+    height: 20rem;
+    top: 28rem;
+    right: 4em;
+  }
+  .outerContainer .mainContainer .extraImage4 {
+    width: 20rem;
+    height: 20rem;
+    top: 28rem;
+    left: 4rem;
+  }
+  .outerContainer .mainContainer .artist_wrapper .artist1 {
+    scale: 0.75;
+  }
+  .outerContainer .mainContainer .artist_wrapper .artist1:hover {
+    transform: scale(0.9);
+  }
+  .outerContainer .mainContainer .artist_wrapper .artist2 {
+    scale: 0.75;
+  }
+  .outerContainer .mainContainer .artist_wrapper .artist2:hover {
+    transform: scale(0.9);
+  }
+  .outerContainer .mainContainer .prev_Artists .carouselWrapper .card {
+    scale: 0.7;
+  }
+}/*# sourceMappingURL=ArtistDesktop.module.css.map */
