@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Shared/Navbar/Navbar";
 import Footer from "./Components/Shared/Footer/Footer";
@@ -39,11 +39,11 @@ const ViewAll = lazy(() =>
 );
 
 const App = () => {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsActive(true);
+      setIsActive(false);
     }
       , 3500);
     return () => clearTimeout(timer);
