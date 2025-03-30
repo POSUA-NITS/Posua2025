@@ -5,18 +5,18 @@ import Hero from "../../Components/Hero";
 import RedBorder from "../../Components/RedBorder";
 import { AboutUs } from "../AboutUs";
 import Invitation from "../Invitation";
-import { Loading } from "../../Components/Loader/Loading";
+// import { Loading } from "../../Components/Loader/Loading";
 
 function Home() {
   const [loading, setLoading] = useState(true);
 
   return (
     <section>
-      {loading && (
+      {/* {loading && (
         <div className="fixed top-0 left-0 w-full h-screen flex justify-center items-center bg-white z-[5000]">
           <Loading />
         </div>
-      )}
+      )} */}
       <section>
         <Hero setLoading={setLoading} />
         <section className="bg-[#f8ead0] min-h-screen w-full flex justify-between px-[6%] md:px-[9%] relative">
