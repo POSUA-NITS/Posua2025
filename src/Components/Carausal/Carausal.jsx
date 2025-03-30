@@ -55,7 +55,7 @@ const Carousel = ({ children }) => {
             scale = Math.max(0.8, scale);
           }
 
-          const translationFactor = Screen1 ? 0.7 : ( Screen2? 0.6: (bigScreen?0.6: 0.47));
+          const translationFactor = Screen1 ? 0.7 : ( Screen2? 0.6: (bigScreen?0.5: 0.45));
 
           return (
             <div
