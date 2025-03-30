@@ -644,6 +644,7 @@ $primary-background: #f8ead0;
 // --- Responsive Design ---
 @media (max-width: 1350px) {
   .outerContainer {
+     
     .mainContainer {
     .extraImage3 {
       
@@ -675,7 +676,11 @@ $primary-background: #f8ead0;
      }
     }
       .prev_Artists{
-        scale: 0.9;
+        .carouselWrapper{
+           .card{
+            scale: 0.9;
+           }
+        }
       }
     }
   }
@@ -713,9 +718,13 @@ $primary-background: #f8ead0;
      }
    }
   }
-      .prev_Artists {
+  .prev_Artists{
+    .carouselWrapper{
+       .card{
         scale: 0.7;
-      }
+       }
+    }
+  }
     }
   }
 }

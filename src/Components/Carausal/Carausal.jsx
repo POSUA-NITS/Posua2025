@@ -6,10 +6,12 @@ const MAX_VISIBILITY = 2;
 
 const Carousel = ({ children }) => {
   const [active, setActive] = useState(0);
-  const [paused, setPaused] = useState(false);
+  const [popupVisible, setPopupVisible] = useState(false);
   const count = React.Children.count(children);
   const carouselRef = useRef(null);
   const [cardWidth, setCardWidth] = useState(0);
+  const Screen1 = useMediaQuery("(min-width: 1350px)");
+  const Screen2 = useMediaQuery("(min-width: 1024px)");
   const bigScreen = useMediaQuery("(min-width: 625px)");
   const VISIBLE_CARDS = bigScreen ? 5 : 3;
 
@@ -23,22 +25,23 @@ const Carousel = ({ children }) => {
   }, [children]);
 
   useEffect(() => {
-    if (paused) return;
+    if ( popupVisible) return;
     const interval = setInterval(() => {
       setActive((prevActive) => (prevActive + 1) % count);
     }, 1500);
     return () => clearInterval(interval);
-  }, [count, active, paused]);
+  }, [count, active, popupVisible]);
 
   const handleCardClick = (cardIndex) => {
     if (cardIndex === active) {
-      setPaused((prevPaused) => !prevPaused);
+      setPopupVisible((prev) => !prev);
     } else {
       setActive(cardIndex);
     }
   };
 
   return (
+    <>
     <div className={styles.carouselCont}>
       <div className={styles.carousel} ref={carouselRef}>
         {Array.from({ length: VISIBLE_CARDS }, (_, index) => {
@@ -47,14 +50,12 @@ const Carousel = ({ children }) => {
           const absOffset = Math.abs(offset);
           let scale = 1;
           
-          if (cardIndex === active && paused) {
-            scale = 1.3;
-          } else if (absOffset > 0) {
+          if (absOffset > 0) {
             scale = 1 - absOffset * 0.1;
             scale = Math.max(0.8, scale);
           }
 
-          const translationFactor = bigScreen ? 0.7 : 0.47;
+          const translationFactor = Screen1 ? 0.7 : ( Screen2? 0.6: (bigScreen?0.6: 0.47));
 
           return (
             <div
@@ -76,7 +77,16 @@ const Carousel = ({ children }) => {
           );
         })}
       </div>
-    </div>
+      </div>
+      {popupVisible && (
+        <div className={styles.popupOverlay2} onClick={() => setPopupVisible(false)}>
+          <div className={styles.popupCard}>
+            {children[active]}
+          </div>
+        </div>
+      )}
+    
+    </>
   );
 };
 
