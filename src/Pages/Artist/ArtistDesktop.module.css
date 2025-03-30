@@ -118,7 +118,7 @@
   height: 16rem;
   background-color: #f8ead0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 5rem;
 }

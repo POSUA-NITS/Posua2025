@@ -102,4 +102,37 @@
   .popupOverlay2 .popupCard {
     scale: 1.1;
   }
+}
+@media (max-width: 480px) {
+  .carouselCont {
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carouselCont .carousel {
+    width: 90%;
+    height: 100%;
+  }
+  .carouselCont .carousel .cardContainer {
+    width: 14rem;
+    height: 18rem;
+    transform: scale(calc(1 - var(--abs-offset) * 0.1)) translateZ(calc(var(--abs-offset) * -20rem)) translateX(calc(var(--direction) * 5rem));
+  }
+  .carouselCont .carousel .left,
+  .carouselCont .carousel .right {
+    font-size: 2rem;
+  }
+  .popupOverlay2 {
+    width: 100vw;
+    height: 100vh;
+  }
+  .popupOverlay2 .popupCard {
+    scale: 1.1;
+  }
 }/*# sourceMappingURL=Carausal.module.css.map */
