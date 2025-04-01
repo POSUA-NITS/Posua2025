@@ -75,7 +75,7 @@ const NavbarMobile = () => {
         <div className="flex h-full w-full items-center justify-between px-6">
           <a href={"/"}>
             <img
-              src="https://res.cloudinary.com/dmezugavw/image/upload/v1742786688/logo_mgsmjo.gif"
+              src="https://res.cloudinary.com/dmezugavw/image/upload/v1743523053/Posua_Loader_Compressed_rezeiv.gif"
               width={100}
               alt="logo"
             ></img>
