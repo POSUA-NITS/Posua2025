@@ -34,7 +34,7 @@ const Team = () => {
       <div className="mt-10 flex justify-center items-center gap-x-[20vw] flex-wrap w-[80%]">
         <div className="relative text-center group z-10 bg-[url('https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743189245/hobo_japi_ymvf2t.png')] bg-cover bg-center h-auto aspect-square w-[19.5vw] flex justify-center items-center">
           <div className="w-[18.6vw] h-auto aspect-square bg-white rounded-full flex items-center justify-center shadow-md z-10 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"></div>
-          <div className="absolute top-[16vw] w-[16vw] h-[4.6vw] posua mobile2:text-[1.3vh] laptop2:text-[3.6vh] bg-[#721B1E] text-white py-2.5 laptop2:py-4 px-4 rounded-full z-20 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
+          <div className="absolute top-[16vw] w-[16vw] h-[4.6vw] posua mobile2:text-[1.6vw] tablet2:text-[2vh] laptop2:text-[3.6vh] bg-[#721B1E] text-white py-2.5 laptop2:py-4 px-4 rounded-full z-20 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
           <h1 className="group-hover:-translate-y-3 transition-transform duration-300">
               John Doe
               </h1>
@@ -47,7 +47,7 @@ const Team = () => {
         </div>
         <div className="relative text-center group z-10 bg-[url('https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743189245/hobo_japi_ymvf2t.png')] bg-cover bg-center h-auto aspect-square w-[19.5vw] flex justify-center items-center">
           <div className="w-[18.6vw] h-auto aspect-square bg-white rounded-full flex items-center justify-center shadow-md z-10 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"></div>
-          <div className="absolute top-[16vw] w-[16vw] h-[4.6vw] posua mobile2:text-[1.3vh] laptop2:text-[3.6vh] bg-[#721B1E] text-white py-2.5 laptop2:py-4 px-4 rounded-full z-20 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
+          <div className="absolute top-[16vw] w-[16vw] h-[4.6vw] posua mobile2:text-[1.6vw] tablet2:text-[2vh] laptop2:text-[3.6vh] bg-[#721B1E] text-white py-2.5 laptop2:py-4 px-4 rounded-full z-20 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
           <h1 className="group-hover:-translate-y-3 transition-transform duration-300">
               John Doe
               </h1>
@@ -60,7 +60,7 @@ const Team = () => {
         </div>
         <div className=" relative text-center group z-30 bg-[url('https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743189245/hobo_japi_ymvf2t.png')]  bg-cover bg-center h-auto aspect-square w-[19.5vw] flex justify-center items-center">
         <div className="w-[18.6vw] h-auto aspect-square bg-white rounded-full flex items-center justify-center shadow-md z-10 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"></div>
-          <div className="absolute top-[16vw] w-[16vw] h-[4.6vw] posua mobile2:text-[1.3vh] laptop2:text-[3.6vh] bg-[#721B1E] text-white py-2.5 laptop2:py-4 px-4 rounded-full z-20 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
+          <div className="absolute top-[16vw] w-[16vw] h-[4.6vw] posua mobile2:text-[1.6vw] tablet2:text-[2vh] laptop2:text-[3.6vh] bg-[#721B1E] text-white py-2.5 laptop2:py-4 px-4 rounded-full z-20 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
           <h1 className="group-hover:-translate-y-3 transition-transform duration-300">
               John Doe
               </h1>
@@ -82,7 +82,7 @@ const Team = () => {
       <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742835372/bohag_bihu-removebg-preview_1_et3m2s.png" alt="" 
         className="mobile2:h-[10vh] laptop2:h-[24vh] mobile2:-translate-y-9.5 laptop2:-translate-y-16 scale-x-[-1] z-10"/>
       </div>
-      <div className="flex mobile2:w-[78%] tablet2:w-[90%] tablet2:gap-x-[1.8vw] laptop2:w-[78%] flex-wrap laptop2:gap-x-30 z-30 justify-center">
+      <div className="flex mobile2:w-[78%] tablet2:w-[90%]  tablet2:gap-x-[1.8vw] laptop2:w-[78%] flex-wrap laptop2:gap-x-30 z-30 justify-center">
         {union.map((image) => (
           <div key={image.id} className="relative bg-transparent">
             {/* Bamboo Frame */}
