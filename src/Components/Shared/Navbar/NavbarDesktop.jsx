@@ -58,7 +58,7 @@ const NavbarDesktop = () => {
     <nav className={``}>
       <div
         className={`flex ${
-          navBlur ? "backdrop-blur-2xl" : ""
+          navBlur ? "backdrop-blur-2xl bg-[rgba(248,234,208,0.5)]" : ""
         } items-center justify-between font-gotham h-20 px-44 gap-8 fixed z-[100] w-full ${
           location.pathname.startsWith("/gallery") ? "bg-[rgba(248,234,208,1)]" : ""
         } `}
