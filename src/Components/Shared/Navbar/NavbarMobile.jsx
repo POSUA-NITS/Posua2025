@@ -69,7 +69,7 @@ const NavbarMobile = () => {
   return (
     <nav>
       <div
-        className={` ${isVisible ? "opacity-100" : "opacity-0"} ${navBlur ? " backdrop-blur-lg shadow-xl bg-[rgba(248,234,208,0.5)]" : ""} font-gotham fixed z-[200] h-20 w-full transition-opacity duration-300 ease-linear  ${location.pathname.match("/gallery/viewall") ? "bg-[rgba(248,234,208,1)]" : ""
+        className={` ${isVisible ? "opacity-100" : "opacity-0"} ${(navBlur && !isMenuOpen)? " backdrop-blur-lg shadow-xl bg-[rgba(248,234,208,0.5)]" : ""} font-gothamMad text-white fixed z-[200] h-20 w-full transition-opacity duration-300 ease-linear  ${location.pathname.startsWith("/gallery/viewall") ? "bg-[rgba(248,234,208,1)]" : ""
           }`}
       >
         <div className="flex h-full w-full items-center justify-between px-6">
@@ -102,7 +102,7 @@ const NavbarMobile = () => {
                     onClick={() => setIsMenuOpen(false)}
                     key={index}
                     to={option.to}
-                    className="h-10 w-full"
+                    className="h-10 w-full drop-shadow-[0.5px_1px_0.5px_rgba(0,0,0)]"
                   >
                     {option.text}{" "}
                   </NavLink>
