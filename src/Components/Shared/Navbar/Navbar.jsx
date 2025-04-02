@@ -5,7 +5,7 @@ import NavbarMobile from './NavbarMobile';
 
 const Navbar = () => {
   const [isMounted, setIsMounted] = useState(false);
-  const bigScreen = useMediaQuery("(min-width: 1025px)");
+  const bigScreen = useMediaQuery("(min-width: 1000px)");
 
   useEffect(() => {
     setIsMounted(true);
