@@ -23,12 +23,12 @@ function Hero({ setLoading }) {
 
   useEffect(() => {
     // if (loaded >= 32) {
-      setTimeout(() => {
-        setStopGif(false);
-        setStopAnimation(true);
-        startGif()
-      }, 2600);
-      setLoading(false);
+    setTimeout(() => {
+      setStopGif(false);
+      setStopAnimation(true);
+      startGif();
+    }, 2600);
+    setLoading(false);
     // }
   }, []);
 
@@ -84,14 +84,30 @@ function Hero({ setLoading }) {
     <div className="relative w-full h-screen overflow-hidden">
       {!stopAnimation && (
         <div className="w-full h-screen absolute z-1000">
-          <div className={`w-full h-full absolute right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/1_qwyup9.webp')] animate-[topRight_3s_ease-in-out_forwards]`}></div>
-          <div className={`w-full h-full absolute left-0 top-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/2_m7k0ic.webp')] animate-[top_3s_ease-in-out_forwards]`}></div>
-          <div className={`w-full h-full absolute left-0 top-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/3_uiqehz.webp')] animate-[right_3s_ease-in-out_forwards]`}></div>
-          <div className={`w-[70%] h-full absolute right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/4_xusz8v.webp')] animate-[right_3s_ease-in-out_forwards]`}></div>
-          <div className={`w-full h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/5_haotid.webp')] animate-[top_3s_ease-in-out_forwards] md:animate-[topLeft_3s_ease-in-out_forwards]`}></div>
-          <div className={`w-full h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/6_mrzniy.webp')] animate-[bottom_3s_ease-in-out_forwards]`}></div>
-          <div className={`w-full md:w-[100%] lg:w-[60%] h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/7_i1a56b.webp')] animate-[bottom_3s_ease-in-out_forwards] md:animate-[bottomLeft_3s_ease-in-out_forwards]`}></div>
-          <div className={`w-[65rem] md:w-[100%] lg:w-[70%] md:h-[70%] lg:h-[100%] absolute left-0 bg-contain bg-no-repeat bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/8_no4cmw.webp')] animate-[left_3s_ease-in-out_forwards]`}></div>
+          <div
+            className={`w-full h-full absolute right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/1_qwyup9.webp')] animate-[topRight_3s_ease-in-out_forwards]`}
+          ></div>
+          <div
+            className={`w-full h-full absolute left-0 top-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/2_m7k0ic.webp')] animate-[top_3s_ease-in-out_forwards]`}
+          ></div>
+          <div
+            className={`w-full h-full absolute left-0 top-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/3_uiqehz.webp')] animate-[right_3s_ease-in-out_forwards]`}
+          ></div>
+          <div
+            className={`w-[70%] h-full absolute right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/4_xusz8v.webp')] animate-[right_3s_ease-in-out_forwards]`}
+          ></div>
+          <div
+            className={`w-full h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/5_haotid.webp')] animate-[top_3s_ease-in-out_forwards] md:animate-[topLeft_3s_ease-in-out_forwards]`}
+          ></div>
+          <div
+            className={`w-full h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914345/6_mrzniy.webp')] animate-[bottom_3s_ease-in-out_forwards]`}
+          ></div>
+          <div
+            className={`w-full md:w-[100%] lg:w-[60%] h-full absolute left-0 right-0 bg-cover bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/7_i1a56b.webp')] animate-[bottom_3s_ease-in-out_forwards] md:animate-[bottomLeft_3s_ease-in-out_forwards]`}
+          ></div>
+          <div
+            className={`w-[65rem] md:w-[100%] lg:w-[70%] md:h-[70%] lg:h-[100%] absolute left-0 bg-contain bg-no-repeat bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742914346/8_no4cmw.webp')] animate-[left_3s_ease-in-out_forwards]`}
+          ></div>
         </div>
       )}
       <div className="absolute bg-linear-to-b from-[#53b8f7] to-[#f9f9f9] w-full h-[30%] md:h-[50%]"></div>
@@ -107,12 +123,12 @@ function Hero({ setLoading }) {
       <div className="absolute bottom-[-1rem] w-full h-[42%] md:h-[40%] bg-center bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841316/hill5_xiphpy.webp')] bg-cover bg-no-repeat"></div>
       <div className="absolute w-[60rem] h-[25rem] right-[-9rem] bottom-[-12rem] bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841332/daor_ur3zqp.webp')] bg-cover move-clouds"></div>
       <div className="absolute bottom-0 left-0 md:left-[-13rem] w-full md:w-[80%] h-[27%] md:h-[28%] bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841639/hill6_ae8fcl.webp')] bg-cover bg-no-repeat"></div>
-      <div className="absolute w-[15rem] h-[14rem] md:w-[26rem] md:h-[25rem] left-0 md:left-[-1rem] bottom-12 md:bottom-6 bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841695/gos_abueux.gif')] bg-cover"></div>
-      <div className="absolute hidden md:block w-[4rem] h-[4rem] left-[11rem] bottom-8 bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841698/grass_xksiyu.gif')] bg-cover"></div>
-      <div className="absolute w-[5rem] h-[6rem] md:w-[10rem] md:h-[10rem] left-[5rem] bottom-6 md:bottom-3 bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841707/nasoni_twyoef.gif')] bg-cover"></div>
-      <div className="absolute w-[5rem] h-[6rem] md:w-[10rem] md:h-[10.5rem] left-[14rem] md:left-[21rem] bottom-1 bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841695/dhulia_kgdzp7.gif')] bg-cover"></div>
-      <div className="absolute w-[5rem] h-[6rem] md:w-[10rem] md:h-[10.5rem] left-[8rem] md:left-[10rem] bottom-2 bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841698/pepua_coqk9f.gif')] bg-cover"></div>
-      <div className="absolute w-[5rem] h-[6rem] md:w-[10rem] md:h-[10.5rem] left-[11.5rem] md:left-[16rem] bottom-3 bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841696/nasoni2_eikwz3.gif')] bg-cover"></div>
+      <div className="absolute w-[15rem] h-[14rem] md:w-[26rem] md:h-[25rem] left-0 md:left-[-1rem] bottom-12 md:bottom-6 bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1743526183/Gos_compressed_lfwjc4.gif')] md:bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841695/gos_abueux.gif')] bg-cover"></div>
+      <div className="absolute hidden md:block w-[4rem] h-[4rem] left-[11rem] bottom-8 bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1743526183/grass_compressed_nnscbt.gif')] md:bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841698/grass_xksiyu.gif')] bg-cover"></div>
+      <div className="absolute w-[5rem] h-[6rem] md:w-[10rem] md:h-[10rem] left-[5rem] bottom-6 md:bottom-3 bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1743533265/Nasoni_1_compressed_ymxezy.gif')] md:bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841707/nasoni_twyoef.gif')] bg-cover"></div>
+      <div className="absolute w-[5rem] h-[6rem] md:w-[10rem] md:h-[10.5rem] left-[14rem] md:left-[21rem] bottom-1 bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1743526184/Dhulia_tvwyzi.gif')] md:bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841695/dhulia_kgdzp7.gif')] bg-cover"></div>
+      <div className="absolute w-[5rem] h-[6rem] md:w-[10rem] md:h-[10.5rem] left-[8rem] md:left-[10rem] bottom-2 bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1743526183/Pepua_comp_hfkd77.gif')] md:bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841698/pepua_coqk9f.gif')] bg-cover"></div>
+      <div className="absolute w-[5rem] h-[6rem] md:w-[10rem] md:h-[10.5rem] left-[11.5rem] md:left-[16rem] bottom-3 bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1743533265/Nasoni_2_compressed_aytb9e.gif')] md:bg-[url('https://res.cloudinary.com/dqobuxkcj/image/upload/v1742841696/nasoni2_eikwz3.gif')] bg-cover"></div>
 
       <div className="w-full h-full absolute top-[41%] left-[53%] md:left-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center space-y-2">
         <div className="w-[100%] md:w-[40rem] h-[7rem] md:h-[13rem] px-[1rem] flex justify-center items-center relative">
@@ -150,7 +166,8 @@ function Hero({ setLoading }) {
         </div>
         <div className="border-2 md:border-3 h-full w-[62%] border-red-900 rounded-lg backdrop-blur-lg flex flex-col justify-center items-end px-3">
           <p className="text-white leading-2.5 md:leading-4 text-end text-[11px] md:text-lg">
-            A vibrant celebration of Assam’s rich culture, traditions, and heritage, set against the blooming beauty of spring.
+            A vibrant celebration of Assam’s rich culture, traditions, and
+            heritage, set against the blooming beauty of spring.
           </p>
         </div>
       </div>
