@@ -6,8 +6,8 @@ const Sponsor = (name, logo) => {
             <div className='flex items-center justify-center w-[90%] at-50%_70% aspect-square bg-radial from-[#F1DCB5] to-transparent backdrop-blur-2xl rounded-lg'>
                 <img src={logo} alt="" className="w-3/4 h-3/4 rounded-full" />
             </div>
-            <div className='bg-[url(https://res.cloudinary.com/dmezugavw/image/upload/v1742785498/sponsor-name_kqelza.webp)] absolute flex items-center justify-center -bottom-[15%] w-[90%] aspect-[25/9] bg-contain bg-center z-10'>
-                <h2 className="text-lg md:text-2xl font-semibold text-center">{name}</h2>
+            <div className='bg-[url(https://res.cloudinary.com/dmezugavw/image/upload/v1742785498/sponsor-name_kqelza.webp)] absolute flex items-center justify-center -bottom-[15%] w-[90%] aspect-[25/9] bg-contain bg-center z-10 truncate'>
+                <h2 className="text-lg md:text-2xl font-semibold text-center text-ellipsis w-full">{name}</h2>
             </div>
         </div>
     )
