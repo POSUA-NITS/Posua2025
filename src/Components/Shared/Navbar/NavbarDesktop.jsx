@@ -67,7 +67,7 @@ const NavbarDesktop = () => {
           <a href={"/"}>
             <img
               className="h-[70px] w-auto"
-              src="https://res.cloudinary.com/dmezugavw/image/upload/v1742786688/logo_mgsmjo.gif"
+              src="https://res.cloudinary.com/dmezugavw/image/upload/v1743523053/Posua_Loader_Compressed_rezeiv.gif"
               width={200}
               height={100}
               alt="logo"
