@@ -123,7 +123,6 @@ const main = [
 ];
 
 const Team = () => {
-  const [memberView, setMemberView] = useState("core");
   return (
     <div className="bg-[#F8EAD0] min-h-screen w-full max-w-screen flex flex-col items-center text-center relative pt-[12vh] overflow-hidden ">
 
