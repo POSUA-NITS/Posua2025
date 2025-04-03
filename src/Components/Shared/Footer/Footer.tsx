@@ -3,8 +3,8 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer className="relative font-gotham">
-            <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742786690/footer-img_oqvtil.gif' className='absolute h-full tablet:w-screen tablet:h-auto z-5 opacity-80 object-[55%_0%] md:object-center object-cover' />
-            <div className=' w-full h-full relative pt-20 pl-18 pr-14 mobile:pl-32 mobile:pr-24 tablet:px-28 laptop:px-44 z-10 opacity-90 overflow-hidden'>
+            <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742786690/footer-img_oqvtil.gif' className='absolute h-full z-5 opacity-80 object-[55%_0%] md:object-center object-cover' />
+            <div className=' w-full h-full relative pt-20 pl-18 pr-14 mobile:pl-32 mobile:pr-24 tablet:px-28 laptop:px-44 z-10 opacity-90 tablet:overflow-hidden'>
                 <div className='text-[#6B2C2C] text-xs mobile:text-sm md:text-base font-semibold flex gap-y-12 gap-x-[10vw] md:gap-x-16 tablet:gap-x-18 relative z-10 flex-wrap pb-5'>
                     <div className='flex flex-col gap-2'>
                         <a href='https://www.instagram.com/posua_nits/'>Instagram</a>
@@ -25,7 +25,7 @@ const Footer = () => {
                         <p className='text-[#D54E54] text-xs'>+919864745775</p>
                     </div>
                     <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742786301/%E0%A6%AA%E0%A6%9B%E0%A7%8B%E0%A7%B1%E0%A6%BE-1_chgze6.webp' className='w-[25vw] mobile:w-[30vw] object-contain block tablet:hidden h-auto relative z-10' />
-                    <div className='relative font-gothamMad tablet:font-gotham flex flex-col gap-1 items-center text-white drop-shadow-[0.5px_1px_0.5px_rgba(0,0,0)] tablet:drop-shadow-none tablet:text-[#701317]'>
+                    <div className='relative w-full top-12 tablet:top-0 tablet:w-max font-gothamMad tablet:font-gotham flex flex-col gap-1 items-center justify-center text-white drop-shadow-[0.5px_1px_0.5px_rgba(0,0,0)] tablet:drop-shadow-none tablet:text-[#701317]'>
                         <p>Mail</p>
                         <div className='tablet:bg-[#701317] h-[0.8px] tablet:h-[1.5px] w-full bg-white'/>
                         <a href='mailto:posua@nits.ac.in'>posua@nits.ac.in</a>
