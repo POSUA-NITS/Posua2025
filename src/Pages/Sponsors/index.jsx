@@ -48,57 +48,85 @@ const Sponsors = () => {
             </div>
             <div className="grid relative grid-cols-1 font-moglan tablet:grid-cols-3 gap-y-10 mt-28 md:mt-44 mb-28 w-[85%] place-items-center">
                 <div className="relative flex overflow-visible z-10 justify-center tablet:w-[22vw] bg-gradient-to-b from-[#E7BB67] to-[#F4E0B9] rounded-lg">
-                    <div className='flex items-center flex-col justify-center w-[90%] py-6 at-50%_70% bg-radial from-[#F1DCB5] to-transparent backdrop-blur-2xl rounded-lg max-h-[90vh] overflow-y-auto'>
+                    <div className='flex items-center flex-col w-[90%] py-6 at-50%_70% bg-radial from-[#F1DCB5] to-transparent backdrop-blur-2xl rounded-lg max-h-[90vh] overflow-y-auto' style={{scrollbarWidth: 'none'}}>
                         <h2 className="text-2xl text-center p-4">Marketing Opportunities</h2>
-                        <p>National Institute of Technology, Silchar,an institute of National Importance is pleased to announce that the institute is organising POSUA'25, the Rongali Bihu Festival of Assam.The entire team of POSUA 2025 is dedicated to ensure maximum reach of our sponsors through the basic framework of the festival. We will make the best of efforts to promote our sponsoring organisations across a wide audience.The team will be popularizing the generous sponsors among students as well as faculty so that they can avail the services rendered by your organization.</p>
-                        <p>Your presence will be highly appreciated and would greatly help us in making this annual event of the Institute a grand success.The Institute will be grateful for your support and faith in us and would surely extend our gratitude towards your organisation. Hence, we, the entire team of POSUA 2025 cordially invite you for sponsorship in this Annual Cultural Fest.</p>
+                        <p>
+                            National Institute of Technology, Silchar,an institute of National
+                            Importance is pleased to announce that the institute is organising
+                            POSUA&apos;25, the Rongali Bihu Festival of Assam.The entire team of
+                            POSUA 2025 is dedicated to ensure maximum reach of our sponsors through
+                            the basic framework of the festival.
+                            <br />
+                            <br />
+                            We will make the best of efforts to promote our sponsoring organisations
+                            across a wide audience.The team will be popularizing the generous
+                            sponsors among students as well as faculty so that they can avail the
+                            services rendered by your organization.
+                            <br />
+                            <br />
+                            Your presence will be highly appreciated and would greatly help us in
+                            making this annual event of the Institute a grand success.The Institute
+                            will be grateful for your support and faith in us and would surely
+                            extend our gratitude towards your organisation.
+                            <br />
+                            <br />
+                            Hence, we, the entire team of POSUA 2024 cordially invite you for
+                            sponsorship in this Annual Cultural Fest.
+                        </p>
                     </div>
                 </div>
                 <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742785499/japi_ij9nt2.webp' alt="" className="w-[150%] top-1/4 absolute z-0 opacity-50 -left-[45%] md:hidden block" />
                 <div className="relative flex overflow-visible z-10 justify-center tablet:w-[22vw] bg-gradient-to-b from-[#E7BB67] to-[#F4E0B9] rounded-lg">
-                    <div className='flex items-center flex-col justify-center w-[90%] py-6 at-50%_70% bg-radial from-[#F1DCB5] to-transparent backdrop-blur-2xl rounded-lg max-h-[90vh] overflow-y-auto'>
+                    <div className='flex items-center flex-col w-[90%] py-6 at-50%_70% bg-radial from-[#F1DCB5] to-transparent backdrop-blur-2xl rounded-lg max-h-[90vh] overflow-y-auto' style={{ scrollbarWidth: 'none' }}>
                         <h2 className="text-2xl text-center p-4">REASONS TO GET ASSOCIATED WITH POSUA’25</h2>
-                        <p>As POSUA is the Rongali Bihu festival organised with great pomp and joy ,and Bihu being the state festival of Assam ,the annual event with splendid grandeur captures a large audience ,and hence has vast public outreach.This provides a good opportunity of promotion to our associated partners across a wider audience.<br />The association would cast a brand image of your organisation among the students of the institute.As a good percentage of our students are placed with heightened job opportunities,they could be potential associates of your organisation in future endeavours.</p>
-                        <p>Your organisation would have greater reach as POSUA captures a large community of people from across North-Eastern India, students and faculty of NIT Silchar as well as other premier institutes like NITs, IIMs and other colleges. Hence, a huge promising market comprising of prospective customers is waiting for you.</p>
+                        <p>
+                            As POSUA is the Rongali Bihu festival organised with great pomp and joy
+                            ,and Bihu being the state festival of Assam ,the annual event with
+                            splendid grandeur captures a large audience ,and hence has vast public
+                            outreach.This provides a good opportunity of promotion to our associated
+                            partners across a wider audience.
+                            <br />
+                            <br />
+                            The association would cast a brand image of your organisation among the
+                            students of the institute.As a good percentage of our students are
+                            placed with heightened job opportunities,they could be potential
+                            associates of your organisation in future endeavours.
+                            <br />
+                            <br />
+                            Your organisation would have greater reach as POSUA captures a large
+                            community of people from across North-Eastern India, students and
+                            faculty of NIT Silchar as well as other premier institutes like NITs,
+                            IIMs and other colleges. Hence, a huge promising market comprising of
+                            prospective customers is waiting for you.
+                        </p>
                     </div>
                 </div>
                 <div className="relative flex overflow-visible z-0 justify-center tablet:w-[22vw] bg-gradient-to-b from-[#E7BB67] to-[#F4E0B9] rounded-lg">
-                    <div className='flex items-center flex-col w-[90%] py-6 at-50%_70% bg-radial from-[#F1DCB5] to-transparent backdrop-blur-2xl rounded-lg max-h-[90vh] overflow-y-auto'>
+                    <div className='flex items-center flex-col w-[90%] py-6 at-50%_70% bg-radial from-[#F1DCB5] to-transparent backdrop-blur-2xl rounded-lg max-h-[90vh] overflow-y-auto' style={{ scrollbarWidth: 'none' }}>
                         <h2 className="text-2xl text-center p-4">SPONSORSHIP ENTITLEMENTS</h2>
-                        <p>
-                            1.There will be banners and posters with mention of our sponsors put up in the
-                            college campus as well as across the city during POSUA’25.
+                        <p className='text-base'>
+                            1)There will be banners and posters with mention of our sponsors put up
+                            in the college campus as well as across the city during POSUA’25.
                             <br />
-                            2.We will be sending brochures,posters and flash presentations with the logos of
-                            our sponsors to several engineering and science colleges across the nation.
                             <br />
-                            3.Publicity pamphlets or any other material provided by sponsors would also be
-                            popularised in the campus during the fest,
+                            2)We will be sending brochures,posters and flash presentations with the
+                            logos of our sponsors to several engineering and science colleges across
+                            the nation.
                             <br />
-                            4. There will be special mention of sponsors on the official website of POSUA.The
-                            official website indeed serve as an integral platform for the entire programme as
-                            all important information regarding the fest are put up there.Since the day of
-                            sponsorship confirmation, the logo and link of official websites of our respective
-                            sponsors will be featured in our website
                             <br />
-                            5.There will be special arrangements made for the sponsors who would prefer
-                            marketing their products and services by setting up stalls and kiosks.
+                            3)Publicity pamphlets or any other material provided by sponsors would
+                            also be popularised in the campus during the fest,
                             <br />
-                            6.Advertisements published in leading newspapers and magazines regarding the fest
-                            will also carry the name and logo of our sponsors. Also,during the entire fest ,we
-                            will ensure slots and spaces for our sponsoring organisations in regional print
-                            and audio-visual media.
                             <br />
-                            7.We will be providing information booklets,folders and stationeries issued by the
-                            sponsors ,having their logo and name to all our guests as well as participants.
+                            4) There will be special mention of sponsors on the official website of
+                            POSUA.The official website indeed serve as an integral platform for the
+                            entire programme as all important information regarding the fest are put
+                            up there.Since the day of sponsorship confirmation, the logo and link of
+                            official websites of our respective sponsors will be featured in our
+                            website.
                             <br />
-                            8.POSUA also enlists online events which increases the reach of our sponsors
-                            through the internet ,and hence covers almost every part of the country, resulting
-                            in extensive exposure.
                             <br />
-                            9. After the fest ends,we will be sending proceedings of POSUA’25 to all the
-                            participating colleges,our sponsors and distinguished guests who graced POSUA’25
-                            with their presence.
+                            <br />
                         </p>
                     </div>
                 </div>
