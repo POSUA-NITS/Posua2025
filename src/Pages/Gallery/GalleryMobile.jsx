@@ -8,9 +8,9 @@ import { useNavigate } from 'react-router-dom';
 
 const backgrounds = [
   'https://res.cloudinary.com/dybzo3xly/image/upload/v1742900799/Blur1_ztw1i1.webp',
-  'https://res.cloudinary.com/dybzo3xly/image/upload/v1742900798/Blur2_ltxgwv.webp',
+  'https://res.cloudinary.com/dybzo3xly/image/upload/v1742900107/Photo3_t90h8r.webp',
   'https://res.cloudinary.com/dybzo3xly/image/upload/v1742900800/Blur3_pbqr8e.webp'];
-const years = ['2022', '2021', '2020'];
+const years = ['2024', '2023', '2022'];
 const sliders = [
   'https://res.cloudinary.com/dybzo3xly/image/upload/v1742901177/Slider1_wkmkzm.webp',
   'https://res.cloudinary.com/dybzo3xly/image/upload/v1742901177/Slider2_ds2haf.webp',
