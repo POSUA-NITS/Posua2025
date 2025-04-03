@@ -123,15 +123,16 @@ const main = [
 ];
 
 const Team = () => {
+  const [memberView, setMemberView] = useState("core");
   return (
     <div className="bg-[#F8EAD0] min-h-screen w-full max-w-screen flex flex-col items-center text-center relative pt-[12vh] overflow-hidden ">
-      
+
       {/* Header Section */}
-      <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742815614/frame1-removebg-preview_2_1_m9yltj.png" alt="" 
-      className="mt-6 laptop2:w-[360px] mobile2:w-[200px]"/>
+      <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742815614/frame1-removebg-preview_2_1_m9yltj.png" alt=""
+        className="mt-6 laptop2:w-[360px] mobile2:w-[200px]" />
       <div className="posua mobile2:text-[4vh] laptop2:text-[10vh] text-[#CB2229]">TEAM POSUA</div>
       <p className="gotham mobile2:text-[2vh] laptop2:text-[3.5vh] mobile2:leading-5 laptop2:leading-8 text-black w-[70%]  mt-4 px-2 z-10">
-      With the arrival of spring and the departure of winter days, our Mother Nature expresses her joy of welcoming the calming rejuvenation via greenery and brightness all around her. Our Spring Fest, Posua is that venture which nurtures this celebration. This spree witnesses everyone coming together to work as a team, be it the students, the faculty members and the entire fraternity of NIT Silchar into its circle of gaiety and also ensures of breaking all the barriers among the crowd and bringing everyone together.
+        With the arrival of spring and the departure of winter days, our Mother Nature expresses her joy of welcoming the calming rejuvenation via greenery and brightness all around her. Our Spring Fest, Posua is that venture which nurtures this celebration. This spree witnesses everyone coming together to work as a team, be it the students, the faculty members and the entire fraternity of NIT Silchar into its circle of gaiety and also ensures of breaking all the barriers among the crowd and bringing everyone together.
       </p>
 
       {/* Image Section */}
@@ -142,47 +143,53 @@ const Team = () => {
           className="hidden laptop2:block absolute left-50% -translate-x-[50%] opacity-35 w-[45vw] top-[430px]"
         />
       </div>
-      
+
       {/* Team Section */}
       <div className="mt-10 flex justify-center items-center gap-x-[20vw] flex-wrap w-[80%]">
         <div className="relative text-center group z-10 bg-[url('https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743189245/hobo_japi_ymvf2t.png')] bg-cover bg-center h-auto aspect-square w-[19.5vw] flex justify-center items-center">
-          <div className="w-[18.6vw] h-auto aspect-square bg-white rounded-full flex items-center justify-center shadow-md z-10 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"></div>
-          <div className="absolute top-[16vw] w-[16vw] h-[4.6vw] posua mobile2:text-[1.6vw] tablet2:text-[2vh] laptop2:text-[3.6vh] bg-[#721B1E] text-white py-2.5 laptop2:py-4 px-4 rounded-full z-20 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
-          <h1 className="group-hover:-translate-y-3 transition-transform duration-300">
-              John Doe
-              </h1>
-              <h1 className="posua text-white opacity-0 absolute bottom-1 left-[50%] -translate-x-[50%] text-2xl group-hover:opacity-100 z-40 transition-all duration-300">Head</h1>
+          <div className="w-[18.6vw] h-auto aspect-square bg-white rounded-full flex items-center justify-center shadow-md z-10 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
+            <img src="https://res.cloudinary.com/dmezugavw/image/upload/v1743618531/IMG_174158960667ce8c6628e75_dehr37.webp" alt="" className="h-full aspect-square object-cover rounded-full" />
           </div>
-          <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742828414/1_81_gj3nn0.png" alt="" 
-          className="absolute top-[50%] -left-[3rem] h-[70%] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"/>
-          <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742829354/1_82_ujxqrd.png" alt="" 
-          className="absolute top-[50%] -right-[3.1rem] h-[70%] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"/>
+          <div className="absolute top-[16vw] min-w-[16vw] h-[4.6vw] posua mobile2:text-[1.6vw] tablet2:text-[2vh] laptop2:text-[3vh] bg-[#721B1E] text-white w-max py-2.5 laptop2:py-4 px-4 rounded-full z-20 flex justify-center items-center group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
+            <h1 className="group-hover:-translate-y-3 transition-transform duration-300">
+              Prof. N. B. D. Choudhury
+            </h1>
+            <h1 className="posua text-white opacity-0 absolute bottom-1 left-[50%] -translate-x-[50%] text-2xl group-hover:opacity-100 z-40 transition-all duration-300">President</h1>
+          </div>
+          <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742828414/1_81_gj3nn0.png" alt=""
+            className="absolute top-[50%] -left-[3rem] h-[70%] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300" />
+          <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742829354/1_82_ujxqrd.png" alt=""
+            className="absolute top-[50%] -right-[3.1rem] h-[70%] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300" />
         </div>
         <div className="relative text-center group z-10 bg-[url('https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743189245/hobo_japi_ymvf2t.png')] bg-cover bg-center h-auto aspect-square w-[19.5vw] flex justify-center items-center">
-          <div className="w-[18.6vw] h-auto aspect-square bg-white rounded-full flex items-center justify-center shadow-md z-10 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"></div>
-          <div className="absolute top-[16vw] w-[16vw] h-[4.6vw] posua mobile2:text-[1.6vw] tablet2:text-[2vh] laptop2:text-[3.6vh] bg-[#721B1E] text-white py-2.5 laptop2:py-4 px-4 rounded-full z-20 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
-          <h1 className="group-hover:-translate-y-3 transition-transform duration-300">
-              John Doe
-              </h1>
-              <h1 className="posua text-white opacity-0 absolute bottom-1 left-[50%] -translate-x-[50%] text-2xl group-hover:opacity-100 z-40 transition-all duration-300">Head</h1>
+          <div className="w-[18.6vw] h-auto aspect-square bg-white rounded-full flex items-center justify-center shadow-md z-10 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
+            <img src="https://res.cloudinary.com/dmezugavw/image/upload/v1743618533/rupak_lcsbkv.webp" alt="" className="h-full aspect-square object-cover rounded-full" />
           </div>
-          <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742828414/1_81_gj3nn0.png" alt="" 
-          className="absolute top-[50%] -left-[3rem] h-[70%] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"/>
-          <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742829354/1_82_ujxqrd.png" alt="" 
-          className="absolute top-[50%] -right-[3.1rem] h-[70%] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"/>
+          <div className="absolute top-[16vw] w-[16vw] min-w-[16vw] h-[4.6vw] posua mobile2:text-[1.6vw] tablet2:text-[2vh] laptop2:text-[3vh] bg-[#721B1E] text-white group-hover:w-max py-2.5 laptop2:py-4 px-4 rounded-full z-20 flex justify-center items-center group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
+            <h1 className="group-hover:-translate-y-3 transition-transform duration-300 truncate">
+              Dr. Rupak Dutta
+            </h1>
+            <h1 className="posua text-white opacity-0 absolute bottom-1 left-[50%] -translate-x-[50%] text-2xl group-hover:opacity-100 z-40 transition-all duration-300 text-nowrap">Vice-President</h1>
+          </div>
+          <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742828414/1_81_gj3nn0.png" alt=""
+            className="absolute top-[50%] -left-[3rem] h-[70%] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300" />
+          <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742829354/1_82_ujxqrd.png" alt=""
+            className="absolute top-[50%] -right-[3.1rem] h-[70%] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300" />
         </div>
         <div className=" relative text-center group z-30 bg-[url('https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743189245/hobo_japi_ymvf2t.png')]  bg-cover bg-center h-auto aspect-square w-[19.5vw] flex justify-center items-center">
-        <div className="w-[18.6vw] h-auto aspect-square bg-white rounded-full flex items-center justify-center shadow-md z-10 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"></div>
-          <div className="absolute top-[16vw] w-[16vw] h-[4.6vw] posua mobile2:text-[1.6vw] tablet2:text-[2vh] laptop2:text-[3.6vh] bg-[#721B1E] text-white py-2.5 laptop2:py-4 px-4 rounded-full z-20 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
-          <h1 className="group-hover:-translate-y-3 transition-transform duration-300">
-              John Doe
-              </h1>
-              <h1 className="posua text-white opacity-0 absolute bottom-1 left-[50%] -translate-x-[50%] text-2xl group-hover:opacity-100 z-40 transition-all duration-300">Head</h1>
+          <div className="w-[18.6vw] h-auto aspect-square bg-white rounded-full flex items-center justify-center shadow-md z-10 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
+            <img src="https://res.cloudinary.com/dmezugavw/image/upload/v1743618531/malaya_fqmdje.webp" alt="" className="h-full aspect-square object-cover rounded-full" />
           </div>
-          <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742828414/1_81_gj3nn0.png" alt="" 
-          className="absolute top-[50%] -left-[3rem] h-[70%] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"/>
-          <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742829354/1_82_ujxqrd.png" alt="" 
-          className="absolute top-[50%] -right-[3.1rem] h-[70%] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300"/>
+          <div className="absolute top-[16vw] w-[16vw] min-w-[16vw] h-[4.6vw] posua mobile2:text-[1.6vw] tablet2:text-[2vh] laptop2:text-[3vh] bg-[#721B1E] text-white group-hover:w-max py-2.5 laptop2:py-4 px-4 rounded-full z-20 flex justify-center items-center group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
+            <h1 className="group-hover:-translate-y-3 transition-transform duration-300 truncate">
+              Dr. Malaya D. Borah
+            </h1>
+            <h1 className="posua text-white opacity-0 absolute bottom-1 left-[50%] -translate-x-[50%] text-2xl group-hover:opacity-100 z-40 transition-all duration-300 text-nowrap">Vice-President</h1>
+          </div>
+          <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742828414/1_81_gj3nn0.png" alt=""
+            className="absolute top-[50%] -left-[3rem] h-[70%] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300" />
+          <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742829354/1_82_ujxqrd.png" alt=""
+            className="absolute top-[50%] -right-[3.1rem] h-[70%] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300" />
         </div>
       </div>
       {main.map((image) => (
@@ -231,4 +238,4 @@ const Team = () => {
   );
 };
 
-export {Team}
+export { Team };

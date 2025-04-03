@@ -7,7 +7,7 @@ const backgrounds = [
     'https://res.cloudinary.com/dybzo3xly/image/upload/v1742901479/pic1_czdese.svg',
      'https://res.cloudinary.com/dybzo3xly/image/upload/v1742901479/pic2_wxc9wq.svg',
       'https://res.cloudinary.com/dybzo3xly/image/upload/v1742901480/pic3_s3gey8.svg'];
-const years = ['2022', '2021', '2020'];
+const years = ['2024', '2023', '2022'];
 const sliders = [
   'https://res.cloudinary.com/dybzo3xly/image/upload/v1742901177/Slider1_wkmkzm.svg', 
    'https://res.cloudinary.com/dybzo3xly/image/upload/v1742901177/Slider2_ds2haf.svg',
