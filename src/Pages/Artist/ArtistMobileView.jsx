@@ -69,9 +69,9 @@ const ArtistMobileView = () => {
             <p className={styles.englishText}>
               Spring arrives with a whispering breeze, waking the Earth from its slumber with ease. Spring brings bihu, hand in hand, a timeless song across the land. And with that people, NIT Silchar has geared up with its preparations for an unforgettable evening. Yes you heard that right, Nit silchar is hosting a glorious performance by Zublee, whose mesmerizing voice and soulful melodies have the power to captivate hearts and create magic on stage. So, what's got you thinking? Join us for a night of music so good, even your playlist will be jealous! Come for the music and we guarantee that you would want to stay for the vibe. See you all there, with your crazy moves, and let everyone just stare!
             </p>
-            <div className='w-[90%] h-[90%] flex justify-center items-center rounded-md text-center'>
+{/*             <div className='w-[90%] h-[90%] flex justify-center items-center rounded-md text-center'>
               <p className='font-moglan text-3xl'>Coming Soon..</p>
-            </div>
+            </div> */}
           </div>
             : <div className={styles.wrapper + " min-h-[25vh]"}>
               {/* <div className={styles.profile}>
