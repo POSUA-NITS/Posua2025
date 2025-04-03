@@ -45,7 +45,7 @@ const ArtistMobileView = () => {
                 <p>singer</p>
               </div>
             </div>
-            <p className={styles.artistName}>Zubeen Garg</p>
+{/*             <p className={styles.artistName}>Zubeen Garg</p> */}
             <p className={styles.assameseText}>
               “আজি কিয় হিয়া কঁপে
               আজি কিয় মনে নাচে
@@ -86,9 +86,9 @@ const ArtistMobileView = () => {
                Spring has finally arrived, and the anticipation has culminated in the sounds of Bihu beats all around the corner. And with this, NIT Silchar is all set to host performance of 'Deusila Bihudol', a renowned folk group whose mesmerizing shows have captivated audiences and made them groove to the beats of Bihu. Brace yourselves for a magnificent cultural event as 'Deusila Bihudal' takes the stage with their drums, pepas, gaganas and various other musical instruments, ready to win the hearts of many. Hoping to see you all there promptly!
 
                </p> */}
-              <div className='w-[90%] h-[90%] flex justify-center items-center rounded-md text-center'>
+{/*               <div className='w-[90%] h-[90%] flex justify-center items-center rounded-md text-center'>
                 <p className='font-moglan text-3xl'>Coming Soon..</p>
-              </div>
+              </div> */}
             </div>
           }
 
