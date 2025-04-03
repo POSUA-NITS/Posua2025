@@ -26,8 +26,8 @@ const main = [
     category: "TECH TEAM",
     members: [
       { id: 1, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743684714/WhatsApp_Image_2025-04-02_at_10.34.26_PM_2_bigb1s.jpg", name: "Himangshu Sarma" },
-      { id: 2, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742837110/Assamese_girl_2_ajw5m8.png", name: "Pragya P. Deka", title: "Co-Head" },
-      { id: 3, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742837110/Assamese_girl_2_ajw5m8.png", name: "Satya ", title: "Co-Head" },
+      { id: 2, src: "https://res.cloudinary.com/dbzjr2zld/image/upload/v1743691026/WhatsApp_Image_2025-04-03_at_20.02.24_7b974f7c_gfduyl.webp", name: "Pragya P. Deka", title: "Co-Head" },
+      { id: 3, src: "https://res.cloudinary.com/dbzjr2zld/image/upload/v1743691025/WhatsApp_Image_2025-04-03_at_20.02.07_217def21_mhgbq7.webp", name: "Satya ", title: "Co-Head" },
       { id: 4, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743687540/WhatsApp_Image_2025-04-03_at_6.38.38_PM_yfmo60.jpg", name: "Anirban Bora", title: "Developer" },
       { id: 5, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743687864/WhatsApp_Image_2025-03-18_at_12.11.39_AM_loe2lb_c_crop_ar_3_4_ppwblm.jpg", name: "Subrata Lodh", title: "Developer" },
       { id: 6, src: "https://res.cloudinary.com/dmezugavw/image/upload/v1743689262/WhatsApp_Image_2025-04-03_at_19.35.07_aa39fa79_ebc808.jpg", name: "Priyanshu Kashyap", title: "Developer" },
