@@ -52,7 +52,7 @@ const Team = () => {
           <div className="w-[18.6vw] h-auto aspect-square bg-white rounded-full flex items-center justify-center shadow-md z-10 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
             <img src="https://res.cloudinary.com/dmezugavw/image/upload/v1743618533/rupak_lcsbkv.webp" alt="" className="h-full aspect-square object-cover rounded-full" />
           </div>
-          <div className="absolute top-[16vw] w-[16vw] min-w-[16vw] h-[4.6vw] posua mobile2:text-[1.6vw] tablet2:text-[2vh] laptop2:text-[3vh] bg-[#721B1E] text-white group-hover:w-max py-2.5 laptop2:py-4 px-4 rounded-full z-20 flex justify-center items-center group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
+          <div className="absolute top-[16vw] w-max min-w-[16vw] h-[4.6vw] posua mobile2:text-[1.6vw] tablet2:text-[2vh] laptop2:text-[3vh] bg-[#721B1E] text-white group-hover:w-max py-2.5 laptop2:py-4 px-4 rounded-full z-20 flex justify-center items-center group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
             <h1 className="group-hover:-translate-y-3 transition-transform duration-300 truncate">
               Dr. Rupak Dutta
             </h1>
@@ -67,7 +67,7 @@ const Team = () => {
           <div className="w-[18.6vw] h-auto aspect-square bg-white rounded-full flex items-center justify-center shadow-md z-10 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
             <img src="https://res.cloudinary.com/dmezugavw/image/upload/v1743618531/malaya_fqmdje.webp" alt="" className="h-full aspect-square object-cover rounded-full" />
           </div>
-          <div className="absolute top-[16vw] w-[16vw] min-w-[16vw] h-[4.6vw] posua mobile2:text-[1.6vw] tablet2:text-[2vh] laptop2:text-[3vh] bg-[#721B1E] text-white group-hover:w-max py-2.5 laptop2:py-4 px-4 rounded-full z-20 flex justify-center items-center group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
+          <div className="absolute top-[16vw] w-max min-w-[16vw] h-[4.6vw] posua mobile2:text-[1.6vw] tablet2:text-[2vh] laptop2:text-[3vh] bg-[#721B1E] text-white group-hover:w-max py-2.5 laptop2:py-4 px-4 rounded-full z-20 flex justify-center items-center group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
             <h1 className="group-hover:-translate-y-3 transition-transform duration-300 truncate">
               Dr. Malaya D. Borah
             </h1>
