@@ -53,7 +53,7 @@ const main = [
   {
     category: "LOGISTICS TEAM",
     members: [
-      { id: 1, name: "Mrinmoy Boro", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743681724/WhatsApp_Image_2025-04-02_at_10.34.31_PM_1_rgyru3.webp" },
+      { id: 1, name: "Mrinmoy Boro", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743690054/WhatsApp_Image_2025-04-02_at_10.34.26_PM_3_seurqy.webp" },
       { id: 2, name: "Sayantan G. Borah", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743682456/WhatsApp_Image_2025-04-02_at_10.34.33_PM_inasyu.webp" },
       { id: 3, name: "Kritartha Sarma", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743682472/WhatsApp_Image_2025-04-02_at_10.34.27_PM_sggtmk.jpg" }],
   },
