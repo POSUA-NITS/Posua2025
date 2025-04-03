@@ -78,6 +78,7 @@ const main = [
     category: "HOSPITALITY TEAM",
     members: [
       { id: 1, name: "Abhirohan Kashyap", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743684228/WhatsApp_Image_2025-04-02_at_10.34.38_PM_1_vzdfbf.webp" },
+      { id:3, name:"Shivangi Ajay", src:"https://res.cloudinary.com/dmezugavw/image/upload/v1743699317/shi_zexrfd.jpg"},
       { id: 2, name: "Anurag Borgohain", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743684246/WhatsApp_Image_2025-04-02_at_10.34.37_PM_1_wao5ox.jpg" }
     ],
   },
@@ -122,6 +123,7 @@ const main = [
   {
     category: "DESIGN TEAM",
     members: [
+      {id:1, src:"https://res.cloudinary.com/dmezugavw/image/upload/v1743699317/ripu_j9dffk.jpg", name: "Ripunjeet Barman"},
       { id: 8, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743679901/WhatsApp_Image_2025-02-15_at_12.01.52_AM_-_EE_053_Ishan_n53jyv.jpg", name: "Ishan Das" },
       { id: 9, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743679969/IMG-20250401-WA0003_-_EE_051_Dorothy_hkv8pn.jpg", name: "Dorothy Phukan" },
     ],
