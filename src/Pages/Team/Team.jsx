@@ -10,6 +10,12 @@ const main = [
     ],
   },
   {
+    category: "TREASURER",
+    members: [
+      { id: 1, src: "https://res.cloudinary.com/dhpqjrbha/image/upload/v1743705183/photo_1_lomvtk.jpg", name: "Pragyan Atri" }
+      ],
+  },
+  {
     category: "CHIEF COORDINATOR",
     members: [
       { id: 1, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743685842/WhatsApp_Image_2025-04-02_at_10.34.29_PM_1_cuheto.jpg", name: "Sibashish Kachari", title: "Chief Coordinator" },
@@ -48,12 +54,6 @@ const main = [
       { id: 3, name: "Abhijit Das", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743614935/DSC_0080_Original_-_Abhijit_Das_ME_092_dqtiwz.jpg " },
       { id: 4, name: "Udipta Nath", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743614934/My_Image_1_-_CE129_Udipta_Nath_htomce.jpg " }
     ],
-  },
-  {
-    category: "TREASURER",
-    members: [
-      { id: 1, src: "https://res.cloudinary.com/dhpqjrbha/image/upload/v1743705183/photo_1_lomvtk.jpg", name: "Pragyan Atri" }
-      ],
   },
   {
     category: "PUBLICITY TEAM",
