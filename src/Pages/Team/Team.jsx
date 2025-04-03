@@ -138,7 +138,7 @@ const Team = () => {
         ))}
       </div>
 
-      <div className="flex justify-center items-center gap-x-[20vw] flex-wrap w-[80%] mt-20 mb-4 md:mb-0">
+      {/* <div className="flex justify-center items-center gap-x-[20vw] flex-wrap w-[80%] mt-20 mb-4 md:mb-0">
         <button
           onClick={() => setMemberView("core")}
           className="text-2xl px-8 py-2 bg-[#721B1E] text-white rounded-full cursor-pointer w-36"
@@ -151,8 +151,8 @@ const Team = () => {
         >
           Events
         </button>
-      </div>
-      {memberView === "core" ? (
+      </div> */}
+      {/* {memberView === "core" ? ( */}
         <div className="flex flex-col justify-between items-center">
           <img
             src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742815614/frame1-removebg-preview_2_1_m9yltj.png"
@@ -166,7 +166,7 @@ const Team = () => {
               className="mobile2:h-[10vh] laptop2:h-[24vh] mobile2:-translate-y-9.5 laptop2:-translate-y-16 z-10"
             />
             <div className="posua mobile2:text-[3vh] laptop2:text-[10vh] text-[#CB2229]">
-              CORE TEAM
+              TEAM
             </div>
             <img
               src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742835372/bohag_bihu-removebg-preview_1_et3m2s.png"
@@ -212,67 +212,6 @@ const Team = () => {
             ))}
           </div>
         </div>
-      ) : (
-        <div className="flex flex-col justify-between items-center">
-          <img
-            src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742815614/frame1-removebg-preview_2_1_m9yltj.png"
-            alt=""
-            className="laptop2:w-[360px] mobile2:w-[200px] hidden laptop2:block mt-40"
-          />
-          <div className="flex mobile2:mt-10 laptop2:mt-0">
-            <img
-              src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742835372/bohag_bihu-removebg-preview_1_et3m2s.png"
-              alt=""
-              className="mobile2:h-[10vh] laptop2:h-[24vh] mobile2:-translate-y-9.5 laptop2:-translate-y-16 z-10"
-            />
-            <div className="posua mobile2:text-[3vh] laptop2:text-[10vh] text-[#CB2229]">
-              EVENTS TEAM
-            </div>
-            <img
-              src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742835372/bohag_bihu-removebg-preview_1_et3m2s.png"
-              alt=""
-              className="mobile2:h-[10vh] laptop2:h-[24vh] mobile2:-translate-y-9.5 laptop2:-translate-y-16 scale-x-[-1] z-10"
-            />
-          </div>
-          <div className="flex mobile2:w-[78%] tablet2:w-[90%] tablet2:gap-x-[1.8vw] laptop2:w-[78%] flex-wrap laptop2:gap-x-30 z-30 justify-center">
-            {union.map((image) => (
-              <div key={image.id} className="relative bg-transparent">
-                {/* Bamboo Frame */}
-                <div className="relative p-4 mobile2:mx-4 laptop2:mx-0 group scale-75 laptop2:scale-100">
-                  <div className="relative border-30 border-[#721B1E] bg-white z-10">
-                    <img
-                      src={image.src}
-                      alt={image.name}
-                      className="w-56 h-72 object-cover z-30"
-                    />
-                  </div>
-                  <div className="posua relative text-white text-center py-2 text-3xl z-40 -translate-y-6 group-hover:-translate-y-10 transition-transform duration-300">
-                    {image.name}
-                  </div>
-                  <h1 className="posua text-white opacity-0 absolute bottom-9 left-[50%] -translate-x-[50%] text-2xl group-hover:opacity-100 z-40 transition-all duration-300">
-                    Head
-                  </h1>
-                  <img
-                    src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742837716/5_2_xosmnn.png"
-                    alt=""
-                    className="absolute h-[58vh] -top-[13%] -left-[9.5vh] z-20"
-                  />
-                  <img
-                    src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742838523/5_3_mazixq.png"
-                    alt=""
-                    className="absolute h-[58vh] -top-[13%] -right-[9.9vh] z-20"
-                  />
-                  <img
-                    src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742839250/woood-removebg-preview_1_2_zyapin.png"
-                    alt=""
-                    className="absolute bottom-0 w-[90%] z-30"
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
 
       {/* Tech Team */}
       <img
