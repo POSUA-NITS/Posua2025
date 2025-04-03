@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Sponsor = (name, logo) => {
+const Sponsor = (name, logo, size) => {
     return (
-        <div className="relative z-10 md:w-[18vw] flex flex-col max-w-[60vw] items-center overflow-visible justify-center aspect-square bg-gradient-to-b from-[#E7BB67] to-[#F4E0B9] rounded-lg">
+        <div className={`relative z-10 ${size?"min-w-[50vw] max-w-[50vw] md:min-w-[25vw] md:max-w-[25vw]":"md:min-w-[18vw] md:max-w-[18vw]"} flex flex-col items-center overflow-visible justify-center aspect-square bg-gradient-to-b from-[#E7BB67] to-[#F4E0B9] rounded-lg`}>
             <div className='flex items-center justify-center w-[90%] at-50%_70% aspect-square bg-radial from-[#F1DCB5] to-transparent backdrop-blur-2xl rounded-lg'>
                 <img src={logo} alt="" className="w-3/4 h-3/4 rounded-full" />
             </div>
             <div className='bg-[url(https://res.cloudinary.com/dmezugavw/image/upload/v1742785498/sponsor-name_kqelza.webp)] absolute flex items-center justify-center -bottom-[15%] w-[90%] aspect-[25/9] bg-contain bg-center z-10 truncate'>
-                <h2 className="text-lg md:text-2xl font-semibold text-center text-ellipsis w-full">{name}</h2>
+                <h2 className="text-sm sm:text-lg md:text-2xl font-semibold text-center text-ellipsis w-full">{name}</h2>
             </div>
         </div>
     )
@@ -18,11 +18,12 @@ const Sponsors = () => {
         <section className="relative max-w-screen overflow-hidden font-gotham flex flex-col items-center justify-center px-10 md:px-16 tablet:px-52 bg-gradient-to-b from-[#29E5FF] via-[#FEFEFE] to-[#FEFEFE] md:bg-[#f8ead0] md:bg-none">
             <img src="https://res.cloudinary.com/dmezugavw/image/upload/v1742785498/header-img_brrtbl.webp" alt="" className="w-1/2 md:w-1/5 mt-32 md:mt-52" />
             <h1 className="text-4xl tablet:text-5xl text-[#CB2229] mb-8 font-moglan">Sponsors</h1>
-            <div className="grid grid-cols-1 tablet:grid-cols-3 w-[95%] gap-y-16 place-items-center">
+            <div className="grid grid-cols-1 tablet:grid-cols-2 w-[95%] gap-y-16 place-items-center">
                 <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742785499/japi_ij9nt2.webp' alt="" className="w-1/3 absolute z-0 opacity-50 -left-[15%] hidden md:block" />
-                {Sponsor("Pizza Hut", "https://res.cloudinary.com/dmezugavw/image/upload/v1743613374/pizzahut_wvxpv3.webp")}
-                {Sponsor("Avni'z Production", "https://res.cloudinary.com/dmezugavw/image/upload/v1743613375/avni_vrwrhf.webp")}
-                {Sponsor("Lati Ghati", "https://res.cloudinary.com/dmezugavw/image/upload/v1743613375/latighati_fhwrkn.webp")}
+                {Sponsor("Indian Oil", "https://res.cloudinary.com/dmezugavw/image/upload/v1743703617/images-1_hvqriw.webp",3)}
+                {Sponsor("Pizza Hut", "https://res.cloudinary.com/dmezugavw/image/upload/v1743613374/pizzahut_wvxpv3.webp",1)}
+                {Sponsor("Avni'z Production", "https://res.cloudinary.com/dmezugavw/image/upload/v1743613375/avni_vrwrhf.webp",2)}
+                {Sponsor("Lati Ghati", "https://res.cloudinary.com/dmezugavw/image/upload/v1743613375/latighati_fhwrkn.webp",3)}
             </div>
             <img src="https://res.cloudinary.com/dmezugavw/image/upload/v1742785498/header-img_brrtbl.webp" alt="" className="w-1/2 md:w-1/5 mt-32 md:mt-28" />
             <h1 className="text-4xl tablet:text-5xl text-[#CB2229] mb-8 font-moglan">Past Sponsors</h1>
