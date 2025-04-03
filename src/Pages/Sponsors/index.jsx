@@ -70,7 +70,7 @@ const Sponsors = () => {
                             extend our gratitude towards your organisation.
                             <br />
                             <br />
-                            Hence, we, the entire team of POSUA 2024 cordially invite you for
+                            Hence, we, the entire team of POSUA 2025 cordially invite you for
                             sponsorship in this Annual Cultural Fest.
                         </p>
                     </div>
