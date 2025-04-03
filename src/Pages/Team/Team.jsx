@@ -10,7 +10,7 @@ const main = [
     ],
   },
   {
-    category: "COORDINATORS",
+    category: "CHIEF COORDINATORS",
     members: [
       { id: 1, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743685842/WhatsApp_Image_2025-04-02_at_10.34.29_PM_1_cuheto.jpg", name: "Sibashish Kachari", title: "Chief Coordinator" },
       { id: 2, src: "https://res.cloudinary.com/dhpqjrbha/image/upload/v1743698747/IMG_20250324_210333_peavmk.jpg", name: "Padmanav Kakati", title: "Chief Coordinator" },
