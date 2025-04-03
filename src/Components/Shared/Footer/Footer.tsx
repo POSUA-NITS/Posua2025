@@ -25,9 +25,9 @@ const Footer = () => {
                         <p className='text-[#D54E54] text-xs'>+919864745775</p>
                     </div>
                     <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742786301/%E0%A6%AA%E0%A6%9B%E0%A7%8B%E0%A7%B1%E0%A6%BE-1_chgze6.webp' className='w-[25vw] mobile:w-[30vw] object-contain block tablet:hidden h-auto relative z-10' />
-                    <div className='relative flex flex-col gap-1 items-center text-black tablet:text-[#701317]'>
+                    <div className='relative font-gothamMad tablet:font-gotham flex flex-col gap-1 items-center text-white drop-shadow-[0.5px_1px_0.5px_rgba(0,0,0)] tablet:drop-shadow-none tablet:text-[#701317]'>
                         <p>Mail</p>
-                        <div className='tablet:bg-[#701317] h-[0.8px] tablet:h-[1.5px] w-full bg-black'/>
+                        <div className='tablet:bg-[#701317] h-[0.8px] tablet:h-[1.5px] w-full bg-white'/>
                         <a href='mailto:posua@nits.ac.in'>posua@nits.ac.in</a>
                         {/* <input
                             type="email"
