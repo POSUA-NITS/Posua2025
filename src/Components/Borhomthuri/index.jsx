@@ -33,7 +33,7 @@ function Borhomthuri() {
         </p>
       </div>
       <div className="w-full md:w-[55%]  md:mt-0 flex flex-col md:flex-row justify-between items-center h-[16.3rem] sm:h-[26rem] md:h-[20rem]">
-        <div className="relative h-[100%] md:h-[43rem] w-full md:mb-15 flex justify-center items-center bg-[url('http://res.cloudinary.com/dqobuxkcj/image/upload/v1742756307/holrium3wqkexu9xtr2p.webp')] bg-contain bg-center bg-no-repeat"></div>
+        <a href="https://drive.google.com/file/d/15co-znUM7VGd8ThQDFyNO1mVMYbfxOAR/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="relative h-[100%] md:h-[43rem] w-full md:mb-15 flex justify-center items-center bg-[url('http://res.cloudinary.com/dqobuxkcj/image/upload/v1742756307/holrium3wqkexu9xtr2p.webp')] bg-contain bg-center bg-no-repeat"></a>
 
         <div className="hidden h-[28rem] w-[32%]  mr-3 md:flex flex-col justify-center items-center overflow-hidden">
           <h1 className="gotham-font  text-[#550E11] text-lg">
