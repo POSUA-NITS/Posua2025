@@ -83,34 +83,19 @@ const ViewAll = () => {
     }
   ];
   const images2 = [
-    { id: 1, url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677860464/POSUA%20Gallery/2022/7_cuyswy.webp" },
-    { id: 2, url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677860463/POSUA%20Gallery/2022/1_l5lxsh.webp" },
-    { id: 3, url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677860463/POSUA%20Gallery/2022/4_a2zaqn.webp" },
-    { id: 4, url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677860464/POSUA%20Gallery/2022/5_dr0zbx.webp" },
-    { id: 5, url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677782905/POSUA%20Gallery/2021/p87_1_z26am8.webp" },
-    { id: 6, url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677782905/POSUA%20Gallery/2021/p57_1_tlkow7.webp" },
-    { id: 7, url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677860465/POSUA%20Gallery/2022/6_kdcdkk.webp" },
-    { id: 8, url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677860463/POSUA%20Gallery/2022/2_l9hzlz.webp" },
-    { id: 9, url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677860463/POSUA%20Gallery/2022/3_gdter6.webp" },
-    {
-      id: 10,
-      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677782904/POSUA%20Gallery/2021/p28_1_w1veyn.webp",
-    },
-    {
-      id: 11,
-      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677847937/POSUA%20Gallery/2018/p178_-_Copy_fjnl8l.webp",
-    },
+    { id: 1, url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743660117/WhatsApp_Image_2025-04-02_at_23.07.59_x2mlyf.webp" },
+   
     {
       id: 12,
       url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677782904/POSUA%20Gallery/2021/p38_2_rb1uin.webp",
     },
     {
       id: 13,
-      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677847519/POSUA%20Gallery/2021/p61_Small_hpddcy.webp",
+      url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743660154/Screenshot_2025-04-03_112657_ku0q9z.webp",
     },
     {
       id: 14,
-      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677783237/POSUA%20Gallery/2019/56622560_2285129651551487_8015484988197699584_n_xqygo0.webp",
+      url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743660118/WhatsApp_Image_2025-04-02_at_23.08.01_up0qyh.webp",
     },
     {
       id: 15,
@@ -118,7 +103,7 @@ const ViewAll = () => {
     },
     {
       id: 16,
-      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677783237/POSUA%20Gallery/2019/56387502_262527601367542_4087657569743536128_n_f4gpgm.webp",
+      url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743660154/Screenshot_2025-04-03_112838_hp3u5h.webp",
     },
     {
       id: 17,
@@ -126,7 +111,7 @@ const ViewAll = () => {
     },
     {
       id: 18,
-      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677847937/POSUA%20Gallery/2018/p178_-_Copy_fjnl8l.webp",
+      url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743660153/Screenshot_2025-04-03_112755_lrdfln.webp",
     },
     {
       id: 19,
@@ -134,11 +119,7 @@ const ViewAll = () => {
     },
     {
       id: 20,
-      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677783141/POSUA%20Gallery/2016/p131_1_qfggwi.webp",
-    },
-    {
-      id: 21,
-      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677783237/POSUA%20Gallery/2019/56242463_2285149308216188_8148921002085056512_n_xkfthk.webp",
+      url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743660117/WhatsApp_Image_2025-04-02_at_23.08.00_jpcoxm.webp",
     },
     {
       id: 22,
