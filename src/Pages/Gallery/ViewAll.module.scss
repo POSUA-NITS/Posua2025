@@ -502,7 +502,7 @@
 
       .section2 {
         grid-template-columns: repeat(2, 1fr); // 2 cards per row on tablets
-        padding-left: 1rem;
+        // padding-left: 1rem;
 
         .card {
           width: 18rem;
@@ -537,7 +537,7 @@
 @media (max-width: 680px) {
   .viewAllContainer {
     .content {
-      padding-left: 1rem;
+      // padding-left: 1rem;
       .section1 {
         .title {
           font-size: 3.5rem;
@@ -548,7 +548,7 @@
      
       .section2 {
         grid-template-columns: repeat(2, 1fr); // 2 cards per row on tablets
-        padding-left: 1rem;
+        // padding-left: 1rem;
 
         .card {
           width: 13rem;
@@ -590,7 +590,7 @@
   .viewAllContainer {
     
     .content {
-      padding-left: 1rem;
+      // padding-left: 1rem;
       .section1 {
         padding-left: 0;
         margin-left: -1rem;
@@ -603,7 +603,7 @@
 
       .section2 {
         grid-template-columns: 1fr; // 1 card per row on small screens
-        padding-left: 1rem;
+        // padding-left: 1rem;
         .card {
           width: 18rem;
           height: 21rem;
@@ -642,7 +642,7 @@
   .viewAllContainer {
     
     .content {
-      padding-left: 1rem;
+      // padding-left: 1rem;
       .section1 {
         padding-left: 0;
         margin-left: -1rem;
@@ -655,7 +655,7 @@
 
       .section2 {
         grid-template-columns: 1fr; // 1 card per row on small screens
-        padding-left: 1rem;
+        // padding-left: 1rem;
         .card {
           width: 16rem;
           height: 19rem;
