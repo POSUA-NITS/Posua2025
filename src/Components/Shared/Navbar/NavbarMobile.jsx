@@ -89,7 +89,7 @@ const NavbarMobile = () => {
         </div>
         <div
           className={`relative backdrop-blur-lg bottom-20 z-[300] flex border-l-4 border-white rounded-l-2xl h-screen w-[45vw] flex-col items-center gap-16 pt-10 ${isMenuOpen ? "left-[55vw]" : "left-[130vw]"
-            } overflow-y-scroll overflow-x-hidden transition-all delay-100 duration-300 ease-in`}
+            } overflow-y-scroll  overflow-x-hidden transition-all delay-100 duration-300 ease-in`}
         >
           <div
             key={1000}
@@ -102,7 +102,7 @@ const NavbarMobile = () => {
                     onClick={() => setIsMenuOpen(false)}
                     key={index}
                     to={option.to}
-                    className="h-10 w-full drop-shadow-[0.5px_1px_0.5px_rgba(0,0,0)]"
+                    className="h-10 w-full drop-shadow-[0.5px_1px_0.5px_rgba(0,0,0)] font-serif font-semibold text-black"
                   >
                     {option.text}{" "}
                   </NavLink>
