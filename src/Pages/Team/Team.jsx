@@ -4,7 +4,7 @@ import SectionHeading from "../../Components/SectionHeading";
 
 const main = [
   {
-    category: "CORE TEAM",
+    category: "CONVENOR",
     members: [
       { id: 1, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743686089/IMG-20250402-WA0095_-_EE_085__Gyan_q2ippw.jpg", name: "Gyan S. Hazarika", title: "Convenor" }
     ],
@@ -48,6 +48,12 @@ const main = [
       { id: 3, name: "Abhijit Das", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743614935/DSC_0080_Original_-_Abhijit_Das_ME_092_dqtiwz.jpg " },
       { id: 4, name: "Udipta Nath", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743614934/My_Image_1_-_CE129_Udipta_Nath_htomce.jpg " }
     ],
+  },
+  {
+    category: "TREASURER",
+    members: [
+      { id: 1, src: "https://res.cloudinary.com/dhpqjrbha/image/upload/v1743705183/photo_1_lomvtk.jpg", name: "Pragyan Atri" }
+      ],
   },
   {
     category: "PUBLICITY TEAM",
@@ -238,7 +244,7 @@ const Team = () => {
                   <div className="relative border-30 border-[#721B1E] bg-white z-10">
                     <img src={img.src} alt={img.name} className="w-56 h-72 object-cover z-30" />
                   </div>
-                  <div className="posua relative text-white text-center py-2 text-3xl z-40 -translate-y-6 group-hover:-translate-y-10 transition-transform duration-300">
+                  <div className="posua relative text-white text-center py-2 text-2xl md:text-3xl z-40 -translate-y-6 group-hover:-translate-y-10 transition-transform duration-300">
                     {img.name}
                   </div>
                   <h1 className={`posua text-white opacity-0 absolute bottom-9 left-[50%] -translate-x-[50%] group-hover:opacity-100 z-40 transition-all duration-300 whitespace-nowrap ${img.title ? "text-xl" : "text-2xl"}`}>{img.title ? img.title : "Head"}</h1>
