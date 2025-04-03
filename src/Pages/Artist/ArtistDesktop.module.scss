@@ -1,0 +1,732 @@
+// --- Variables ---
+$frame-color: #a94442;
+$text-color: #333;
+$primary-background: #f8ead0;
+
+// --- General Styles ---
+* {
+  box-sizing: border-box;
+}
+
+// --- Outer Container ---
+.outerContainer {
+  width: 100vw;
+  background-color: $primary-background;
+  // overflow-y: auto; /* Enables scrolling */
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+
+  /* Hide scrollbar */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  
+
+// --- Main Container ---
+.mainContainer {
+  width: 100%;
+  flex-grow: 1; /* Allows the content to grow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-background;
+  position: relative;
+  
+  // --- Pseudo-elements for decorative images ---
+  &::before,
+  &::after,
+  .extraImage1,
+  .extraImage2,
+  .extraImage3,
+  .extraImgae4 {
+    content: "";
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: brightness(0.8);
+  }
+
+  &::before {
+    position: fixed;
+    background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742923319/rightGamusa_aadl38.png");
+    width: 20rem;
+    height: 30rem;
+    top: 4rem;
+    right: 0rem;
+  }
+
+  &::after {
+    position: fixed;
+    background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742922617/LeftGamusa_q8plub.png");
+    width: 20rem;
+    height: 30rem;
+    top: 4rem;
+    left: 0rem;
+  }
+
+  .extraImage1 {
+    position: fixed;
+    background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742923319/rightPhool_mfgw4o.png");
+    width: 20rem;
+    height: 20rem;
+    top: 28rem;
+    right: -2rem;
+  }
+
+  .extraImage2 {
+    position: fixed;
+    background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742922616/Phool_qmsxwd.png");
+    width: 20rem;
+    height: 20rem;
+    top: 28rem;
+    left: 0rem;
+  }
+  .extraImage3 {
+    position: fixed;
+    background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742965608/rightJapi_qlsahv.png");
+    width: 26rem;
+    height: 26rem;
+    top: 28rem;
+    right: 20%;
+  }
+
+  .extraImage4 {
+    position: fixed;
+    background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742922616/japi3_2_inf4pz.png");
+    background-size: cover;
+    width: 26rem;
+    height: 26rem;
+    top: 28rem;
+    left: 20%;
+   
+  }
+
+  // --- Heading Styles ---
+  .heading {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+
+    .image {
+      display: block;
+      width: 15rem;
+      height: 4rem;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .title {
+      margin-top: -0.5rem;
+      height: 1rem;
+      width: 80%;
+      font-size: 3rem;
+      font-weight: 500;
+      font-family: var(--font-moglan);
+      color: #cb2229;
+      text-align: center;
+    }
+  }
+
+  // --- Artist Wrapper Styles ---
+  .artist_wrapper {
+    width: 100%;
+    height: 16rem;
+    background-color: $primary-background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+
+    .artist1 {
+      width: 45rem;
+      height: 16rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      .leftMusic {
+        margin-top: 1.05rem;
+        display: hidden;
+        width: 6rem;
+        height: 6rem;
+        object-fit: cover;
+        object-position: top;
+        transform: rotate(-45deg);
+        mix-blend-mode: multiply;
+        z-index: -3;
+      }
+
+      .LeftPepa {
+        display: inline-block;
+        margin-top: 1.05rem;
+        width: 6rem;
+        height: 6rem;
+        margin-right: -0.5rem;
+        object-fit: cover;
+        object-position: top;
+        transition: margin-right 0.3s ease, transform 0.3s ease;
+      }
+
+      .LeftDhol {
+        margin-top: 2rem;
+        display: inline-block;
+        width: 8rem;
+        height: 16rem;
+        margin-left: -2rem;
+        object-fit: 100% 100%;
+        object-position: center;
+        scale: 1.5;
+        margin-right: -2rem;
+      }
+
+      .artistImage {
+        width: 12rem;
+        height: 16rem;
+        background-color: #b02227;
+        background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742914160/bgSvg_mzeadi.svg");
+        background-size: 100% 100%;
+        z-index: 25;
+        scale: 1.2;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        transition: transform 0.3s ease;
+
+        .mainArtist {
+          display: inline-block;
+          width: 11rem;
+          height: 13rem;
+          object-fit: 100% 100%;
+          object-position: center;
+          padding-top: 0.7rem;
+          border-radius: 0.5rem;
+        }
+
+        .textBox {
+          width: 12rem;
+          height: 6rem;
+          z-index: 35;
+          background-image: url("https://res.cloudinary.com/dmezugavw/image/upload/v1743686989/textFrame-Picsart-BackgroundRemover-removebg-preview_foo4lb.webp");
+          background-size: 100% 100%;
+          
+        }
+      }
+
+      .RightDhol {
+        margin-right: -2rem;
+        display: inline-block;
+        width: 8rem;
+        height: 20rem;
+        object-fit: 100% 100%;
+        object-position: center;
+        scale: 1.5;
+        z-index: 10;
+        margin-left: -2rem;
+      }
+
+      .RightPepa {
+        display: inline-block;
+        margin-top: 1.05rem;
+        width: 6rem;
+        height: 6rem;
+        margin-left: -0.5rem;
+        object-fit: cover;
+        object-position: top;
+        transition: margin-left 0.3s ease, transform 0.3s ease;
+      }
+
+      .rightMusic {
+        width: 6rem;
+        margin-top: 1.05rem;
+        height: 6rem;
+        object-fit: cover;
+        object-position: top;
+        transform: rotate(45deg);
+        mix-blend-mode: multiply;
+        display: hidden;
+        z-index: -3;
+      }
+
+      // Hover Effect
+      &:hover {
+        transform: scale(1.15);
+
+        .leftMusic {
+          display: inline-block;
+        }
+
+        .LeftPepa {
+          margin-right: -1rem;
+          transform: scale(1.05) rotate(30deg);
+        }
+
+        .RightPepa {
+          margin-left: -1rem;
+          transform: scale(1.05) rotate(-30deg);
+        }
+
+        .rightMusic {
+          display: inline-block;
+        }
+      }
+    }
+
+
+    .artist2 {
+      width: 45rem;
+      height: 16rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      .leftMusic2 {
+        margin-top: 1.05rem;
+        display: hidden;
+        width: 6rem;
+        height: 6rem;
+        object-fit: cover;
+        object-position: top;
+        transform: rotate(-45deg);
+        mix-blend-mode: multiply;
+        z-index: -3;
+      }
+
+      .LeftPepa2 {
+        display: inline-block;
+        margin-top: 1.05rem;
+        width: 6rem;
+        height: 6rem;
+        margin-right: -0.5rem;
+        object-fit: cover;
+        object-position: top;
+        transition: margin-right 0.3s ease, transform 0.3s ease;
+      }
+
+      .LeftDhol2 {
+        margin-top: 2rem;
+        display: inline-block;
+        width: 8rem;
+        height: 16rem;
+        margin-left: -2rem;
+        object-fit: 100% 100%;
+        object-position: center;
+        scale: 1.5;
+        margin-right: -2rem;
+      }
+
+      .artistImage2 {
+        width: 12rem;
+        height: 16rem;
+        background-color: #b02227;
+        background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742914160/bgSvg_mzeadi.svg");
+        background-size: 100% 100%;
+        z-index: 25;
+        scale: 1.2;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        transition: transform 0.3s ease;
+
+        .mainArtist2 {
+          display: inline-block;
+          width: 11rem;
+          height: 13rem;
+          object-fit: 100% 100%;
+          object-position: center;
+          padding-top: 0.7rem;
+          border-radius: 0.5rem;
+        }
+
+        .textBox2 {
+          width: 100%;
+          height: 6rem;
+          z-index: 35;
+          color: #c35d5a;
+          background-image: url("https://res.cloudinary.com/dmezugavw/image/upload/v1743686989/textFrame-Picsart-BackgroundRemover-removebg-preview_foo4lb.webp");
+          background-size: 100% 100%;
+          
+        }
+      }
+
+      .RightDhol2 {
+        margin-right: -2rem;
+        display: inline-block;
+        width: 8rem;
+        height: 20rem;
+        object-fit: 100% 100%;
+        object-position: center;
+        scale: 1.5;
+        z-index: 10;
+        margin-left: -2rem;
+      }
+
+      .RightPepa2 {
+        display: inline-block;
+        margin-top: 1.05rem;
+        width: 6rem;
+        height: 6rem;
+        margin-left: -0.5rem;
+        object-fit: cover;
+        object-position: top;
+        transition: margin-left 0.3s ease, transform 0.3s ease;
+      }
+
+      .rightMusic2 {
+        width: 6rem;
+        margin-top: 1.05rem;
+        height: 6rem;
+        object-fit: cover;
+        object-position: top;
+        transform: rotate(45deg);
+        mix-blend-mode: multiply;
+        display: hidden;
+        z-index: -3;
+      }
+
+      // Hover Effect
+      &:hover {
+        transform: scale(1.15);
+
+        .leftMusic2 {
+          display: inline-block;
+        }
+
+        .LeftPepa2 {
+          margin-right: -1rem;
+          transform: scale(1.05) rotate(30deg);
+        }
+
+        .RightPepa2 {
+          margin-left: -1rem;
+          transform: scale(1.05) rotate(-30deg);
+        }
+
+        .rightMusic2 {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+    // --- Previous Artists Styles ---
+    .prev_Artists {
+      width: 100%;
+      height: 48rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -4rem;
+      padding-bottom: 4rem;
+
+      .carouselWrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .card {
+          width: 22rem;
+          height: 30rem;
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          text-align: center;
+          border-radius: 15px;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          margin: 0 1.5rem;
+          background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742961127/GamusaFrame_zbbg30.webp");
+          background-size: 100% 100%;
+          background-color: orange;
+          &:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+          }
+
+          .cardImage {
+            padding-top: 2rem;
+            width: 80%;
+            height: 74%;
+            object-fit: cover;
+            z-index: 10;
+            border-radius: 10px 10px 0 0;
+          }
+
+          .textBox {
+            width: 80%;
+            height: 15%;
+            background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742914467/textFrame_bkdxll.webp");
+            background-size: 108% 110%;
+            background-color: #f8ead0;
+            padding: 0.5rem;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .artistName {
+              font-size: 1.2rem;
+              height: 40%;
+              width: 100%;
+              color: #b02227;
+              font-weight: 400;
+              margin: 0;
+              padding-top: 0.5rem;
+              font-family: var(--font-gotham);
+            }
+            .tit {
+              height: 30%;
+              width: 100%;
+              font-size: 0.8rem;
+              color: #b02227;
+              font-weight: 400;
+              padding-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .popupOverlay{
+          position: fixed;
+          top: 0;
+          left: 100%; /* Start from outside the viewport (right) */
+          width: 100%;
+          height: 100%;
+          // background: rgba(0, 0, 0, 0.6);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 1000;
+          transition: transform 0.5s ease-in-out;
+          transform: translateX(0); /* Default state */
+
+          &.active {
+            transform: translateX(-100%); /* Slide in from right */
+          }
+
+          &.closing {
+            transform: translateX(100%); /* Slide out to left */
+          }
+        .wrapper {
+          width: 70vw;
+          height: max-content;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          background-color: #f4e0b9;
+          padding: 0;
+          z-index: 20;
+          position: relative;
+          padding: 3rem;
+          // padding-left: 2px;
+          // padding-right: 2px;
+          border: 12px solid #e7bb67;
+          // padding-top: 2rem;
+          .closeButton {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            height: 3rem;
+            width: 3rem;
+            box-sizing: border-box;
+            font-size: 2rem;
+            border: none;
+            border-radius: 50%;
+            background: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+               background-color:  #e7bb67;
+            }
+          }
+
+           .wrapper1{
+              width: 40%;
+              height: fit-content;
+           .profile {
+            width: 12rem;
+            height: 16rem;
+            background-image: url("https://res.cloudinary.com/dybzo3xly/image/upload/v1742914160/bgSvg_mzeadi.svg");
+            background-size: cover;
+            z-index: 25;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            transition: transform 0.3s ease;
+  
+            .mainArtist {
+              display: inline-block;
+              width: 10rem;
+              height: 13rem;
+              object-fit: cover;
+              object-position: center;
+              padding-top: 0.5rem;
+              border-radius: 1rem;
+            }
+  
+            .textBox {
+              width: 8rem;
+              height: 4rem;
+              z-index: 35;
+              background-image: url("https://res.cloudinary.com/dmezugavw/image/upload/v1743686989/textFrame-Picsart-BackgroundRemover-removebg-preview_foo4lb.webp");
+              background-size: 100% 100%;
+              scale: 1.5;
+            }
+          }
+        }
+         .wrapper2{
+             width: 80vw;
+             height: fit-content;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             padding-left: 2rem;
+          .artistName {
+            font-family: var(--font-moglan);
+            font-size: 3rem;
+            font-weight: 800;
+            text-align: center;
+            padding: 1rem;
+            color: #5f1516;
+            white-space: nowrap;
+          }
+          .assameseText {
+            font-size: 15px;
+            font-family: var(--font-gotham);
+            letter-spacing: 0%;
+            text-align: justify;
+            color: #5f1516;
+            font-weight: 300;
+            text-indent: 1rem;
+          }
+          .englishText {
+            margin-top: 1rem;
+            font-size: 16px;
+            font-family: var(--font-gotham);
+            letter-spacing: 0%;
+            text-align: justify;
+            color: #5f1516;
+            font-weight: 600;
+            text-indent: 1rem;
+          }
+        }
+      }
+      }
+    }
+  
+}
+
+
+// --- Responsive Design ---
+@media (max-width: 1350px) {
+  .outerContainer {
+     
+    .mainContainer {
+    .extraImage3 {
+      
+      top: 28rem;
+      right: 5rem;
+    }
+  
+    .extraImage4 {
+      position: fixed;
+   
+      top: 28rem;
+      left: 5rem;
+     
+    }
+  
+    
+      .artist_wrapper {
+        .artist1{
+         scale: 0.8;
+         &:hover {
+          transform: scale(1);
+        }
+      }
+      .artist2{
+        scale: 0.8;
+        &:hover {
+         transform: scale(1);
+       }
+     }
+    }
+      .prev_Artists{
+        .carouselWrapper{
+           .card{
+            scale: 0.9;
+           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .outerContainer {
+    .mainContainer {
+    .extraImage3 {
+      width: 20rem;
+      height: 20rem;
+      top: 28rem;
+      right: 4em;
+    }
+  
+    .extraImage4 {
+     
+      width: 20rem;
+      height: 20rem;
+      top: 28rem;
+      left: 4rem;
+     
+    }
+    .artist_wrapper {
+      .artist1{
+       scale: 0.75;
+       &:hover {
+        transform: scale(0.9);
+      }
+    }
+    .artist2{
+      scale: 0.75;
+      &:hover {
+       transform: scale(0.9);
+     }
+   }
+  }
+  .prev_Artists{
+    .carouselWrapper{
+       .card{
+        scale: 0.7;
+       }
+    }
+  }
+    }
+  }
+}
+

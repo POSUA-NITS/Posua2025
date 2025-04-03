@@ -26,7 +26,7 @@ const NavOptions = [
 ];
 
 const NavbarDesktop = () => {
-  const location = useLocation()
+  const location = useLocation();
   const [navBlur, setNavBlur] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -35,14 +35,14 @@ const NavbarDesktop = () => {
 
     if (currentScrollY > 50) {
       setNavBlur(true);
-    }
-    else {
+    } else {
       setNavBlur(false);
     }
     setLastScrollY(currentScrollY);
   };
 
   useEffect(() => {
+    
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -50,14 +50,24 @@ const NavbarDesktop = () => {
     };
   }, [lastScrollY]);
 
+  // useEffect(() => {
+  //   console.log(navBlur);
+  // }, [navBlur]);
+
   return (
     <nav className={``}>
-      <div className={`flex ${navBlur ? "backdrop-blur-2xl" : ""} items-center justify-between font-gotham h-20 px-44 gap-8 fixed z-[100] w-full ${location.pathname === "/gallery" ? 'bg-[rgba(248,234,208,1)]' : ''} `}>
+      <div
+        className={`flex ${
+          navBlur ? "backdrop-blur-2xl bg-[rgba(248,234,208,0.5)]" : ""
+        } items-center justify-between font-gotham h-20 px-44 gap-8 fixed z-[100] w-full ${
+          location.pathname.startsWith("/gallery") ? "bg-[rgba(248,234,208,1)]" : ""
+        } `}
+      >
         <div className="w-1/4 relative z-10">
           <a href={"/"}>
             <img
               className="h-[70px] w-auto"
-              src="https://res.cloudinary.com/dmezugavw/image/upload/v1742786688/logo_mgsmjo.gif"
+              src="https://res.cloudinary.com/dmezugavw/image/upload/v1743523053/Posua_Loader_Compressed_rezeiv.gif"
               width={200}
               height={100}
               alt="logo"
@@ -69,7 +79,9 @@ const NavbarDesktop = () => {
             return (
               <NavLink
                 key={index}
-                className={`font-medium text-[1.05rem] border-[#E85F5F] ${location.pathname === option.to ? 'border-b-[3px]' : ''}`}
+                className={`font-medium text-[1.05rem] border-[#E85F5F] ${
+                  location.pathname === option.to ? "border-b-[3px]" : ""
+                }`}
                 to={option.to}
               >
                 {option.text}
@@ -77,13 +89,21 @@ const NavbarDesktop = () => {
             );
           })}
           <NavLink
-            className={`font-bold text-[1.05rem] border-[#E85F5F] ${location.pathname === "/artist" ? 'border-b-[3px] text-[#CB2229]' : 'text-[#E85F5F]'}`}
+            className={`font-bold text-[1.05rem] border-[#E85F5F] ${
+              location.pathname === "/artist"
+                ? "border-b-[3px] text-[#CB2229]"
+                : "text-[#E85F5F]"
+            }`}
             to={"/artist"}
           >
             Artist
           </NavLink>
         </div>
-        <div className={`w-full h-full absolute left-0 ${location.pathname === "/gallery" ? '' : 'hidden'} z-5`}>
+        <div
+          className={`w-full h-full absolute left-0 ${
+            location.pathname.startsWith("/gallery") ? "" : "hidden"
+          } z-5`}
+        >
           <div className="w-4 md:w-6 absolute top-0 left-[6%] md:left-[9%] h-full z-[8]">
             <RedBorder />
           </div>
@@ -92,7 +112,9 @@ const NavbarDesktop = () => {
           </div>
         </div>
       </div>
-      <div className={`w-full absolute z-20 top-[5rem] h-2 bg-[#dc6b71c6]`}></div>
+      <div
+        className={`w-full absolute z-20 top-[5rem] h-2 bg-[#dc6b71c6]`}
+      ></div>
     </nav>
   );
 };

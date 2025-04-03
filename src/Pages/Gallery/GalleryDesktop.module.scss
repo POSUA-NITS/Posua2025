@@ -1,11 +1,11 @@
 
-html, body {
-    margin: 0;
-    padding: 0;
-    // overflow-x: hidden;
-    // height: 100%;
-    box-sizing: border-box;
-  }
+// html, body {
+//     margin: 0;
+//     padding: 0;
+//     // overflow: hidden;
+//     height: 100%;
+//     box-sizing: border-box;
+//   }
   @keyframes slideInFromRight {
     from {
       transform: translateX(100%);
@@ -19,14 +19,16 @@ html, body {
   
 .main_Container{
      padding: 4rem;
+     padding-top: 1rem;
     //  background-image:  url(./pic1.svg);
      background-size:  100% 114%;
      box-sizing: border-box;
-     width: 100vw;
+     width: 100%;
      height: 100vh;
      display: flex;
      justify-content: center;
      overflow: hidden;
+     scrollbar-width: none;
      animation: slideInFromRight 0.5s ease-out;
      // Blackish shadow overlay
   &::before {
@@ -53,6 +55,7 @@ html, body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 4.5rem;
      .headline{
         width: 80%;
         height: 5rem;
@@ -89,7 +92,7 @@ html, body {
                 margin: 0;
                 width: 60%;
                 font-size: 14rem;
-                letter-spacing: 1rem;
+                letter-spacing: 0.5rem;
                 color: #EFBABD;
                 font-family: var( --font-ledger);
                 font-weight: 400;
@@ -107,7 +110,7 @@ html, body {
                 display: block;
                 margin-top: 3rem;
                 margin-left: 3rem;
-                font-family: var(--font-gotham);
+                font-family: var(--font-gothamMad);
                 font-weight: 800;
                 font-size: 20px;
                 line-height: 150%;
@@ -147,6 +150,7 @@ html, body {
                 span {
                   position: relative;
                   z-index: 1;
+                  font-weight: 800;
                 }
               }
               .slider {
@@ -171,6 +175,8 @@ html, body {
             left: 1%;
             width: 38%;
             height: 36%;
+            object-fit: contain
+            ;
             img {
               width: 100%;
               height: 100%;
@@ -199,6 +205,56 @@ html, body {
             }
           }
      }
+}
+
+
+
+@media (max-width: 1450px) {
+  .main_Container {
+      
+  
+      .section1{
+      .headline 
+      {
+          .photoGallery {
+        font-size: 5rem;
+        white-space: nowrap;
+      }
+      }
+      .wrapper1 
+      {
+          .year_Content{
+          font-size: 10rem;
+      }
+       .button{
+        padding: 0.55rem 1.8rem;
+       }
+       .slider {
+        height: 3rem;
+        width: 16rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+
+     }
+  }
+}
+  
+
+   .section2{
+       .photo1{
+          width: 65%;
+          height: 30%;
+       }
+       .photo2{
+           display: none;
+       }
+       .photo3{
+         width: 65%;
+         height: 30%;
+       }
+   }
+  }
+  
 }
 
 @media (max-width: 1300px) {

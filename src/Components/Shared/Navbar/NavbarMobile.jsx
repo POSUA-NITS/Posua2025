@@ -2,7 +2,8 @@
 
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import RedBorder from "../../RedBorder";
 
 const NavOptions = [
   {
@@ -34,6 +35,7 @@ const NavbarMobile = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [navBlur, setNavBlur] = useState(false);
+  const location = useLocation();
 
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -46,10 +48,10 @@ const NavbarMobile = () => {
       setIsVisible(true);
     }
 
-    if(currentScrollY > 50){
+    if (currentScrollY > 50) {
       setNavBlur(true);
     }
-    else{
+    else {
       setNavBlur(false);
     }
 
@@ -67,12 +69,13 @@ const NavbarMobile = () => {
   return (
     <nav>
       <div
-        className={` ${isVisible ? "opacity-100" : "opacity-0"} ${navBlur?" backdrop-blur-lg shadow-xl":"" } font-gotham fixed z-[200] h-20 w-full transition-opacity duration-300 ease-linear`}
+        className={` ${isVisible ? "opacity-100" : "opacity-0"} ${(navBlur && !isMenuOpen)? " backdrop-blur-lg shadow-xl bg-[rgba(248,234,208,0.5)]" : ""} font-gothamMad text-white fixed z-[200] h-20 w-full transition-opacity duration-300 ease-linear  ${location.pathname.startsWith("/gallery/viewall") ? "bg-[rgba(248,234,208,1)]" : ""
+          }`}
       >
         <div className="flex h-full w-full items-center justify-between px-6">
           <a href={"/"}>
             <img
-              src="https://res.cloudinary.com/dmezugavw/image/upload/v1742786688/logo_mgsmjo.gif"
+              src="https://res.cloudinary.com/dmezugavw/image/upload/v1743523053/Posua_Loader_Compressed_rezeiv.gif"
               width={100}
               alt="logo"
             ></img>
@@ -86,7 +89,7 @@ const NavbarMobile = () => {
         </div>
         <div
           className={`relative backdrop-blur-lg bottom-20 z-[300] flex border-l-4 border-white rounded-l-2xl h-screen w-[45vw] flex-col items-center gap-16 pt-10 ${isMenuOpen ? "left-[55vw]" : "left-[130vw]"
-            } overflow-scroll transition-all delay-100 duration-300 ease-in`}
+            } overflow-y-scroll overflow-x-hidden transition-all delay-100 duration-300 ease-in`}
         >
           <div
             key={1000}
@@ -99,7 +102,7 @@ const NavbarMobile = () => {
                     onClick={() => setIsMenuOpen(false)}
                     key={index}
                     to={option.to}
-                    className="h-10 w-full"
+                    className="h-10 w-full drop-shadow-[0.5px_1px_0.5px_rgba(0,0,0)]"
                   >
                     {option.text}{" "}
                   </NavLink>
