@@ -102,7 +102,7 @@ const NavbarMobile = () => {
                     onClick={() => setIsMenuOpen(false)}
                     key={index}
                     to={option.to}
-                    className="h-10 w-full drop-shadow-[0.5px_1px_0.5px_rgba(0,0,0)] font-serif font-semibold text-black"
+                    className="h-10 w-full drop-shadow-[0.5px_1px_0.5px_rgba(0,0,0)] font-serif font-semibold"
                   >
                     {option.text}{" "}
                   </NavLink>
