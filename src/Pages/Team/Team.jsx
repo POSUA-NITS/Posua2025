@@ -7,8 +7,9 @@ const main = [
     category: "CORE TEAM",
     members: [
       { id: 1, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743686089/IMG-20250402-WA0095_-_EE_085__Gyan_q2ippw.jpg", name: "Gyan S. Hazarika", title: "Convenor" },
-      { id: 2, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743685764/IMG_20250118_212516_-_ME_D_140_Kasturi_Priyadarshinee_Borah_ag0nng.jpg", name: "Kasturi P. Borah", title: "Chief Coordinatior" },
-      { id: 3, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743685842/WhatsApp_Image_2025-04-02_at_10.34.29_PM_1_cuheto.jpg", name: "Sibashish Kachari", title: "Chief Coordinator" }
+      { id: 2, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743685842/WhatsApp_Image_2025-04-02_at_10.34.29_PM_1_cuheto.jpg", name: "Sibashish Kachari", title: "Chief Coordinator" },
+      { id: 3, src: "https://res.cloudinary.com/dhpqjrbha/image/upload/v1743698747/IMG_20250324_210333_peavmk.jpg", name: "Padmanav Kakati", title: "Chief Coordinator" },
+      { id: 4, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743685764/IMG_20250118_212516_-_ME_D_140_Kasturi_Priyadarshinee_Borah_ag0nng.jpg", name: "Kasturi P. Borah", title: "Chief Coordinatior" }
     ],
   },
   {
