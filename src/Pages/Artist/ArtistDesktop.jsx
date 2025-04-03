@@ -45,25 +45,35 @@ const ArtistDesktop = () => {
           <p className={styles.title}>UPCOMING ARTISTS</p>
         </div>
         <div className={styles.artist_wrapper}>
-          <div className={styles.artist1}   onClick={openPopup}>
+          <div className={styles.artist1}
+          //  onClick={openPopup}
+           >
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className={styles.leftMusic} alt='leftMusic' />
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914466/papLeft_esh2ke.svg' className={styles.LeftPepa} alt='LeftPepa' />
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914464/LeftDhol_mqch8f.svg' className={styles.LeftDhol} alt='LeftDhol' />
-            <div className={styles.artistImage}>
-              <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914468/Zubeen_kalp5x.svg' className={styles.mainArtist} alt='Zubeen Garg' />
-              <div className={styles.textBox}></div>
+            <div className={styles.artistImage} style={{justifyContent: 'center', minWidth: '10rem'}}>
+              <div className='bg-[#f8ead0] w-[90%] h-[90%] flex justify-center items-center rounded-md text-center'>
+                <p className='font-moglan laptop2:text-3xl text-xl'>Coming Soon..</p>
+              </div>
+              {/* <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914468/Zubeen_kalp5x.svg' className={styles.mainArtist} alt='Zubeen Garg' />
+              <div className={styles.textBox}></div> */}
             </div>
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914468/RightDhol_wvr36b.svg' className={styles.RightDhol} alt='RightDhol' />
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914467/papRight_vdsite.svg' className={styles.RightPepa} alt='RightPepa' />
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className={styles.rightMusic} alt='rightMusic' />
           </div>
-          <div className={styles.artist2}  onClick={openPopup}>
+          <div className={styles.artist2} 
+          //  onClick={openPopup}
+           >
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className={styles.leftMusic2} alt='leftMusic' />
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914466/papLeft_esh2ke.svg' className={styles.LeftPepa2} alt='LeftPepa' />
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914464/LeftDhol_mqch8f.svg' className={styles.LeftDhol2} alt='LeftDhol' />
-            <div className={styles.artistImage2}>
-              <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914468/Zubeen_kalp5x.svg' className={styles.mainArtist2} alt='Zubeen Garg' />
-              <div className={styles.textBox2}></div>
+            <div className={styles.artistImage2} style={{justifyContent: 'center', minWidth: '10rem'}}>
+              <div className='bg-[#f8ead0] w-[90%] h-[90%] flex justify-center items-center rounded-md text-center'>
+                <p className='font-moglan laptop2:text-3xl text-xl'>Coming Soon..</p>
+              </div>
+              {/* <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914468/Zubeen_kalp5x.svg' className={styles.mainArtist2} alt='Zubeen Garg' />
+              <div className={styles.textBox2}></div> */}
             </div>
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914468/RightDhol_wvr36b.svg' className={styles.RightDhol2} alt='RightDhol' />
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914467/papRight_vdsite.svg' className={styles.RightPepa2} alt='RightPepa' />

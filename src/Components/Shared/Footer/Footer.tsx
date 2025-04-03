@@ -7,20 +7,22 @@ const Footer = () => {
             <div className=' w-full h-full relative pt-20 pl-18 pr-14 mobile:pl-32 mobile:pr-24 tablet:px-28 laptop:px-44 z-10 opacity-90 overflow-hidden'>
                 <div className='text-[#6B2C2C] text-xs mobile:text-sm md:text-base font-semibold flex gap-y-12 gap-x-[10vw] md:gap-x-16 tablet:gap-x-18 relative z-10 flex-wrap pb-5'>
                     <div className='flex flex-col gap-2'>
-                        <a href='/'>Instagram</a>
-                        <a href='/'>Facebook</a>
-                        <a href='/'>X</a>
+                        <a href='https://www.instagram.com/posua_nits/'>Instagram</a>
+                        <a href='https://www.facebook.com/nitsposua'>Facebook</a>
+                        {/* <a href='/'>X</a> */}
                     </div>
                     <div className='flex flex-col gap-2 w-max'>
                         <p>NIT Silchar</p>
                         <p>NIT Road, Fakirtilla</p>
                         <p>Silchar, Assam, 788010</p>
                     </div>
-                    <div className='flex flex-col'>
-                        <p>John Doe</p>
-                        <p className='text-[#D54E54] text-xs mb-2'>+91 98975 89326</p>
-                        <p>Lisa Williams</p>
-                        <p className='text-[#D54E54] text-xs'>+91 95347 56282</p>
+                    <div className='flex flex-col text-sm'>
+                        <p>Gyan</p>
+                        <p className='text-[#D54E54] text-xs mb-1'>+916002934521</p>
+                        <p>Pragyan Atri</p>
+                        <p className='text-[#D54E54] text-xs mb-1'>+916000392510</p>
+                        <p>Padmanav Kakati</p>
+                        <p className='text-[#D54E54] text-xs'>+919864745775</p>
                     </div>
                     <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1742786301/%E0%A6%AA%E0%A6%9B%E0%A7%8B%E0%A7%B1%E0%A6%BE-1_chgze6.webp' className='w-[25vw] mobile:w-[30vw] object-contain block tablet:hidden h-auto relative z-10' />
                     <div className='relative flex flex-col gap-1 items-center text-black tablet:text-[#701317]'>
