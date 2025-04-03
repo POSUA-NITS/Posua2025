@@ -124,12 +124,12 @@ const main = [
   {
     category: "DECORATION TEAM",
     members: [
-      { id: 1, name: "Vishal Varma", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743680271/WhatsApp_Image_2025-04-02_at_10.34.26_PM_6_u0z5ed.webp" },
-      { id: 2, name: "Hiramani Das", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743680284/IMG-20241017-WA0060_-_CE_112_Hira_Mani_Das_bnvpad.jpg" },
-      { id: 3, name: "Mrityunjoy Chinte", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743680784/WhatsApp_Image_2025-04-02_at_10.34.38_PM_i2rgmd.webp" },
-      { id: 4, name: "Uttirna Talukdar", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743680808/WhatsApp_Image_2025-04-02_at_10.34.28_PM_1_tvlcvl.webp" },
-      { id: 5, name: "Angkita Baro", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743680849/IMG-20250401-WA0050_-_EE_034_Angkita_Baro_kztwhg.webp" },
-      { id: 6, name: "Himangshu Sarma", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743681026/WhatsApp_Image_2025-04-02_at_10.34.28_PM_2_mct7rw.webp" }
+      { id: 1, name: "Himangshu Sarma", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743681026/WhatsApp_Image_2025-04-02_at_10.34.28_PM_2_mct7rw.webp" },
+      { id: 2, name: "Vishal Varma", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743680271/WhatsApp_Image_2025-04-02_at_10.34.26_PM_6_u0z5ed.webp" },
+      { id: 3, name: "Hiramani Das", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743680284/IMG-20241017-WA0060_-_CE_112_Hira_Mani_Das_bnvpad.jpg" },
+      { id: 4, name: "Mrityunjoy Chinte", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743680784/WhatsApp_Image_2025-04-02_at_10.34.38_PM_i2rgmd.webp" },
+      { id: 5, name: "Uttirna Talukdar", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743680808/WhatsApp_Image_2025-04-02_at_10.34.28_PM_1_tvlcvl.webp" },
+      { id: 6, name: "Angkita Baro", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743680849/IMG-20250401-WA0050_-_EE_034_Angkita_Baro_kztwhg.webp" }
     ],
   },
   {
