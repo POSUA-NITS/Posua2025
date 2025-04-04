@@ -9,14 +9,16 @@ const ArtistDesktop = () => {
     { id: 1, url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743509260/1_hvqht0.webp", alt: "Nilotpal Borah", tit: "Singer" },
     { id: 2, url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743607390/ZubeenGarg_ybmmad.webp", alt: "Zubeen Garg", tit: "Singer" },
     { id: 3, url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743607390/Priyanka_Bharali_fzetdl.webp", alt: "Priyanka Bharali", tit: "Singer" },
-    { id: 4, url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743607391/SrimantaShekhar_xtzq9z.webp", alt: "Srimanta Shekhar", tit: "Singer" },
+    { id: 4, url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743607391/SrimantaShekhar_xtzq9z.webp", alt: "Simanta Shekhar", tit: "Singer" },
     { id: 5, url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743607398/PaponMahanta_hg0shr.webp", alt: "Angaraag Mahanta", tit: "Singer" },
 
   ];
 
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [isPopupOpen2, setIsPopupOpen2] = useState(false);
 
   const [popupClass, setPopupClass] = useState(styles.popupOverlay);
+  const [popupClass2, setPopupClass2] = useState(styles.popupOverlay);
 
   const openPopup = () => {
     setIsPopupOpen(true);
@@ -67,17 +69,26 @@ const ArtistDesktop = () => {
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className={styles.rightMusic2} alt='rightMusic' />
           </div>
           <div className={styles.artist1}
-          //  onClick={openPopup}
+            onClick={() => {
+              setIsPopupOpen2(true);
+              setTimeout(() => {
+                setPopupClass2(`${styles.popupOverlay} ${styles.active}`);
+              }, 10);
+            }}
           >
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className={styles.leftMusic} alt='leftMusic' />
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914466/papLeft_esh2ke.svg' className={styles.LeftPepa} alt='LeftPepa' />
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914464/LeftDhol_mqch8f.svg' className={styles.LeftDhol} alt='LeftDhol' />
             <div className={styles.artistImage} style={{ justifyContent: 'center', minWidth: '10rem' }}>
-              <div className='bg-[#f8ead0] w-[90%] h-[90%] flex justify-center items-center rounded-md text-center'>
+              {/* <div className='bg-[#f8ead0] w-[90%] h-[90%] flex justify-center items-center rounded-md text-center'>
                 <p className='font-moglan laptop2:text-3xl text-xl'>Coming Soon..</p>
+              </div> */}
+              <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1743767974/WhatsApp_Image_2025-04-04_at_17.22.54_215e91e6_mjkier.jpg' className={styles.mainArtist} style={{ objectFit: "cover" }} alt='Zublee Baruah' />
+              <div className={"text-[#c35d5a] flex flex-col items-center justify-center "+ styles.textBox}>
+                <p>Patkai</p>
+                <div className='border-[#c35d5a] border-t-2 border-dashed h-[0.8px] tablet:h-[1.5px] w-[80%]' />
+                <p>band</p>
               </div>
-              {/* <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914468/Zubeen_kalp5x.svg' className={styles.mainArtist} alt='Zubeen Garg' />
-              <div className={styles.textBox}></div> */}
             </div>
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914468/RightDhol_wvr36b.svg' className={styles.RightDhol} alt='RightDhol' />
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914467/papRight_vdsite.svg' className={styles.RightPepa} alt='RightPepa' />
@@ -145,6 +156,50 @@ const ArtistDesktop = () => {
                 </p>
                 <p className={styles.englishText}>
                   Spring arrives with a whispering breeze, waking the Earth from its slumber with ease. Spring brings bihu, hand in hand, a timeless song across the land. And with that people, NIT Silchar has geared up with its preparations for an unforgettable evening. Yes you heard that right, Nit silchar is hosting a glorious performance by Zublee, whose mesmerizing voice and soulful melodies have the power to captivate hearts and create magic on stage. So, what's got you thinking? Join us for a night of music so good, even your playlist will be jealous! Come for the music and we guarantee that you would want to stay for the vibe. See you all there, with your crazy moves, and let everyone just stare!
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
+        {isPopupOpen2 && (
+          <div className={popupClass2}>
+            <div className={styles.wrapper}>
+              <button className={styles.closeButton} onClick={()=>{
+                setPopupClass2(`${styles.popupOverlay} ${styles.closing}`);
+                setTimeout(() => {
+                  setIsPopupOpen2(false);
+                  setPopupClass2(styles.popupOverlay);
+                }, 500); 
+              }}>
+                &times;
+              </button>
+              <div className={styles.wrapper1}>
+                <div className={styles.profile}>
+                  <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1743767974/WhatsApp_Image_2025-04-04_at_17.22.54_215e91e6_mjkier.jpg' className={styles.mainArtist} alt='Zublee Baruah' />
+                  <div className={styles.textBox + " text-[#c35d5a] flex flex-col items-center justify-center text-sm"}>
+                    <p>Patkai</p>
+                    <div className='border-[#c35d5a] border-t-2 border-dashed h-[0.8px] tablet:h-[1.5px] w-[80%]' />
+                    <p>band</p>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.wrapper2}>
+                <p className={styles.artistName}>Patkai</p>
+                <p className={styles.assameseText}>
+                  সূর্য অস্ত যোৱা আৰু সন্ধিয়াৰ মৃদু বতাহে পৃথিৱীৰ প্ৰতিধ্বনি কঢ়িয়াই অনাৰ লগতেই পছোৱাৰ মঞ্চ সাজু হ'বলৈ লৈছে পাতকাই লোক দল ক আমন্ত্রিত কৰিবলৈ।
+                  <br/>
+                  ঢোল, পেঁপা আৰু অসমৰ লোক সংস্কৃতিৰ এক মনোৰম সংমিশ্রণ, পাতকাই আহিছে  এক নতুন প্ৰতিধ্বনি লৈ। ঝুমুৰৰ মধুৰ ধ্বনিৰ পৰা আদি কৰি বিহুৰ উৎফুল্লিত কৰি তোলা শক্তি- পাতকাই হ'ল একতাৰ প্ৰতীক।
+                  <br/>
+                  আহক ৰাইজ, সকলোৱে একেলগ হৈ উপভোগ কৰো সুৰৰ প্ৰতিধ্বনিৰে ভৰা এক নিশা, য'ত প্ৰত্যেক তালে কঢ়িয়াই আনে এক নতুন গল্প।
+
+                </p>
+                <p className={styles.englishText}>
+                  As the sun sets and the evening breeze carries the echoes of our land, let the soul of Assam come alive through Patkai – a mesmerizing folk group performance at Posua 2025!
+                  <br/>
+                  With the rhythmic beats of the dhol, the enchanting tunes of the pepa, and the vibrant energy of our folk traditions, Patkai brings together the spirit of Assam’s diverse communities on one stage. From the raw power of Jhumur to the graceful sways of Bihu, each performance is a tribute to the roots that bind us.
+                  <br/>
+                  Join us as tradition meets celebration, where every beat tells a story. Let the night resonate with the folk melodies that have echoed through generations!
+
                 </p>
               </div>
             </div>
