@@ -12,7 +12,7 @@ function Invitation() {
           />
         </div>
         <img
-          src="https://res.cloudinary.com/dybzo3xly/image/upload/v1743613833/InvitationPosua_prnbtx.webp"
+          src="https://res.cloudinary.com/dhpqjrbha/image/upload/v1743711234/Copy_of_Invitation_20250403_214458_0000_ev1qrl.webp"
           alt="Invitation"
           className="w-full"
         />

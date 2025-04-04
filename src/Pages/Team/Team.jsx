@@ -4,12 +4,24 @@ import SectionHeading from "../../Components/SectionHeading";
 
 const main = [
   {
-    category: "CORE TEAM",
+    category: "CONVENOR",
     members: [
-      { id: 1, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743686089/IMG-20250402-WA0095_-_EE_085__Gyan_q2ippw.jpg", name: "Gyan S. Hazarika", title: "Convenor" },
-      { id: 2, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743685764/IMG_20250118_212516_-_ME_D_140_Kasturi_Priyadarshinee_Borah_ag0nng.jpg", name: "Kasturi P. Borah", title: "Chief Coordinatior" },
-      { id: 3, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743685842/WhatsApp_Image_2025-04-02_at_10.34.29_PM_1_cuheto.jpg", name: "Sibashish Kachari", title: "Chief Coordinator" }
+      { id: 1, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743686089/IMG-20250402-WA0095_-_EE_085__Gyan_q2ippw.jpg", name: "Gyan S. Hazarika", title: "Convenor" }
     ],
+  },
+  {
+    category: "CHIEF COORDINATORS",
+    members: [
+      { id: 1, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743685842/WhatsApp_Image_2025-04-02_at_10.34.29_PM_1_cuheto.jpg", name: "Sibashish Kachari", title: "Chief Coordinator" },
+      { id: 2, src: "https://res.cloudinary.com/dhpqjrbha/image/upload/v1743698747/IMG_20250324_210333_peavmk.jpg", name: "Padmanav Kakati", title: "Chief Coordinator" },
+      { id: 3, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743685764/IMG_20250118_212516_-_ME_D_140_Kasturi_Priyadarshinee_Borah_ag0nng.jpg", name: "Kasturi P. Borah", title: "Chief Coordinatior" }
+    ],
+  },
+  {
+    category: "TREASURER",
+    members: [
+      { id: 1, src: "https://res.cloudinary.com/dhpqjrbha/image/upload/v1743705183/photo_1_lomvtk.jpg", name: "Pragyan Atri" }
+      ],
   },
   {
     category: "EXECUTIVE HEADS",
@@ -121,12 +133,12 @@ const main = [
   {
     category: "DECORATION TEAM",
     members: [
-      { id: 1, name: "Vishal Varma", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743680271/WhatsApp_Image_2025-04-02_at_10.34.26_PM_6_u0z5ed.webp" },
-      { id: 2, name: "Hiramani Das", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743680284/IMG-20241017-WA0060_-_CE_112_Hira_Mani_Das_bnvpad.jpg" },
-      { id: 3, name: "Mrityunjoy Chinte", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743680784/WhatsApp_Image_2025-04-02_at_10.34.38_PM_i2rgmd.webp" },
-      { id: 4, name: "Uttirna Talukdar", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743680808/WhatsApp_Image_2025-04-02_at_10.34.28_PM_1_tvlcvl.webp" },
-      { id: 5, name: "Angkita Baro", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743680849/IMG-20250401-WA0050_-_EE_034_Angkita_Baro_kztwhg.webp" },
-      { id: 6, name: "Himangshu Sarma", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743681026/WhatsApp_Image_2025-04-02_at_10.34.28_PM_2_mct7rw.webp" }
+      { id: 1, name: "Himangshu Sarma", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743681026/WhatsApp_Image_2025-04-02_at_10.34.28_PM_2_mct7rw.webp" },
+      { id: 2, name: "Vishal Varma", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743680271/WhatsApp_Image_2025-04-02_at_10.34.26_PM_6_u0z5ed.webp" },
+      { id: 3, name: "Hiramani Das", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743680284/IMG-20241017-WA0060_-_CE_112_Hira_Mani_Das_bnvpad.jpg" },
+      { id: 4, name: "Mrityunjoy Chinte", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743680784/WhatsApp_Image_2025-04-02_at_10.34.38_PM_i2rgmd.webp" },
+      { id: 5, name: "Uttirna Talukdar", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743680808/WhatsApp_Image_2025-04-02_at_10.34.28_PM_1_tvlcvl.webp" },
+      { id: 6, name: "Angkita Baro", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743680849/IMG-20250401-WA0050_-_EE_034_Angkita_Baro_kztwhg.webp" }
     ],
   },
   {
@@ -161,7 +173,22 @@ const Team = () => {
       </div>
 
       {/* Team Section */}
-      <div className="mt-10 flex justify-center items-center gap-x-[20vw] flex-wrap w-[80%]">
+      <div className="mt-10 flex justify-center items-center gap-x-[18vw] flex-wrap w-[80%] gap-y-20">
+        <div className=" relative text-center group z-30 bg-[url('https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743189245/hobo_japi_ymvf2t.png')]  bg-cover bg-center h-auto aspect-square w-[19.5vw] flex justify-center items-center">
+          <div className="w-[18.6vw] h-auto aspect-square bg-white rounded-full flex items-center justify-center shadow-md z-10 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
+            <img src="https://res.cloudinary.com/dhpqjrbha/image/upload/v1743704061/director_catbvj.webp" alt="" className="h-full aspect-square object-cover rounded-full" />
+          </div>
+          <div className="absolute top-[16vw] w-max min-w-[16vw] h-[4.6vw] posua mobile2:text-[1.6vw] tablet2:text-[2vh] laptop2:text-[3vh] bg-[#721B1E] text-white group-hover:w-max py-2.5 laptop2:py-4 px-4 rounded-full z-20 flex justify-center items-center group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
+            <h1 className="group-hover:-translate-y-3 transition-transform duration-300 truncate">
+            Prof. Dilip Kumar Baidya
+            </h1>
+            <h1 className="posua text-white opacity-0 absolute bottom-1 left-[50%] -translate-x-[50%] text-2xl group-hover:opacity-100 z-40 transition-all duration-300 text-nowrap">Director</h1>
+          </div>
+          <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742828414/1_81_gj3nn0.png" alt=""
+            className="absolute top-[50%] -left-[3rem] h-[70%] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300" />
+          <img src="https://res.cloudinary.com/dsj9gr1o3/image/upload/v1742829354/1_82_ujxqrd.png" alt=""
+            className="absolute top-[50%] -right-[3.1rem] h-[70%] group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300" />
+        </div>
         <div className="relative text-center group z-10 bg-[url('https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743189245/hobo_japi_ymvf2t.png')] bg-cover bg-center h-auto aspect-square w-[19.5vw] flex justify-center items-center">
           <div className="w-[18.6vw] h-auto aspect-square bg-white rounded-full flex items-center justify-center shadow-md z-10 group-hover:translate-x-6 group-hover:translate-y-8 transition-transform duration-300">
             <img src="https://res.cloudinary.com/dmezugavw/image/upload/v1743618531/IMG_174158960667ce8c6628e75_dehr37.webp" alt="" className="h-full aspect-square object-cover rounded-full" />
@@ -226,7 +253,7 @@ const Team = () => {
                   <div className="relative border-30 border-[#721B1E] bg-white z-10">
                     <img src={img.src} alt={img.name} className="w-56 h-72 object-cover z-30" />
                   </div>
-                  <div className="posua relative text-white text-center py-2 text-3xl z-40 -translate-y-6 group-hover:-translate-y-10 transition-transform duration-300">
+                  <div className="posua relative text-white text-center py-2 text-2xl md:text-3xl z-40 -translate-y-6 group-hover:-translate-y-10 transition-transform duration-300">
                     {img.name}
                   </div>
                   <h1 className={`posua text-white opacity-0 absolute bottom-9 left-[50%] -translate-x-[50%] group-hover:opacity-100 z-40 transition-all duration-300 whitespace-nowrap ${img.title ? "text-xl" : "text-2xl"}`}>{img.title ? img.title : "Head"}</h1>
