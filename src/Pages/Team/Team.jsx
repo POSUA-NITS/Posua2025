@@ -26,12 +26,18 @@ const main = [
     category: "TECH TEAM",
     members: [
       { id: 1, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743684714/WhatsApp_Image_2025-04-02_at_10.34.26_PM_2_bigb1s.jpg", name: "Himangshu Sarma" },
+      { id:8, src:"https://res.cloudinary.com/dmezugavw/image/upload/v1729590206/pragya_zg7bor.jpg", name:"Pragya Annesha Baruah", title: "UI/UX Head"},
       { id: 2, src: "https://res.cloudinary.com/dbzjr2zld/image/upload/v1743691026/WhatsApp_Image_2025-04-03_at_20.02.24_7b974f7c_gfduyl.webp", name: "Pragya P. Deka", title: "Co-Head" },
       { id: 3, src: "https://res.cloudinary.com/dbzjr2zld/image/upload/v1743691025/WhatsApp_Image_2025-04-03_at_20.02.07_217def21_mhgbq7.webp", name: "Satya ", title: "Co-Head" },
+      { id: 9, src: "https://res.cloudinary.com/dmezugavw/image/upload/v1743746898/1000031393_wkp3sc.webp", name: "Gracie Ruth", title: "UI/UX Co-Head" },
       { id: 4, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743687540/WhatsApp_Image_2025-04-03_at_6.38.38_PM_yfmo60.jpg", name: "Anirban Bora", title: "Developer" },
       { id: 5, src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743687864/WhatsApp_Image_2025-03-18_at_12.11.39_AM_loe2lb_c_crop_ar_3_4_ppwblm.jpg", name: "Subrata Lodh", title: "Developer" },
       { id: 6, src: "https://res.cloudinary.com/dmezugavw/image/upload/v1743689262/WhatsApp_Image_2025-04-03_at_19.35.07_aa39fa79_ebc808.jpg", name: "Priyanshu Kashyap", title: "Developer" },
       { id: 7, src: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743689249/Manash_Pratim_Goswami_-_MANASH_PRATIM_GOSWAMI_vzheif.jpg", name: "Manash P. Goswami", title: "Developer" },
+      { id: 10, src: "https://res.cloudinary.com/dmezugavw/image/upload/v1743746913/1000031389_qsfypi.webp", name: "Jainika Saikia", title: "Designer" },
+      { id: 11, src: "https://res.cloudinary.com/dmezugavw/image/upload/v1743746895/1000031366_przgyr.webp", name: "Bhargab Baruah", title: "Designer" },
+      { id: 12, src: "https://res.cloudinary.com/dmezugavw/image/upload/v1743746892/IMG-20250404-WA0014_dy9w04.webp", name: "Anuj Das", title: "Designer" },
+      { id: 13, src: "https://res.cloudinary.com/dmezugavw/image/upload/v1743746901/1000031395_omjgje.webp", name: "Surajit Sutradhar", title: "Designer" },
     ],
   },
   {
@@ -86,7 +92,10 @@ const main = [
     category: "FOOD TEAM",
     members: [
       { id: 1, name: "Aman Kalita", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743684426/WhatsApp_Image_2025-04-02_at_10.34.34_PM_1_ann4oi.jpg" },
-      { id: 2, name: "Nabadeep Choudhary", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743684522/IMG-20250329-WA0000_-_ME_D_109_NABADEEP_CHOUDHURY_o3x9pn.jpg" }
+      { id: 2, name: "Nabadeep Choudhary", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743684522/IMG-20250329-WA0000_-_ME_D_109_NABADEEP_CHOUDHURY_o3x9pn.jpg" },
+      {
+        id: 3, name :"Syed Rehab Tanjir", src:"https://res.cloudinary.com/dmezugavw/image/upload/v1743749581/rehab_k2ug5k.jpg"
+      }
     ],
   },
   {
