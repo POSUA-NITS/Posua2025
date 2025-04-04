@@ -113,7 +113,9 @@ const main = [
   {
     category: "SECURITY TEAM",
     members: [
-      { id: 1, name: "Samiran Sarma", src: "https://res.cloudinary.com/dmezugavw/image/upload/v1743750576/WhatsApp_Image_2025-04-04_at_12.38.21_bb9dea82_kkqfmu.jpg" },
+      { id: 1, name: "Bhargab Raj Gogoi", src: "https://res.cloudinary.com/dsj9gr1o3/image/upload/v1743684939/WhatsApp_Image_2025-04-02_at_10.34.38_PM_2_ycwwag.jpg" },
+      { id: 2, name: "Samiran Sarma", src: "https://res.cloudinary.com/dmezugavw/image/upload/v1743750576/WhatsApp_Image_2025-04-04_at_12.38.21_bb9dea82_kkqfmu.jpg" },
+      { id:3, name: "Nabarun Biswas", src: "https://res.cloudinary.com/dmezugavw/image/upload/v1743767987/WhatsApp_Image_2025-04-04_at_17.23.55_721b695d_ffg9ol.jpg"}
     ],
   },
   {

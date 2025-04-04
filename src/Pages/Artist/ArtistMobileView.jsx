@@ -19,7 +19,7 @@ const ArtistMobileView = () => {
     { id: 1, url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743509260/1_hvqht0.webp", alt: "Nilotpal Borah", tit: "Singer" },
     { id: 2, url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743607390/ZubeenGarg_ybmmad.webp", alt: "Zubeen Garg", tit: "Singer" },
     { id: 3, url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743607390/Priyanka_Bharali_fzetdl.webp", alt: "Priyanka Bharali", tit: "Singer" },
-    { id: 4, url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743607391/SrimantaShekhar_xtzq9z.webp", alt: "Srimanta Shekhar", tit: "Singer" },
+    { id: 4, url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743607391/SrimantaShekhar_xtzq9z.webp", alt: "Simanta Shekhar", tit: "Singer" },
     { id: 5, url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743607398/PaponMahanta_hg0shr.webp", alt: "Angaraag Mahanta", tit: "Singer" },
 
   ];
@@ -45,8 +45,9 @@ const ArtistMobileView = () => {
                 <p>singer</p>
               </div>
             </div>
-{/*             <p className={styles.artistName}>Zubeen Garg</p> */}
+            <p className={styles.artistName}>Zublee</p>
             <p className={styles.assameseText}>
+              <br />
               “আজি কিয় হিয়া কঁপে
               আজি কিয় মনে নাচে
               দুচকুতে তোমাৰে
@@ -67,28 +68,34 @@ const ArtistMobileView = () => {
               জৰীবৰৰ তলতে বিহুখন পাতোগৈ ঐ
               অ’ তেহে দেহা পৰিব শাত।</p>
             <p className={styles.englishText}>
+              <br />
               Spring arrives with a whispering breeze, waking the Earth from its slumber with ease. Spring brings bihu, hand in hand, a timeless song across the land. And with that people, NIT Silchar has geared up with its preparations for an unforgettable evening. Yes you heard that right, Nit silchar is hosting a glorious performance by Zublee, whose mesmerizing voice and soulful melodies have the power to captivate hearts and create magic on stage. So, what's got you thinking? Join us for a night of music so good, even your playlist will be jealous! Come for the music and we guarantee that you would want to stay for the vibe. See you all there, with your crazy moves, and let everyone just stare!
             </p>
-{/*             <div className='w-[90%] h-[90%] flex justify-center items-center rounded-md text-center'>
-              <p className='font-moglan text-3xl'>Coming Soon..</p>
-            </div> */}
           </div>
             : <div className={styles.wrapper + " min-h-[25vh]"}>
-              {/* <div className={styles.profile}>
-                     <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914468/Zubeen_kalp5x.svg' className={styles.mainArtist} alt='Zubeen Garg' />
-                     <div className={styles.textBox}></div>
-               </div>
-               <p className={styles.artistName}>Papon Mahonta</p>
-               <p className={styles.assameseText}>
-               অসমৰ গাঁৱে-ভূঞে, চহৰে-নগৰে অসমীয়াৰ হুচৰিক মঞ্চত উপস্থাপন কৰি দৰ্শকৰ অপূৰ্ব খ্যাতি লাভ কৰিবলৈ সক্ষম হোৱা "দেউচিলা বিহুদল" আহি আজি এন. আই. টি. ৰ বাকৰি শুৱনি কৰিছেহি। এন. আই. টি. ৰ বিহুবলীয়া ৰাইজৰ মন প্ৰাণ জিনিবলৈ নিজৰ ঢোল, পেঁপা, গগনাৰ লগতে বিভিন্ন বাদ্যযন্ত্ৰৰ সুৰেৰে আপ্লুত কৰি তুলিবলৈ সাজু "দেউচিলা বিহুদল"। ঢোলৰ চাপৰত হুঁচৰিৰ চেঁৱত আকৌ এবাৰ কঁকাল ভাঙি নাচিবলৈ, এতিয়া মাথোঁ অপেক্ষা ৫ মাৰ্চ তাৰিখলৈ। 
-               </p>
-               <p className={styles.englishText}>
-               Spring has finally arrived, and the anticipation has culminated in the sounds of Bihu beats all around the corner. And with this, NIT Silchar is all set to host performance of 'Deusila Bihudol', a renowned folk group whose mesmerizing shows have captivated audiences and made them groove to the beats of Bihu. Brace yourselves for a magnificent cultural event as 'Deusila Bihudal' takes the stage with their drums, pepas, gaganas and various other musical instruments, ready to win the hearts of many. Hoping to see you all there promptly!
-
-               </p> */}
-{/*               <div className='w-[90%] h-[90%] flex justify-center items-center rounded-md text-center'>
-                <p className='font-moglan text-3xl'>Coming Soon..</p>
-              </div> */}
+              <div className={styles.profile}>
+                <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1743767974/WhatsApp_Image_2025-04-04_at_17.22.54_215e91e6_mjkier.jpg' className={styles.mainArtist} alt='Zubeen Garg' />
+                <div className={styles.textBox + " text-[#c35d5a] flex flex-col items-center justify-center text-sm"}>
+                  <p>Patkai</p>
+                  <div className='border-[#c35d5a] border-t-2 border-dashed h-[0.8px] tablet:h-[1.5px] w-[80%]' />
+                  <p>band</p>
+                </div>
+              </div>
+              <p className={styles.artistName}>Patkai</p>
+              <p className={styles.assameseText}>
+                সূর্য অস্ত যোৱা আৰু সন্ধিয়াৰ মৃদু বতাহে পৃথিৱীৰ প্ৰতিধ্বনি কঢ়িয়াই অনাৰ লগতেই পছোৱাৰ মঞ্চ সাজু হ'বলৈ লৈছে পাতকাই লোক দল ক আমন্ত্রিত কৰিবলৈ।
+                <br />
+                ঢোল, পেঁপা আৰু অসমৰ লোক সংস্কৃতিৰ এক মনোৰম সংমিশ্রণ, পাতকাই আহিছে  এক নতুন প্ৰতিধ্বনি লৈ। ঝুমুৰৰ মধুৰ ধ্বনিৰ পৰা আদি কৰি বিহুৰ উৎফুল্লিত কৰি তোলা শক্তি- পাতকাই হ'ল একতাৰ প্ৰতীক।
+                <br />
+                আহক ৰাইজ, সকলোৱে একেলগ হৈ উপভোগ কৰো সুৰৰ প্ৰতিধ্বনিৰে ভৰা এক নিশা, য'ত প্ৰত্যেক তালে কঢ়িয়াই আনে এক নতুন গল্প।              </p>
+              <p className={styles.englishText}>
+                <br />
+                As the sun sets and the evening breeze carries the echoes of our land, let the soul of Assam come alive through Patkai – a mesmerizing folk group performance at Posua 2025!
+                <br />
+                With the rhythmic beats of the dhol, the enchanting tunes of the pepa, and the vibrant energy of our folk traditions, Patkai brings together the spirit of Assam’s diverse communities on one stage. From the raw power of Jhumur to the graceful sways of Bihu, each performance is a tribute to the roots that bind us.
+                <br />
+                Join us as tradition meets celebration, where every beat tells a story. Let the night resonate with the folk melodies that have echoed through generations!
+              </p>
             </div>
           }
 
