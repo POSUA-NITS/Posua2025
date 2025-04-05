@@ -2,7 +2,7 @@ import React from 'react'
 
 const Sponsor = (name, logo, size) => {
     return (
-        <div className={`relative z-10 ${size?"min-w-[50vw] max-w-[50vw] md:min-w-[25vw] md:max-w-[25vw]":"md:min-w-[18vw] md:max-w-[18vw]"} flex flex-col items-center overflow-visible justify-center aspect-square bg-gradient-to-b from-[#E7BB67] to-[#F4E0B9] rounded-lg`}>
+        <div className={`relative z-10 ${size ? "min-w-[50vw] max-w-[50vw] md:min-w-[25vw] md:max-w-[25vw]" : "md:min-w-[18vw] md:max-w-[18vw]"} flex flex-col items-center overflow-visible justify-center aspect-square bg-gradient-to-b from-[#E7BB67] to-[#F4E0B9] rounded-lg`}>
             <div className='flex items-center justify-center w-[90%] at-50%_70% aspect-square bg-radial from-[#F1DCB5] to-transparent backdrop-blur-2xl rounded-lg'>
                 <img src={logo} alt="" className="w-3/4 h-3/4 rounded-full" />
             </div>
@@ -19,21 +19,25 @@ const Sponsors = () => {
             <img src="https://res.cloudinary.com/dmezugavw/image/upload/v1742785498/header-img_brrtbl.webp" alt="" className="w-1/2 md:w-1/5 mt-32 md:mt-52" />
             <h1 className="text-4xl tablet:text-5xl text-[#CB2229] mb-8 font-moglan">Sponsors</h1>
             <div className="grid grid-cols-1 tablet:grid-cols-2 w-[95%] gap-y-16 place-items-center">
-            <img 
-                src="https://res.cloudinary.com/dmezugavw/image/upload/v1742785499/japi_ij9nt2.webp" 
-                alt="" 
-                className="w-1/3 absolute z-0 opacity-50 -left-[15%] hidden md:block" 
-            />
-                {Sponsor("Indian Oil", "https://res.cloudinary.com/dmezugavw/image/upload/v1743703617/images-1_hvqriw.webp", 3)}
-                {Sponsor("Pizza Hut", "https://res.cloudinary.com/dmezugavw/image/upload/v1743613374/pizzahut_wvxpv3.webp", 1)}
-                {Sponsor("Avni'z Production", "https://res.cloudinary.com/dmezugavw/image/upload/v1743613375/avni_vrwrhf.webp", 2)}
-                {Sponsor("Amul", "https://res.cloudinary.com/dbzjr2zld/image/upload/v1743752919/Amul_oh2xbg.png", 4)}
-                {Sponsor("Manya", "https://res.cloudinary.com/dbzjr2zld/image/upload/v1743752998/Screenshot_2025-04-04_131938_xbqm6i.png", 5)}
-                {Sponsor("Bhogali Jalpan", "https://res.cloudinary.com/dbzjr2zld/image/upload/v1743752919/WhatsApp_Image_2025-04-04_at_13.03.29_ec785d72_degrcl.jpg", 6)}
-        <div className="col-span-full place-self-center">
-            {Sponsor("ND24", "https://res.cloudinary.com/dbzjr2zld/image/upload/v1743752917/ND24_i4371e.png", 7)}
-        </div>
-        </div>
+                <img
+                    src="https://res.cloudinary.com/dmezugavw/image/upload/v1742785499/japi_ij9nt2.webp"
+                    alt=""
+                    className="w-1/3 absolute z-0 opacity-50 -left-[15%] hidden md:block"
+                />
+                <div className="col-span-full place-self-center">
+                    {Sponsor("Indian Oil", "https://res.cloudinary.com/dmezugavw/image/upload/v1743703617/images-1_hvqriw.webp", 3)}
+                </div>
+                {Sponsor("NEEPCO", "https://res.cloudinary.com/dmezugavw/image/upload/v1743839729/encrypted-tbn0_gstatic_com__images-1-1_x1hcf9.webp", 1)}
+                {Sponsor("C-DAC", "https://res.cloudinary.com/dmezugavw/image/upload/v1743839729/cdac_neqwr2.webp", 2)}
+            </div>
+            <div className="grid grid-cols-2 tablet:grid-cols-3 gap-y-20 gap-x-4 tablet:gap-x-0 place-items-center w-[95%] mt-32 md:mt-28">
+                {Sponsor("Pizza Hut", "https://res.cloudinary.com/dmezugavw/image/upload/v1743613374/pizzahut_wvxpv3.webp")}
+                {Sponsor("Avni'z Production", "https://res.cloudinary.com/dmezugavw/image/upload/v1743613375/avni_vrwrhf.webp")}
+                {Sponsor("Amul", "https://res.cloudinary.com/dbzjr2zld/image/upload/v1743752919/Amul_oh2xbg.png")}
+                {Sponsor("Manya", "https://res.cloudinary.com/dbzjr2zld/image/upload/v1743752998/Screenshot_2025-04-04_131938_xbqm6i.png")}
+                {Sponsor("Bhogali Jalpan", "https://res.cloudinary.com/dbzjr2zld/image/upload/v1743752919/WhatsApp_Image_2025-04-04_at_13.03.29_ec785d72_degrcl.jpg")}
+                {Sponsor("ND24", "https://res.cloudinary.com/dbzjr2zld/image/upload/v1743752917/ND24_i4371e.png")}
+            </div>
 
             <img src="https://res.cloudinary.com/dmezugavw/image/upload/v1742785498/header-img_brrtbl.webp" alt="" className="w-1/2 md:w-1/5 mt-32 md:mt-28" />
             <h1 className="text-4xl tablet:text-5xl text-[#CB2229] mb-8 font-moglan">Past Sponsors</h1>
@@ -59,7 +63,7 @@ const Sponsors = () => {
             </div>
             <div className="grid relative grid-cols-1 font-moglan tablet:grid-cols-3 gap-y-10 mt-28 md:mt-44 mb-28 w-[85%] place-items-center">
                 <div className="relative flex overflow-visible z-10 justify-center tablet:w-[22vw] bg-gradient-to-b from-[#E7BB67] to-[#F4E0B9] rounded-lg">
-                    <div className='flex items-center flex-col w-[90%] py-6 at-50%_70% bg-radial from-[#F1DCB5] to-transparent backdrop-blur-2xl rounded-lg max-h-[90vh] overflow-y-auto' style={{scrollbarWidth: 'none'}}>
+                    <div className='flex items-center flex-col w-[90%] py-6 at-50%_70% bg-radial from-[#F1DCB5] to-transparent backdrop-blur-2xl rounded-lg max-h-[90vh] overflow-y-auto' style={{ scrollbarWidth: 'none' }}>
                         <h2 className="text-2xl text-center p-4">Marketing Opportunities</h2>
                         <p>
                             National Institute of Technology, Silchar,an institute of National
